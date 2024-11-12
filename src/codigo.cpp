@@ -49,8 +49,6 @@ void Lectura_Cliente() {
         getline(ss, cliente.direccion, ',');
         ss >> cliente.activo;
     }
-
-    lectura_cliente.close();
 }
 
 void Lectura_Vehiculo() {
@@ -81,8 +79,6 @@ void Lectura_Vehiculo() {
         ss.ignore();
         getline(ss, vehiculo.fecha_de_entrega);
     }
-
-    lectura_vehiculo.close();
 }
 
 void Lectura_Repuesto() {
@@ -106,8 +102,6 @@ void Lectura_Repuesto() {
         ss.ignore();
         ss >> repuesto.existencias;
     }
-
-    lectura_repuesto.close();
 }
 
 int main() {
