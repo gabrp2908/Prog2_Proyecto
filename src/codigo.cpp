@@ -26,6 +26,7 @@ struct Repuestos{
 
 void Lectura_Cliente();
 void Lectura_Vehiculo();
+void Lectura_Repuesto();
 
 void Lectura_Cliente() {
 
