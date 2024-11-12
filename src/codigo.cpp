@@ -85,6 +85,31 @@ void Lectura_Vehiculo() {
     lectura_vehiculo.close();
 }
 
+void Lectura_Repuesto() {
+
+    ifstream lectura_repuesto("DATOS_REPUESTOS.csv", ios::in);
+    string line;
+
+    getline(lectura_repuesto, line);
+
+    while(getline(lectura_repuesto, line)) {
+
+        istringstream ss(line);
+
+        getline(ss, repuesto.modelo, ',');
+        getline(ss, repuesto.marca, ',');
+        getline(ss, repuesto.nombre, ',');
+        getline(ss, repuesto.modelo_carro, ',');
+        ss >> repuesto.year_carro;
+        ss.ignore();
+        ss >> repuesto.precio;
+        ss.ignore();
+        ss >> repuesto.existencias;
+    }
+
+    lectura_repuesto.close();
+}
+
 int main() {
 
 
