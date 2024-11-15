@@ -44,6 +44,19 @@ void Lectura_Cliente();
 void Lectura_Vehiculo();
 void Lectura_Repuesto();
 
+void Consulta_Cliente();
+void Consulta_Vehiculo_x_placa(); 
+void Consulta_Vehiculo_x_cedula();
+void Consulta_Repuesto(); 
+
+void QuickSortVehiculos(int left, int right);
+void QuickSortClientes(int left, int right);
+void QuickSortRepuestos(int left, int right);
+
+int PartitionVehiculos(int left, int right);
+int PartitionClientes(int left, int right);
+int PartitionRepuestos(int left, int right);
+
 void MenuPrincipal(){
     int opcion;
     do{
@@ -191,6 +204,72 @@ void MenuAgregar(){
     } while (opcion_agregar != 4);
 }
 
+void QuickSortVehiculos(int left, int right) {
+    if (left < right) {
+        int pivotIndex = PartitionVehiculos(left, right);
+        QuickSortVehiculos(left, pivotIndex - 1);
+        QuickSortVehiculos(pivotIndex + 1, right);
+    }
+}
+
+int PartitionVehiculos(int left, int right) {
+    int pivot = vehiculos[right].ced_cliente;
+    int i = left - 1;
+
+    for (int j = left; j < right; j++) {
+        if (vehiculos[j].ced_cliente < pivot) {
+            i++;
+            swap(vehiculos[i], vehiculos[j]);
+        }
+    }
+    swap(vehiculos[i + 1], vehiculos[right]);
+    return i + 1;
+}
+
+void QuickSortClientes(int left, int right) {
+    if (left < right) {
+        int pivotIndex = PartitionClientes(left, right);
+        QuickSortClientes(left, pivotIndex - 1);
+        QuickSortClientes(pivotIndex + 1, right);
+    }
+}
+
+int PartitionClientes(int left, int right) {
+    int pivot = clientes[right].cedula;
+    int i = left - 1;
+
+    for (int j = left; j < right; j++) {
+        if (clientes[j].cedula < pivot) {
+            i++;
+            swap(clientes[i], clientes[j]);
+        }
+    }
+    swap(clientes[i + 1], clientes[right]);
+    return i + 1;
+}
+
+void QuickSortRepuestos(int left, int right) {
+    if (left < right) {
+        int pivotIndex = PartitionRepuestos(left, right);
+        QuickSortRepuestos(left, pivotIndex - 1);
+        QuickSortRepuestos(pivotIndex + 1, right);
+    }
+}
+
+int PartitionRepuestos(int left, int right) {
+    int pivot = repuestos[right].modelo;
+    int i = left - 1;
+
+    for (int j = left; j < right; j++) {
+        if (repuestos[j].modelo < pivot) {
+            i++;
+            swap(repuestos[i], repuestos[j]);
+        }
+    }
+    swap(repuestos[i + 1], repuestos[right]);
+    return i + 1;
+}
+
 void Lectura_Cliente() {
     ifstream lectura_cliente("DATOS_CLIENTES.csv", ios::in);
     string line;
@@ -212,6 +291,8 @@ void Lectura_Cliente() {
         clientes[numClientes++] = cliente;
     }
     lectura_cliente.close();
+
+    QuickSortClientes(0, numClientes - 1);
 }
 
 void Lectura_Vehiculo() {
@@ -242,6 +323,8 @@ void Lectura_Vehiculo() {
         vehiculos[numVehiculos++] = vehiculo;
     }
     lectura_vehiculo.close();
+
+    QuickSortVehiculos(0, numVehiculos - 1);
 }
 
 void Lectura_Repuesto() {
@@ -267,6 +350,8 @@ void Lectura_Repuesto() {
         repuestos[numRepuestos++] = repuesto;
     }
     lectura_repuesto.close();
+
+    QuickSortRepuestos(0, numRepuestos - 1);
 }
 
 int main() {
