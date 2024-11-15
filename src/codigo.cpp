@@ -5,6 +5,10 @@
 
 using namespace std;
 
+const int MAX_VEHICULOS = 10000;
+const int MAX_CLIENTES = 10000;
+const int MAX_REPUESTOS = 10000;
+
 struct Vehiculos{
     string modelo, marca, placa, color, motor, fecha_de_entrega;
     int year, kilometraje, ced_cliente;
@@ -19,16 +23,26 @@ struct Cliente{
 }cliente;
 
 struct Repuestos{
-    string modelo, marca, nombre, modelo_carro;
-    int year_carro, existencias;
+    string marca, nombre, modelo_carro;
+    int modelo, year_carro, existencias;
     float precio;
-} repuestos;
+}repuesto;
+
+// Arreglos estáticos y contadores
+Vehiculos vehiculos[MAX_VEHICULOS];
+Cliente clientes[MAX_CLIENTES];
+Repuestos repuestos[MAX_REPUESTOS];
+int numVehiculos = 0, numClientes = 0, numRepuestos = 0;
 
 void MenuPrincipal();
 void MenuConsultar();
 void MenuActualizar();
 void MenuBorrar();
 void MenuAgregar();
+
+void Lectura_Cliente();
+void Lectura_Vehiculo();
+void Lectura_Repuesto();
 
 void MenuPrincipal(){
     int opcion;
@@ -64,7 +78,6 @@ void MenuPrincipal(){
         }
     } while (opcion != 5);
 }
-
 
 void MenuConsultar(){
     int opcion_leer;
@@ -122,8 +135,7 @@ void MenuActualizar(){
      } while (opcion_actualizar!=4);
 }
 
-void MenuBorrar()
-{
+void MenuBorrar(){
     int opcion_actualizar;
     do{
         cout << "MENU DE ELIMINACION DE REGISTROS" << endl;
@@ -151,8 +163,7 @@ void MenuBorrar()
     } while (opcion_actualizar != 4);
 }
 
-void MenuAgregar()
-{
+void MenuAgregar(){
     int opcion_agregar;
     do{
         cout << "MENU DE ACTUALIZACION DE REGISTROS" << endl;
@@ -180,19 +191,12 @@ void MenuAgregar()
     } while (opcion_agregar != 4);
 }
 
-void Lectura_Cliente();
-void Lectura_Vehiculo();
-void Lectura_Repuesto();
-
 void Lectura_Cliente() {
-
     ifstream lectura_cliente("DATOS_CLIENTES.csv", ios::in);
     string line;
-
     getline(lectura_cliente, line);
 
-    while(getline(lectura_cliente, line)) {
-
+    while (getline(lectura_cliente, line) && numClientes < MAX_CLIENTES){
         istringstream ss(line);
 
         ss >> cliente.cedula;
@@ -204,18 +208,18 @@ void Lectura_Cliente() {
         ss.ignore();
         getline(ss, cliente.direccion, ',');
         ss >> cliente.activo;
+
+        clientes[numClientes++] = cliente;
     }
+    lectura_cliente.close();
 }
 
 void Lectura_Vehiculo() {
-
-    ifstream lectura_vehiculo("DATOS_VEHICULOS.csv", ios::in);
+    ifstream lectura_vehiculo("DATOS_VEHICULOS.csv");
     string line;
-
     getline(lectura_vehiculo, line);
 
-    while(getline(lectura_vehiculo, line)) {
-
+    while (getline(lectura_vehiculo, line) && numVehiculos < MAX_VEHICULOS){
         istringstream ss(line);
 
         getline(ss, vehiculo.modelo, ',');
@@ -234,33 +238,42 @@ void Lectura_Vehiculo() {
         ss >> vehiculo.ced_cliente;
         ss.ignore();
         getline(ss, vehiculo.fecha_de_entrega);
+
+        vehiculos[numVehiculos++] = vehiculo;
     }
+    lectura_vehiculo.close();
 }
 
 void Lectura_Repuesto() {
-
     ifstream lectura_repuesto("DATOS_REPUESTOS.csv", ios::in);
     string line;
 
     getline(lectura_repuesto, line);
 
-    while(getline(lectura_repuesto, line)) {
-
+    while (getline(lectura_repuesto, line) && numRepuestos < MAX_REPUESTOS){
         istringstream ss(line);
 
-        getline(ss, repuestos.modelo, ',');
-        getline(ss, repuestos.marca, ',');
-        getline(ss, repuestos.nombre, ',');
-        getline(ss, repuestos.modelo_carro, ',');
-        ss >> repuestos.year_carro;
+        ss >> repuesto.modelo;
         ss.ignore();
-        ss >> repuestos.precio;
+        getline(ss, repuesto.marca, ',');
+        getline(ss, repuesto.nombre, ',');
+        getline(ss, repuesto.modelo_carro, ',');
+        ss >> repuesto.year_carro;
         ss.ignore();
-        ss >> repuestos.existencias;
+        ss >> repuesto.precio;
+        ss.ignore();
+        ss >> repuesto.existencias;
+
+        repuestos[numRepuestos++] = repuesto;
     }
+    lectura_repuesto.close();
 }
 
 int main() {
+    Lectura_Cliente();
+    Lectura_Vehiculo();
+    Lectura_Repuesto();
+    
     MenuPrincipal();
     return 0;
     }
