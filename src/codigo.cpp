@@ -93,31 +93,38 @@ void MenuPrincipal(){
 }
 
 void MenuConsultar(){
-    int opcion_leer;
+    int opcion_consulta;
     do{
         cout << "MENU DE CONSULTA DE REGISTROS" << endl;
         cout << "Indique el tipo de consulta que desea realizar:" << endl;
-        cout << "1. Vehiculo " << endl;
-        cout << "2. Cliente" << endl;
-        cout << "3. Repuesto" << endl;
-        cout << "4. Regresar al Menu Principal" << endl;
+        cout << "1. Vehiculo por placa" << endl;
+        cout << "2. Vehiculo por cedula de cliente" << endl;
+        cout << "3. Cliente" << endl;
+        cout << "4. Repuesto" << endl;
+        cout << "5. Regresar al Menu Principal" << endl;
         cout << "Seleccione una opcion: ";
-        cin >> opcion_leer;
+        cin >> opcion_consulta;
 
-        switch (opcion_leer){
+        switch (opcion_consulta){
         case 1: //Registro Vehiculo
-             break;
+            Consulta_Vehiculo_x_placa();
+            break;
         case 2: //Registro Cliente
+            Consulta_Vehiculo_x_cedula();
             break;
         case 3: //Registro Repuesto
+            Consulta_Cliente();
             break;
-        case 4: //Menu Principal
+        case 4:
+            Consulta_Repuesto();
+            break;
+        case 5: //Menu Principal
             MenuPrincipal();
             break;
         default:
             cout << "Opcion Invalida" << endl;
         }
-    } while (opcion_leer != 4);
+    } while (opcion_consulta != 5);
 }
 
 void MenuActualizar(){
@@ -504,4 +511,4 @@ int main() {
     
     MenuPrincipal();
     return 0;
-    }
+}
