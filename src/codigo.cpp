@@ -273,7 +273,6 @@ int PartitionRepuestos(int left, int right) {
 void Lectura_Cliente() {
     ifstream lectura_cliente("DATOS_CLIENTES.csv", ios::in);
     string line;
-    getline(lectura_cliente, line);
 
     while (getline(lectura_cliente, line) && numClientes < MAX_CLIENTES){
         istringstream ss(line);
@@ -298,7 +297,6 @@ void Lectura_Cliente() {
 void Lectura_Vehiculo() {
     ifstream lectura_vehiculo("DATOS_VEHICULOS.csv");
     string line;
-    getline(lectura_vehiculo, line);
 
     while (getline(lectura_vehiculo, line) && numVehiculos < MAX_VEHICULOS){
         istringstream ss(line);
@@ -330,8 +328,6 @@ void Lectura_Vehiculo() {
 void Lectura_Repuesto() {
     ifstream lectura_repuesto("DATOS_REPUESTOS.csv", ios::in);
     string line;
-
-    getline(lectura_repuesto, line);
 
     while (getline(lectura_repuesto, line) && numRepuestos < MAX_REPUESTOS){
         istringstream ss(line);
@@ -391,7 +387,6 @@ void Consulta_Vehiculo_x_placa() {
 	string line, vehiculo_buscar, vehiculo_actual;
 	bool existe = false;
 	cout << "Ingrese la placa del vehiculo que desea consultar: "; cin >> vehiculo_buscar;
-	getline(lectura_vehiculo, line);
 	while (getline(lectura_vehiculo, line)) {
 		istringstream ss(line);
 		
