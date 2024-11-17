@@ -67,6 +67,11 @@ void Agregar_Cliente();
 void Agregar_Vehiculo();
 void Agregar_Repuesto();
 
+//Funciones de Borrado
+void Eliminar_Cliente();
+void Eliminar_Vehiculo();
+void Eliminar_Repuesto();
+
 void MenuPrincipal(){
     int opcion;
     do{
@@ -115,13 +120,13 @@ void MenuConsultar(){
         cin >> opcion_consulta;
 
         switch (opcion_consulta){
-        case 1: //Registro Vehiculo
+        case 1: 
             Consulta_Vehiculo_x_placa();
             break;
-        case 2: //Registro Cliente
+        case 2:
             Consulta_Vehiculo_x_cedula();
             break;
-        case 3: //Registro Repuesto
+        case 3:
             Consulta_Cliente();
             break;
         case 4:
@@ -165,7 +170,7 @@ void MenuActualizar(){
 }
 
 void MenuBorrar(){
-    int opcion_actualizar;
+    int opcion_borrar;
     do{
         cout << endl << "MENU DE ELIMINACION DE REGISTROS" << endl;
         cout << "Indique el tipo de registro que desea eliminar:" << endl;
@@ -174,14 +179,17 @@ void MenuBorrar(){
         cout << "3. Repuesto" << endl;
         cout << "4. Regresar al Menu Principal" << endl;
         cout << "Seleccione una opcion: ";
-        cin >> opcion_actualizar;
+        cin >> opcion_borrar;
 
-        switch (opcion_actualizar){
-        case 1: //Registro Vehiculo
+        switch (opcion_borrar){
+        case 1:
+            Eliminar_Vehiculo();
             break;
-        case 2: //Registro Cliente
+        case 2: 
+            Eliminar_Cliente();
             break;
-        case 3: //Registro Repuesto
+        case 3: 
+            Eliminar_Repuesto();
             break;
         case 4: //Menu Principal
             return;
@@ -189,7 +197,7 @@ void MenuBorrar(){
         default:
             cout << "Opcion Invalida" << endl << endl;
         }
-    } while (opcion_actualizar != 4);
+    } while (opcion_borrar != 4);
 }
 
 void MenuAgregar(){
