@@ -70,7 +70,7 @@ void Agregar_Repuesto();
 void MenuPrincipal(){
     int opcion;
     do{
-        cout << "MENU PRINCIPAL" << endl;
+        cout << endl << "MENU PRINCIPAL" << endl;
         cout << "1. Consultar" << endl;
         cout << "2. Actualizar" << endl;
         cout << "3. Borrar" << endl;
@@ -96,8 +96,7 @@ void MenuPrincipal(){
             cout << "Saliendo del programa . . ." << endl;
             break;
         default:
-            cout << "Opcion invalida" << endl
-                 << endl;
+            cout << "Opcion invalida" << endl << endl;
         }
     } while (opcion != 5);
 }
@@ -105,7 +104,7 @@ void MenuPrincipal(){
 void MenuConsultar(){
     int opcion_consulta;
     do{
-        cout << "MENU DE CONSULTA DE REGISTROS" << endl;
+        cout << endl <<"MENU DE CONSULTA DE REGISTROS" << endl;
         cout << "Indique el tipo de consulta que desea realizar:" << endl;
         cout << "1. Vehiculo por placa" << endl;
         cout << "2. Vehiculo por cedula de cliente" << endl;
@@ -129,10 +128,10 @@ void MenuConsultar(){
             Consulta_Repuesto();
             break;
         case 5: //Menu Principal
-            MenuPrincipal();
+            return;
             break;
         default:
-            cout << "Opcion Invalida" << endl;
+            cout << "Opcion Invalida" << endl << endl;
         }
     } while (opcion_consulta != 5);
 }
@@ -140,7 +139,7 @@ void MenuConsultar(){
 void MenuActualizar(){
     int opcion_actualizar;
     do{
-        cout << "MENU DE ACTUALIZACION DE REGISTROS" << endl;
+        cout << endl << "MENU DE ACTUALIZACION DE REGISTROS" << endl;
         cout << "Indique el tipo de registro que desea actualizar:" << endl;
         cout << "1. Vehiculo " << endl;
         cout << "2. Cliente" << endl;
@@ -157,10 +156,10 @@ void MenuActualizar(){
         case 3: //Registro Repuesto
             break;
         case 4: //Menu
-            MenuPrincipal();
+            return;
             break;
         default:
-            cout << "Opcion Invalida" << endl;
+            cout << "Opcion Invalida" << endl << endl;
         }
      } while (opcion_actualizar!=4);
 }
@@ -168,7 +167,7 @@ void MenuActualizar(){
 void MenuBorrar(){
     int opcion_actualizar;
     do{
-        cout << "MENU DE ELIMINACION DE REGISTROS" << endl;
+        cout << endl << "MENU DE ELIMINACION DE REGISTROS" << endl;
         cout << "Indique el tipo de registro que desea eliminar:" << endl;
         cout << "1. Vehiculo " << endl;
         cout << "2. Cliente" << endl;
@@ -185,10 +184,10 @@ void MenuBorrar(){
         case 3: //Registro Repuesto
             break;
         case 4: //Menu Principal
-            MenuPrincipal();
+            return;
             break;
         default:
-            cout << "Opcion Invalida" << endl;
+            cout << "Opcion Invalida" << endl << endl;
         }
     } while (opcion_actualizar != 4);
 }
@@ -196,12 +195,12 @@ void MenuBorrar(){
 void MenuAgregar(){
     int opcion_agregar;
     do{
-        cout << "MENU DE ACTUALIZACION DE REGISTROS" << endl;
+        cout << endl << "MENU DE ACTUALIZACION DE REGISTROS" << endl;
         cout << "Indique el tipo de registro que desea agregar:" << endl;
         cout << "1. Vehiculo " << endl;
         cout << "2. Cliente" << endl;
         cout << "3. Repuesto" << endl;
-        cout << "4. Regresar al Menu Principal" << endl;
+        cout << "4. Regresar al Menu Principal" << endl << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion_agregar;
 
@@ -216,7 +215,7 @@ void MenuAgregar(){
             Agregar_Repuesto();
             break;
         case 4: //Menu Principal
-            MenuPrincipal();
+            return;
             break;
         default:
             cout << "Opcion Invalida" << endl;
@@ -377,7 +376,7 @@ void Lectura_Repuesto() {
 //Consulta de cliente segun su cedula
 void Consulta_Cliente() {
     int cedula;
-    cout << "Ingrese la cedula del cliente que desea consultar: "; cin >> cedula;
+    cout << endl << "Ingrese la cedula del cliente que desea consultar: "; cin >> cedula;
 
     int left = 0, right = numClientes - 1;
     bool encontrado = false;
@@ -412,7 +411,7 @@ void Consulta_Vehiculo_x_placa() {
     ifstream lectura_vehiculo("DATOS_VEHICULOS.csv");
 	string line, vehiculo_buscar, vehiculo_actual;
 	bool existe = false;
-	cout << "Ingrese la placa del vehiculo que desea consultar: "; cin >> vehiculo_buscar;
+	cout << endl << "Ingrese la placa del vehiculo que desea consultar: "; cin >> vehiculo_buscar;
 	while (getline(lectura_vehiculo, line)) {
 		istringstream ss(line);
 		
@@ -458,7 +457,7 @@ void Consulta_Vehiculo_x_placa() {
 //Consulta de vehiculo segun la cedula de cliente
 void Consulta_Vehiculo_x_cedula() {
 	int cedula;
-	cout << "Ingrese la cedula del cliente que alquilo el carro que desea consultar: "; cin >> cedula;
+	cout << endl << "Ingrese la cedula del cliente que alquilo el carro que desea consultar: "; cin >> cedula;
 
     int left = 0, right = numVehiculos - 1;
     bool encontrado = false;
@@ -495,7 +494,7 @@ void Consulta_Vehiculo_x_cedula() {
 //Consulta de repuesto segun el modelo
 void Consulta_Repuesto() {
     int modelo;
-	cout << "Ingrese el modelo del repuesto que desea consultar: "; cin >> modelo;
+	cout << endl << "Ingrese el modelo del repuesto que desea consultar: "; cin >> modelo;
 
     int left = 0, right = numVehiculos - 1;
     bool encontrado = false;
@@ -527,7 +526,7 @@ void Consulta_Repuesto() {
 
 //Implementacion de funciones de insercion
 void Agregar_Cliente(){
-    cout << "Introduzca los datos del Cliente que desea agregar: " << endl;
+    cout << endl << "Introduzca los datos del Cliente que desea agregar: " << endl;
 
     cout << " Cedula: ";
     cin >> cliente.cedula;
@@ -548,7 +547,7 @@ void Agregar_Cliente(){
     clientes[numClientes++] = cliente;
 
     char confirmar;
-    cout << "Desea confirmar los cambios realizados? (y/n): ";
+    cout << "Desea confirmar los cambios realizados? (Y/N): ";
     cin >> confirmar;
 
     if (confirmar == 'y' || confirmar == 'Y'){
@@ -566,7 +565,7 @@ void Agregar_Cliente(){
 }
 
 void Agregar_Vehiculo(){
-    cout << "Introduzca los datos del vehiculo que desea agregar: " << endl;
+    cout << endl << "Introduzca los datos del vehiculo que desea agregar: " << endl;
 
     cout << " Modelo: ";
     cin >> vehiculo.modelo;
@@ -594,7 +593,7 @@ void Agregar_Vehiculo(){
     vehiculos[numVehiculos++] = vehiculo;
 
     char confirmar;
-    cout << "Desea confirmar los cambios realizados? (y/n): ";
+    cout << "Desea confirmar los cambios realizados? (Y/N): ";
     cin >> confirmar;
 
     if (confirmar == 'y' || confirmar == 'Y'){
@@ -613,7 +612,7 @@ void Agregar_Vehiculo(){
 }
 
 void Agregar_Repuesto(){
-    cout << "Introduzca los datos del Repuesto que desea agregar: " << endl;
+    cout << endl << "Introduzca los datos del Repuesto que desea agregar: " << endl;
 
     cout << " Modelo: ";
     cin >> repuesto.modelo;
@@ -634,7 +633,7 @@ void Agregar_Repuesto(){
     repuestos[numRepuestos++] = repuesto;
 
     char confirmar;
-    cout << "Desea confirmar los cambios realizados? (y/n): ";
+    cout << "Desea confirmar los cambios realizados? (Y/N): ";
     cin >> confirmar;
 
     if (confirmar == 'y' || confirmar == 'Y'){
