@@ -34,33 +34,43 @@ Cliente clientes[MAX_CLIENTES];
 Repuestos repuestos[MAX_REPUESTOS];
 int numVehiculos = 0, numClientes = 0, numRepuestos = 0;
 
+//Funciones de Menu
 void MenuPrincipal();
 void MenuConsultar();
 void MenuActualizar();
 void MenuBorrar();
 void MenuAgregar();
 
+//Funciones de Lectura
 void Lectura_Cliente();
 void Lectura_Vehiculo();
 void Lectura_Repuesto();
 
-void Consulta_Cliente();
-void Consulta_Vehiculo_x_placa(); 
-void Consulta_Vehiculo_x_cedula();
-void Consulta_Repuesto(); 
-
+//Funciones de QuickSort para cada estructura
 void QuickSortVehiculos(int left, int right);
 void QuickSortClientes(int left, int right);
 void QuickSortRepuestos(int left, int right);
 
+// Funciones de partición para QuickSort
 int PartitionVehiculos(int left, int right);
 int PartitionClientes(int left, int right);
 int PartitionRepuestos(int left, int right);
 
+// Funciones de Consulta
+void Consulta_Cliente();
+void Consulta_Vehiculo_x_placa();
+void Consulta_Vehiculo_x_cedula();
+void Consulta_Repuesto();
+
+//Funciones de Insercion
+void Agregar_Cliente();
+void Agregar_Vehiculo();
+void Agregar_Repuesto();
+
 void MenuPrincipal(){
     int opcion;
     do{
-        cout << "MENU PRINCIPAL" << endl;
+        cout << endl << "MENU PRINCIPAL" << endl;
         cout << "1. Consultar" << endl;
         cout << "2. Actualizar" << endl;
         cout << "3. Borrar" << endl;
@@ -86,8 +96,7 @@ void MenuPrincipal(){
             cout << "Saliendo del programa . . ." << endl;
             break;
         default:
-            cout << "Opcion invalida" << endl
-                 << endl;
+            cout << "Opcion invalida" << endl << endl;
         }
     } while (opcion != 5);
 }
@@ -95,7 +104,7 @@ void MenuPrincipal(){
 void MenuConsultar(){
     int opcion_consulta;
     do{
-        cout << "MENU DE CONSULTA DE REGISTROS" << endl;
+        cout << endl <<"MENU DE CONSULTA DE REGISTROS" << endl;
         cout << "Indique el tipo de consulta que desea realizar:" << endl;
         cout << "1. Vehiculo por placa" << endl;
         cout << "2. Vehiculo por cedula de cliente" << endl;
@@ -119,10 +128,10 @@ void MenuConsultar(){
             Consulta_Repuesto();
             break;
         case 5: //Menu Principal
-            MenuPrincipal();
+            return;
             break;
         default:
-            cout << "Opcion Invalida" << endl;
+            cout << "Opcion Invalida" << endl << endl;
         }
     } while (opcion_consulta != 5);
 }
@@ -130,7 +139,7 @@ void MenuConsultar(){
 void MenuActualizar(){
     int opcion_actualizar;
     do{
-        cout << "MENU DE ACTUALIZACION DE REGISTROS" << endl;
+        cout << endl << "MENU DE ACTUALIZACION DE REGISTROS" << endl;
         cout << "Indique el tipo de registro que desea actualizar:" << endl;
         cout << "1. Vehiculo " << endl;
         cout << "2. Cliente" << endl;
@@ -147,10 +156,10 @@ void MenuActualizar(){
         case 3: //Registro Repuesto
             break;
         case 4: //Menu
-            MenuPrincipal();
+            return;
             break;
         default:
-            cout << "Opcion Invalida" << endl;
+            cout << "Opcion Invalida" << endl << endl;
         }
      } while (opcion_actualizar!=4);
 }
@@ -158,7 +167,7 @@ void MenuActualizar(){
 void MenuBorrar(){
     int opcion_actualizar;
     do{
-        cout << "MENU DE ELIMINACION DE REGISTROS" << endl;
+        cout << endl << "MENU DE ELIMINACION DE REGISTROS" << endl;
         cout << "Indique el tipo de registro que desea eliminar:" << endl;
         cout << "1. Vehiculo " << endl;
         cout << "2. Cliente" << endl;
@@ -175,10 +184,10 @@ void MenuBorrar(){
         case 3: //Registro Repuesto
             break;
         case 4: //Menu Principal
-            MenuPrincipal();
+            return;
             break;
         default:
-            cout << "Opcion Invalida" << endl;
+            cout << "Opcion Invalida" << endl << endl;
         }
     } while (opcion_actualizar != 4);
 }
@@ -186,24 +195,27 @@ void MenuBorrar(){
 void MenuAgregar(){
     int opcion_agregar;
     do{
-        cout << "MENU DE ACTUALIZACION DE REGISTROS" << endl;
+        cout << endl << "MENU DE ACTUALIZACION DE REGISTROS" << endl;
         cout << "Indique el tipo de registro que desea agregar:" << endl;
         cout << "1. Vehiculo " << endl;
         cout << "2. Cliente" << endl;
         cout << "3. Repuesto" << endl;
-        cout << "4. Regresar al Menu Principal" << endl;
+        cout << "4. Regresar al Menu Principal" << endl << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion_agregar;
 
         switch (opcion_agregar){
-        case 1: //Registro Vehiculo
+        case 1:
+            Agregar_Vehiculo();
             break;
-        case 2: //Registro Cliente
+        case 2:
+            Agregar_Cliente();
             break;
-        case 3: //Registro Repuesto
+        case 3:
+            Agregar_Repuesto();
             break;
         case 4: //Menu Principal
-            MenuPrincipal();
+            return;
             break;
         default:
             cout << "Opcion Invalida" << endl;
@@ -211,6 +223,7 @@ void MenuAgregar(){
     } while (opcion_agregar != 4);
 }
 
+//Implementacion de QuickSort para Vehiculos
 void QuickSortVehiculos(int left, int right) {
     if (left < right) {
         int pivotIndex = PartitionVehiculos(left, right);
@@ -233,6 +246,7 @@ int PartitionVehiculos(int left, int right) {
     return i + 1;
 }
 
+// Implementacion de QuickSort para Clientes
 void QuickSortClientes(int left, int right) {
     if (left < right) {
         int pivotIndex = PartitionClientes(left, right);
@@ -255,6 +269,7 @@ int PartitionClientes(int left, int right) {
     return i + 1;
 }
 
+// Implementacion de QuickSort para Repuestos
 void QuickSortRepuestos(int left, int right) {
     if (left < right) {
         int pivotIndex = PartitionRepuestos(left, right);
@@ -277,6 +292,7 @@ int PartitionRepuestos(int left, int right) {
     return i + 1;
 }
 
+//Lectura de archivos
 void Lectura_Cliente() {
     ifstream lectura_cliente("DATOS_CLIENTES.csv", ios::in);
     string line;
@@ -357,9 +373,10 @@ void Lectura_Repuesto() {
     QuickSortRepuestos(0, numRepuestos - 1);
 }
 
+//Consulta de cliente segun su cedula
 void Consulta_Cliente() {
     int cedula;
-    cout << "Ingrese la cedula del cliente que desea consultar: "; cin >> cedula;
+    cout << endl << "Ingrese la cedula del cliente que desea consultar: "; cin >> cedula;
 
     int left = 0, right = numClientes - 1;
     bool encontrado = false;
@@ -389,11 +406,12 @@ void Consulta_Cliente() {
     }
 }
 
+//Consulta de vehiculo segun su placa
 void Consulta_Vehiculo_x_placa() {
     ifstream lectura_vehiculo("DATOS_VEHICULOS.csv");
 	string line, vehiculo_buscar, vehiculo_actual;
 	bool existe = false;
-	cout << "Ingrese la placa del vehiculo que desea consultar: "; cin >> vehiculo_buscar;
+	cout << endl << "Ingrese la placa del vehiculo que desea consultar: "; cin >> vehiculo_buscar;
 	while (getline(lectura_vehiculo, line)) {
 		istringstream ss(line);
 		
@@ -436,9 +454,10 @@ void Consulta_Vehiculo_x_placa() {
 	}
 }
 
+//Consulta de vehiculo segun la cedula de cliente
 void Consulta_Vehiculo_x_cedula() {
 	int cedula;
-	cout << "Ingrese la cedula del cliente que alquilo el carro que desea consultar: "; cin >> cedula;
+	cout << endl << "Ingrese la cedula del cliente que alquilo el carro que desea consultar: "; cin >> cedula;
 
     int left = 0, right = numVehiculos - 1;
     bool encontrado = false;
@@ -472,9 +491,10 @@ void Consulta_Vehiculo_x_cedula() {
     }
 }
 
+//Consulta de repuesto segun el modelo
 void Consulta_Repuesto() {
     int modelo;
-	cout << "Ingrese el modelo del repuesto que desea consultar: "; cin >> modelo;
+	cout << endl << "Ingrese el modelo del repuesto que desea consultar: "; cin >> modelo;
 
     int left = 0, right = numVehiculos - 1;
     bool encontrado = false;
@@ -501,6 +521,132 @@ void Consulta_Repuesto() {
     }
     if (!encontrado) {
         cout << "Modelo " << modelo << " no encontrado." << endl;
+    }
+}
+
+//Implementacion de funciones de insercion
+void Agregar_Cliente(){
+    cout << endl << "Introduzca los datos del Cliente que desea agregar: " << endl;
+
+    cout << " Cedula: ";
+    cin >> cliente.cedula;
+    cout << " Nombre: ";
+    cin >> cliente.nombre;
+    cout << " Apellido: ";
+    cin >> cliente.apellido;
+    cout << " Correo: ";
+    cin >> cliente.email;
+    cout << " Vehiculos rentados: ";
+    cin >> cliente.cantidad_vehiculos_rentados;
+    cout << " Direccion: ";
+    cin.ignore();
+    getline(cin, cliente.direccion);
+    cout << " Activo (Si = 1, No = 0): ";
+    cin >> cliente.activo;
+
+    clientes[numClientes++] = cliente;
+
+    char confirmar;
+    cout << "Desea confirmar los cambios realizados? (Y/N): ";
+    cin >> confirmar;
+
+    if (confirmar == 'y' || confirmar == 'Y'){
+        ofstream escritura_cliente("DATOS_CLIENTES.csv", ios::app);
+
+        escritura_cliente << cliente.cedula << ',' << cliente.nombre << ',' << cliente.apellido << ',' << cliente.email
+                          << ',' << cliente.cantidad_vehiculos_rentados << ',' << cliente.direccion << ',' << cliente.activo << endl;
+
+        cout << "El Cliente " << cliente.nombre << " " << cliente.apellido << " ha sido agregado exitosamente." << endl;
+        escritura_cliente.close();
+    }
+    else{
+        cout << "El cambio ha sido descartado. " << endl;
+    }
+}
+
+void Agregar_Vehiculo(){
+    cout << endl << "Introduzca los datos del vehiculo que desea agregar: " << endl;
+
+    cout << " Modelo: ";
+    cin >> vehiculo.modelo;
+    cout << " Marca: ";
+    cin >> vehiculo.marca;
+    cout << " Placa: ";
+    cin >> vehiculo.placa;
+    cout << " Color: ";
+    cin >> vehiculo.color;
+    cout << " Year: ";
+    cin >> vehiculo.year;
+    cout << " Kilometraje: ";
+    cin >> vehiculo.kilometraje;
+    cout << " Rentado (Si = 1, No = 0): ";
+    cin >> vehiculo.rentado;
+    cout << " Motor: ";
+    cin >> vehiculo.motor;
+    cout << " Precio de renta: ";
+    cin >> vehiculo.precio_renta;
+    cout << " Cedula del cliente: ";
+    cin >> vehiculo.ced_cliente;
+    cout << " Fecha de entrega (dd/mm/aaaa): ";
+    cin >> vehiculo.fecha_de_entrega;
+
+    vehiculos[numVehiculos++] = vehiculo;
+
+    char confirmar;
+    cout << "Desea confirmar los cambios realizados? (Y/N): ";
+    cin >> confirmar;
+
+    if (confirmar == 'y' || confirmar == 'Y'){
+        ofstream escritura_vehiculo("DATOS_VEHICULOS.csv", ios::app);
+
+        escritura_vehiculo << vehiculo.modelo << ',' << vehiculo.marca << ',' << vehiculo.placa << ',' << vehiculo.color
+                           << ',' << vehiculo.year << ',' << vehiculo.kilometraje << ',' << vehiculo.rentado << ',' << vehiculo.motor
+                           << ',' << vehiculo.precio_renta << ',' << vehiculo.ced_cliente << ',' << vehiculo.fecha_de_entrega << endl;
+
+        cout << "El Vehiculo " << vehiculo.modelo << " " << vehiculo.marca << " ha sido agregado exitosamente." << endl;
+        escritura_vehiculo.close();
+    }
+    else{
+        cout << "El cambio ha sido descartado. " << endl;
+    }
+}
+
+void Agregar_Repuesto(){
+    cout << endl << "Introduzca los datos del Repuesto que desea agregar: " << endl;
+
+    cout << " Modelo: ";
+    cin >> repuesto.modelo;
+    cout << " Marca: ";
+    cin >> repuesto.marca;
+    cout << " Nombre: ";
+    cin.ignore();
+    getline(cin, repuesto.nombre);
+    cout << " Modelo del carro: ";
+    cin >> repuesto.modelo_carro;
+    cout << " Year Carro: ";
+    cin >> repuesto.year_carro;
+    cout << " Precio: ";
+    cin >> repuesto.precio;
+    cout << " Existencias: ";
+    cin >> repuesto.existencias;
+
+    repuestos[numRepuestos++] = repuesto;
+
+    char confirmar;
+    cout << "Desea confirmar los cambios realizados? (Y/N): ";
+    cin >> confirmar;
+
+    if (confirmar == 'y' || confirmar == 'Y'){
+        ofstream escritura_repuesto("DATOS_REPUESTOS.csv", ios::app);
+
+        escritura_repuesto << repuesto.modelo << ',' << repuesto.marca << ',' << repuesto.nombre << ',' << repuesto.modelo_carro
+                           << ',' << repuesto.year_carro << ',' << repuesto.precio << ',' << repuesto.existencias << endl;
+
+        cout << "El Repuesto " << repuesto.modelo << " " << repuesto.marca << " ha sido agregado exitosamente." << endl;
+        escritura_repuesto.close();
+    }
+    else{
+        cout << "El cambio ha sido descartado. " << endl;
     }
 }
 
