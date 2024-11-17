@@ -383,35 +383,41 @@ void Lectura_Repuesto() {
 
 //Consulta de cliente segun su cedula
 void Consulta_Cliente() {
-    Lectura_Cliente();
-    int cedula;
+    int cedula, cedula_actual;
     cout << endl << "Ingrese la cedula del cliente que desea consultar: "; cin >> cedula;
-
-    int left = 0, right = numClientes - 1;
     bool encontrado = false;
 
-    while (left <= right) {
-        int mid = left + (right - left) / 2;
+    ifstream lectura_cliente("DATOS_CLIENTES.csv", ios::in);
+    string line;
 
-        if (clientes[mid].cedula == cedula) {
-            encontrado = true;
-            cout << " Cedula: " << clientes[mid].cedula << endl;
-            cout << " Nombre: " << clientes[mid].nombre << endl;
-            cout << " Apellido: " << clientes[mid].apellido << endl;
-            cout << " Correo: " << clientes[mid].email << endl;
-            cout << " Vehiculos rentados: " << clientes[mid].cantidad_vehiculos_rentados << endl;
-            cout << " Direccion: " << clientes[mid].direccion << endl;
-            cout << " Activo: " << (clientes[mid].activo ? "Si" : "No") << endl;
-            break;
-        }
-        if (clientes[mid].cedula < cedula) {
-            left = mid + 1;
-        } else {
-            right = mid - 1;
+    while (getline(lectura_cliente, line) && numClientes < MAX_CLIENTES){
+        istringstream ss(line);
+
+        ss >> cliente.cedula;
+        ss.ignore();
+        cedula_actual = cliente.cedula;
+        getline(ss, cliente.nombre, ',');
+        getline(ss, cliente.apellido, ',');
+        getline(ss, cliente.email, ',');
+        ss >> cliente.cantidad_vehiculos_rentados;
+        ss.ignore();
+        getline(ss, cliente.direccion, ',');
+        ss >> cliente.activo;
+        
+        if (cedula_actual == cedula) {
+		encontrado = true;
+            cout << " Cedula: " << cliente.cedula << endl;
+            cout << " Nombre: " << cliente.nombre << endl;
+            cout << " Apellido: " << cliente.apellido << endl;
+            cout << " Correo: " << cliente.email << endl;
+            cout << " Vehiculos rentados: " << cliente.cantidad_vehiculos_rentados << endl;
+            cout << " Direccion: " << cliente.direccion << endl;
+            cout << " Activo: " << (cliente.activo ? "Si" : "No") << endl;
         }
     }
+    lectura_cliente.close();
     if (!encontrado) {
-        cout << endl << "Cedula " << cedula << " no encontrada." << endl;
+        cout << endl << "La Cedula " << cedula << " no ha sido encontrada en los registros." << endl;
     }
 }
 
@@ -459,41 +465,49 @@ void Consulta_Vehiculo() {
 	}
 	lectura_vehiculo.close();
 	if (!existe) {
-		cout << endl << "Placa " << vehiculo_buscar << " no encontrado.";
+		cout << endl << "La Placa " << vehiculo_buscar << " no ha sido encontrada en los registros.";
 	}
 }
 
 //Consulta de repuesto segun el modelo
 void Consulta_Repuesto() {
-    Lectura_Repuesto();
-    int modelo;
-	cout << endl << "Ingrese el modelo del repuesto que desea consultar: "; cin >> modelo;
-
-    int left = 0, right = numVehiculos - 1;
+    int modelo, modelo_actual;
+	
+    cout << endl << "Ingrese el modelo del repuesto que desea consultar: "; cin >> modelo;
+    ifstream lectura_repuesto("DATOS_REPUESTOS.csv", ios::in);
+    string line;
     bool encontrado = false;
 
-    while (left <= right) {
-        int mid = left + (right - left) / 2;
+    while (getline(lectura_repuesto, line) && numRepuestos < MAX_REPUESTOS){
+        istringstream ss(line);
 
-        if (repuestos[mid].modelo == modelo) {
+        ss >> repuesto.modelo;
+        ss.ignore();
+        modelo_actual = repuesto.modelo;
+        getline(ss, repuesto.marca, ',');
+        getline(ss, repuesto.nombre, ',');
+        getline(ss, repuesto.modelo_carro, ',');
+        ss >> repuesto.year_carro;
+        ss.ignore();
+        ss >> repuesto.precio;
+        ss.ignore();
+        ss >> repuesto.existencias;
+
+        if (modelo_actual == modelo) {
 		    encontrado = true;
-			cout << " Modelo: " << repuestos[mid].modelo << endl;
-			cout << " Marca: " << repuestos[mid].marca << endl;
-			cout << " Nombre: " << repuestos[mid].nombre << endl;
-			cout << " Modelo del carro: " << repuestos[mid].modelo_carro << endl;
-            cout << " Year Carro: " << repuestos[mid].year_carro << endl;
-            cout << " Precio: " << repuestos[mid].precio << " $" << endl;
-            cout << " Existencias: " << repuestos[mid].existencias << endl;
+			cout << " Modelo: " << repuesto.modelo << endl;
+			cout << " Marca: " << repuesto.marca << endl;
+			cout << " Nombre: " << repuesto.nombre << endl;
+			cout << " Modelo del carro: " << repuesto.modelo_carro << endl;
+            cout << " Year Carro: " << repuesto.year_carro << endl;
+            cout << " Precio: " << repuesto.precio << " $" << endl;
+            cout << " Existencias: " << repuesto.existencias << endl;
             break;
         }
-        if (repuestos[mid].modelo < modelo) {
-            left = mid + 1;
-        } else {
-            right = mid - 1;
-        }
     }
+    lectura_repuesto.close();
     if (!encontrado) {
-        cout << endl << "Modelo " << modelo << " no encontrado." << endl;
+        cout << endl << "El Modelo " << modelo << " no ha sido encontrado en los registros." << endl;
     }
 }
 
