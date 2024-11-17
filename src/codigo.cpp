@@ -383,6 +383,7 @@ void Lectura_Repuesto() {
 
 //Consulta de cliente segun su cedula
 void Consulta_Cliente() {
+    Lectura_Cliente();
     int cedula;
     cout << endl << "Ingrese la cedula del cliente que desea consultar: "; cin >> cedula;
 
@@ -464,6 +465,7 @@ void Consulta_Vehiculo() {
 
 //Consulta de repuesto segun el modelo
 void Consulta_Repuesto() {
+    Lectura_Repuesto();
     int modelo;
 	cout << endl << "Ingrese el modelo del repuesto que desea consultar: "; cin >> modelo;
 
@@ -497,6 +499,7 @@ void Consulta_Repuesto() {
 
 //Implementacion de funciones de insercion
 void Agregar_Cliente(){
+    Lectura_Cliente();
     cout << endl << "Introduzca los datos del Cliente que desea agregar: " << endl;
 
     cout << endl << " Cedula: ";
@@ -583,6 +586,7 @@ void Agregar_Vehiculo(){
 }
 
 void Agregar_Repuesto(){
+    Lectura_Repuesto();
     cout << endl << "Introduzca los datos del Repuesto que desea agregar: " << endl;
 
     cout << endl << " Modelo: ";
@@ -623,6 +627,7 @@ void Agregar_Repuesto(){
 
 //Implementacion de funciones de borrado
 void Eliminar_Cliente() {
+    Lectura_Cliente();
     int cedula;
     cout << "Ingrese la Cedula del Cliente que desea eliminar: "; cin >> cedula;
 
@@ -746,6 +751,7 @@ void Eliminar_Vehiculo() {
 }
 
 void Eliminar_Repuesto() {
+    Lectura_Repuesto();
     int modelo;
     cout << "Ingrese el Modelo del Repuesto que desea eliminar: "; cin >> modelo;
 
@@ -812,7 +818,8 @@ void Eliminar_Repuesto() {
 }
 
 //Implementacion de funciones de actualizacion
-void Actualizar_Cliente() {
+void Actualizar_Cliente(){
+    Lectura_Cliente();
     int cedula;
     cout << endl << "Ingrese la Cedula del Cliente que desea actualizar: "; cin >> cedula;
 
@@ -977,7 +984,8 @@ void Actualizar_Vehiculo() {
 	}
 }
 
-void Actualizar_Repuesto() {
+void Actualizar_Repuesto(){
+    Lectura_Repuesto();
     int modelo;
     cout << endl << "Ingrese el Modelo del Repuesto que desea actualizar: "; cin >> modelo;
 
@@ -1066,10 +1074,7 @@ void Actualizar_Repuesto() {
 }
 
 int main() {
-    Lectura_Cliente();
     Lectura_Vehiculo();
-    Lectura_Repuesto();
-    
     MenuPrincipal();
     return 0;
 }
