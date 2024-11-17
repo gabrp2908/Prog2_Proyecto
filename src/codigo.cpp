@@ -631,21 +631,28 @@ void Eliminar_Cliente() {
     int cedula;
     cout << "Ingrese la Cedula del Cliente que desea eliminar: "; cin >> cedula;
 
-    int left = 0, right = numClientes - 1;
+    int mid, left = 0, right = numClientes - 1;
     bool encontrado = false;
 
-    while (left <= right) {
-        int mid = left + (right - left) / 2;
+    while (left <= right){
+        mid = left + (right - left) / 2;
 
-        if (clientes[mid].cedula == cedula) {
+        if (clientes[mid].cedula == cedula){
             encontrado = true;
             break;
         }
-        if (clientes[mid].cedula < cedula) {
+        if (clientes[mid].cedula < cedula){
             left = mid + 1;
-        } else {
+        }
+        else{
             right = mid - 1;
         }
+    }
+    if (cedula == clientes[mid].cedula){
+        for (int i = 0; i < numClientes; i++){
+            clientes[i] = clientes[i + 1];
+        }
+        numClientes--;
     }
 
     if (encontrado) {
@@ -755,21 +762,29 @@ void Eliminar_Repuesto() {
     int modelo;
     cout << "Ingrese el Modelo del Repuesto que desea eliminar: "; cin >> modelo;
 
-    int left = 0, right = numRepuestos - 1;
+    int mid, left = 0, right = numRepuestos - 1;
     bool encontrado = false;
 
-    while (left <= right) {
-        int mid = left + (right - left) / 2;
+    while (left <= right){
+        mid = left + (right - left) / 2;
 
-        if (repuestos[mid].modelo == modelo) {
+        if (repuestos[mid].modelo == modelo){
             encontrado = true;
             break;
         }
-        if (repuestos[mid].modelo < modelo) {
+        if (repuestos[mid].modelo < modelo){
             left = mid + 1;
-        } else {
+        }
+        else{
             right = mid - 1;
         }
+    }
+    if (modelo == repuestos[mid].modelo){
+        for (int i = 0; i < numRepuestos; i++)
+        {
+            repuestos[i] = repuestos[i + 1];
+        }
+        numRepuestos--;
     }
 
     if (encontrado) {
