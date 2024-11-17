@@ -67,6 +67,11 @@ void Agregar_Cliente();
 void Agregar_Vehiculo();
 void Agregar_Repuesto();
 
+//Funciones de Borrado
+void Eliminar_Cliente();
+void Eliminar_Vehiculo();
+void Eliminar_Repuesto();
+
 void MenuPrincipal(){
     int opcion;
     do{
@@ -115,13 +120,13 @@ void MenuConsultar(){
         cin >> opcion_consulta;
 
         switch (opcion_consulta){
-        case 1: //Registro Vehiculo
+        case 1: 
             Consulta_Vehiculo_x_placa();
             break;
-        case 2: //Registro Cliente
+        case 2:
             Consulta_Vehiculo_x_cedula();
             break;
-        case 3: //Registro Repuesto
+        case 3:
             Consulta_Cliente();
             break;
         case 4:
@@ -165,7 +170,7 @@ void MenuActualizar(){
 }
 
 void MenuBorrar(){
-    int opcion_actualizar;
+    int opcion_borrar;
     do{
         cout << endl << "MENU DE ELIMINACION DE REGISTROS" << endl;
         cout << "Indique el tipo de registro que desea eliminar:" << endl;
@@ -174,14 +179,17 @@ void MenuBorrar(){
         cout << "3. Repuesto" << endl;
         cout << "4. Regresar al Menu Principal" << endl;
         cout << "Seleccione una opcion: ";
-        cin >> opcion_actualizar;
+        cin >> opcion_borrar;
 
-        switch (opcion_actualizar){
-        case 1: //Registro Vehiculo
+        switch (opcion_borrar){
+        case 1:
+            Eliminar_Vehiculo();
             break;
-        case 2: //Registro Cliente
+        case 2: 
+            Eliminar_Cliente();
             break;
-        case 3: //Registro Repuesto
+        case 3: 
+            Eliminar_Repuesto();
             break;
         case 4: //Menu Principal
             return;
@@ -189,7 +197,7 @@ void MenuBorrar(){
         default:
             cout << "Opcion Invalida" << endl << endl;
         }
-    } while (opcion_actualizar != 4);
+    } while (opcion_borrar != 4);
 }
 
 void MenuAgregar(){
@@ -648,6 +656,195 @@ void Agregar_Repuesto(){
     else{
         cout << "El cambio ha sido descartado. " << endl;
     }
+}
+
+//Implementacion de funciones de borrado
+void Eliminar_Cliente() {
+    int cedula;
+    cout << "Ingrese la Cedula del Cliente que desea eliminar: "; cin >> cedula;
+
+    int left = 0, right = numClientes - 1;
+    bool encontrado = false;
+
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+
+        if (clientes[mid].cedula == cedula) {
+            encontrado = true;
+            break;
+        }
+        if (clientes[mid].cedula < cedula) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+
+    if (encontrado) {
+        char confirmar;
+        cout << "Desea confirmar los cambios realizados? (y/n): "; cin >> confirmar;
+
+        if (confirmar == 'y' || confirmar == 'Y') {
+            ifstream lectura_cliente("DATOS_CLIENTES.csv");
+            ofstream escritura_cliente_Temp("DATOS_CLIENTES_TEMP.csv");
+            string line;
+            int cedula_actual;
+
+            while (getline(lectura_cliente, line)) {
+                istringstream ss(line);
+
+                ss >> cliente.cedula;
+                ss.ignore();
+                cedula_actual = cliente.cedula;
+                getline(ss, cliente.nombre, ',');
+                getline(ss, cliente.apellido, ',');
+                getline(ss, cliente.email, ',');
+                ss >> cliente.cantidad_vehiculos_rentados;
+                ss.ignore();
+                getline(ss, cliente.direccion, ',');
+                ss >> cliente.activo;
+
+                if(cedula != cedula_actual) {
+                    escritura_cliente_Temp << cliente.cedula << ',' << cliente.nombre << ',' << cliente.apellido << ',' << cliente.email 
+                    << ',' << cliente.cantidad_vehiculos_rentados << ',' << cliente.direccion << ',' << cliente.activo << endl;
+                    continue;
+                }
+            }
+            lectura_cliente.close();
+            escritura_cliente_Temp.close();
+
+            remove("DATOS_CLIENTES.csv");
+            rename("DATOS_CLIENTES_TEMP.csv", "DATOS_CLIENTES.csv");
+            cout << "El Cliente fue eliminado correctamente." << endl;
+	    } else{
+		cout << "El cambio ha sido descartado. " << endl;
+	    } 
+	} else {
+		cout << "El Cliente con Cedula " << cedula << " no existe en los registros." << endl;
+	}
+}
+
+void Eliminar_Vehiculo() {
+    string placa;
+    cout << "Ingrese la Placa del Vehiculo que desea eliminar: "; cin >> placa;
+
+    ifstream lectura_vehiculo("DATOS_VEHICULOS.csv");
+    ofstream escritura_vehiculo_Temp("DATOS_VEHICULOS_TEMP.csv");
+    bool encontrado = false;
+    string line, placa_actual;
+
+    while (getline(lectura_vehiculo, line)) {
+        istringstream ss(line);
+
+        getline(ss, vehiculo.modelo, ',');
+        getline(ss, vehiculo.marca, ',');
+        getline(ss, vehiculo.placa, ',');
+        placa_actual = vehiculo.placa;
+        getline(ss, vehiculo.color, ',');
+        ss >> vehiculo.year;
+        ss.ignore();
+        ss >> vehiculo.kilometraje;
+        ss.ignore();
+        ss >> vehiculo.rentado;
+        ss.ignore();
+        getline(ss, vehiculo.motor, ',');
+        ss >> vehiculo.precio_renta;
+        ss.ignore();
+        ss >> vehiculo.ced_cliente;
+        ss.ignore();
+        getline(ss, vehiculo.fecha_de_entrega);
+
+        if (placa.compare(placa_actual) == 0) encontrado = true; 
+        else {
+            escritura_vehiculo_Temp << vehiculo.modelo << ',' << vehiculo.marca << ',' << vehiculo.placa << ',' << vehiculo.color 
+            << ',' << vehiculo.year << ',' << vehiculo.kilometraje << ',' << vehiculo.rentado << ',' << vehiculo.motor 
+            << ',' << vehiculo.precio_renta << ',' << vehiculo.ced_cliente << ',' << vehiculo.fecha_de_entrega << endl;
+            }
+    }
+    lectura_vehiculo.close();
+    escritura_vehiculo_Temp.close();
+
+    if (encontrado) {
+        char confirmar;
+        cout << "Desea confirmar los cambios realizados? (y/n): "; cin >> confirmar;
+
+        if (confirmar == 'y' || confirmar == 'Y') {
+            remove("DATOS_VEHICULOS.csv");
+            rename("DATOS_VEHICULOS_TEMP.csv", "DATOS_VEHICULOS.csv");
+            cout << "El Vehiculo fue eliminado correctamente." << endl;           
+        } else{
+            remove("DATOS_VEHICULOS_TEMP.csv");
+		    cout << "El cambio ha sido descartado. " << endl;
+	    } 
+	} else {
+		cout << "El Vehiculo de placa " << placa << " no existe en los registros." << endl;
+	}
+}
+
+void Eliminar_Repuesto() {
+    int modelo;
+    cout << "Ingrese el Modelo del Repuesto que desea eliminar: "; cin >> modelo;
+
+    int left = 0, right = numRepuestos - 1;
+    bool encontrado = false;
+
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+
+        if (repuestos[mid].modelo == modelo) {
+            encontrado = true;
+            break;
+        }
+        if (repuestos[mid].modelo < modelo) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+
+    if (encontrado) {
+        char confirmar;
+        cout << "Desea confirmar los cambios realizados? (y/n): "; cin >> confirmar;
+
+        if (confirmar == 'y' || confirmar == 'Y') {
+            ifstream lectura_repuesto("DATOS_REPUESTOS.csv");
+            ofstream escritura_repuesto_Temp("DATOS_REPUESTOS_TEMP.csv");
+            string line;
+            int modelo_actual;
+
+            while (getline(lectura_repuesto, line)) {
+                istringstream ss(line);
+
+                ss >> repuesto.modelo;
+                ss.ignore();
+                modelo_actual = repuesto.modelo;
+                getline(ss, repuesto.marca, ',');
+                getline(ss, repuesto.nombre, ',');
+                getline(ss, repuesto.modelo_carro, ',');
+                ss >> repuesto.year_carro;
+                ss.ignore();
+                ss >> repuesto.precio;
+                ss.ignore();
+                ss >> repuesto.existencias;
+
+                if(modelo != modelo_actual ) {
+                    escritura_repuesto_Temp << repuesto.modelo << ',' << repuesto.marca << ',' << repuesto.nombre << ',' << repuesto.modelo_carro
+                    << ',' << repuesto.year_carro << ',' << repuesto.precio << ',' << repuesto.existencias << endl;
+                    continue;
+                }
+            }
+            lectura_repuesto.close();
+            escritura_repuesto_Temp.close();
+
+            remove("DATOS_REPUESTOS.csv");
+            rename("DATOS_REPUESTOS_TEMP.csv", "DATOS_REPUESTOS.csv");
+            cout << "El Repuesto fue eliminado correctamente." << endl;
+	    } else{
+		cout << "El cambio ha sido descartado." << endl;
+	    } 
+	} else {
+		cout << "El Repuesto de modelo " << modelo << " no existe en los registros." << endl;
+	}
 }
 
 int main() {
