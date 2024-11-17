@@ -80,26 +80,21 @@ void MenuPrincipal(){
         cout << "2. Actualizar" << endl;
         cout << "3. Borrar" << endl;
         cout << "4. Agregar" << endl;
-        cout << "5. Salir del programa" << endl;
+        cout << "5. Salir del programa" << endl << endl ;
         cout << "Seleccione una opcion: ";
         cin >> opcion;
 
         switch (opcion){
         case 1:
-            MenuConsultar();
-            break;
+            MenuConsultar(); break;
         case 2:
-            MenuActualizar();
-            break;
+            MenuActualizar(); break;
         case 3:
-            MenuBorrar();
-            break;
+            MenuBorrar(); break;
         case 4:
-            MenuAgregar();
-            break;
+            MenuAgregar(); break;
         case 5:
-            cout << "Saliendo del programa . . ." << endl;
-            break;
+            cout << "Saliendo del programa . . ." << endl; break;
         default:
             cout << "Opcion invalida" << endl << endl;
         }
@@ -115,26 +110,21 @@ void MenuConsultar(){
         cout << "2. Vehiculo por cedula de cliente" << endl;
         cout << "3. Cliente" << endl;
         cout << "4. Repuesto" << endl;
-        cout << "5. Regresar al Menu Principal" << endl;
+        cout << "5. Regresar al Menu Principal" << endl << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion_consulta;
 
         switch (opcion_consulta){
         case 1: 
-            Consulta_Vehiculo_x_placa();
-            break;
+            Consulta_Vehiculo_x_placa(); break;
         case 2:
-            Consulta_Vehiculo_x_cedula();
-            break;
+            Consulta_Vehiculo_x_cedula(); break;
         case 3:
-            Consulta_Cliente();
-            break;
+            Consulta_Cliente(); break;
         case 4:
-            Consulta_Repuesto();
-            break;
-        case 5: //Menu Principal
-            return;
-            break;
+            Consulta_Repuesto(); break;
+        case 5: //Retorno a Menu Principal
+            return; break;
         default:
             cout << "Opcion Invalida" << endl << endl;
         }
@@ -149,7 +139,7 @@ void MenuActualizar(){
         cout << "1. Vehiculo " << endl;
         cout << "2. Cliente" << endl;
         cout << "3. Repuesto" << endl;
-        cout << "4. Regresar al Menu Principal" << endl;
+        cout << "4. Regresar al Menu Principal" << endl << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion_actualizar;
 
@@ -160,7 +150,7 @@ void MenuActualizar(){
             break;
         case 3: //Registro Repuesto
             break;
-        case 4: //Menu
+        case 4: //Retorno a Menu Principal
             return;
             break;
         default:
@@ -177,23 +167,19 @@ void MenuBorrar(){
         cout << "1. Vehiculo " << endl;
         cout << "2. Cliente" << endl;
         cout << "3. Repuesto" << endl;
-        cout << "4. Regresar al Menu Principal" << endl;
+        cout << "4. Regresar al Menu Principal" << endl << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion_borrar;
 
         switch (opcion_borrar){
         case 1:
-            Eliminar_Vehiculo();
-            break;
+            Eliminar_Vehiculo(); break;
         case 2: 
-            Eliminar_Cliente();
-            break;
+            Eliminar_Cliente(); break;
         case 3: 
-            Eliminar_Repuesto();
-            break;
-        case 4: //Menu Principal
-            return;
-            break;
+            Eliminar_Repuesto(); break;
+        case 4: //Retorno a Menu Principal
+            return; break;
         default:
             cout << "Opcion Invalida" << endl << endl;
         }
@@ -214,17 +200,13 @@ void MenuAgregar(){
 
         switch (opcion_agregar){
         case 1:
-            Agregar_Vehiculo();
-            break;
+            Agregar_Vehiculo(); break;
         case 2:
-            Agregar_Cliente();
-            break;
+            Agregar_Cliente(); break;
         case 3:
-            Agregar_Repuesto();
-            break;
-        case 4: //Menu Principal
-            return;
-            break;
+            Agregar_Repuesto(); break;
+        case 4: //Retorno a Menu Principal
+            return; break;
         default:
             cout << "Opcion Invalida" << endl;
         }
@@ -536,21 +518,15 @@ void Consulta_Repuesto() {
 void Agregar_Cliente(){
     cout << endl << "Introduzca los datos del Cliente que desea agregar: " << endl;
 
-    cout << " Cedula: ";
-    cin >> cliente.cedula;
-    cout << " Nombre: ";
-    cin >> cliente.nombre;
-    cout << " Apellido: ";
-    cin >> cliente.apellido;
-    cout << " Correo: ";
-    cin >> cliente.email;
-    cout << " Vehiculos rentados: ";
-    cin >> cliente.cantidad_vehiculos_rentados;
+    cout << " Cedula: "; cin >> cliente.cedula;
+    cout << " Nombre: "; cin >> cliente.nombre;
+    cout << " Apellido: "; cin >> cliente.apellido;
+    cout << " Correo: "; cin >> cliente.email;
+    cout << " Vehiculos rentados: "; cin >> cliente.cantidad_vehiculos_rentados;
     cout << " Direccion: ";
     cin.ignore();
     getline(cin, cliente.direccion);
-    cout << " Activo (Si = 1, No = 0): ";
-    cin >> cliente.activo;
+    cout << " Activo (Si = 1, No = 0): "; cin >> cliente.activo;
 
     clientes[numClientes++] = cliente;
 
@@ -575,28 +551,17 @@ void Agregar_Cliente(){
 void Agregar_Vehiculo(){
     cout << endl << "Introduzca los datos del vehiculo que desea agregar: " << endl;
 
-    cout << " Modelo: ";
-    cin >> vehiculo.modelo;
-    cout << " Marca: ";
-    cin >> vehiculo.marca;
-    cout << " Placa: ";
-    cin >> vehiculo.placa;
-    cout << " Color: ";
-    cin >> vehiculo.color;
-    cout << " Year: ";
-    cin >> vehiculo.year;
-    cout << " Kilometraje: ";
-    cin >> vehiculo.kilometraje;
-    cout << " Rentado (Si = 1, No = 0): ";
-    cin >> vehiculo.rentado;
-    cout << " Motor: ";
-    cin >> vehiculo.motor;
-    cout << " Precio de renta: ";
-    cin >> vehiculo.precio_renta;
-    cout << " Cedula del cliente: ";
-    cin >> vehiculo.ced_cliente;
-    cout << " Fecha de entrega (dd/mm/aaaa): ";
-    cin >> vehiculo.fecha_de_entrega;
+    cout << " Modelo: "; cin >> vehiculo.modelo;
+    cout << " Marca: "; cin >> vehiculo.marca;
+    cout << " Placa: "; cin >> vehiculo.placa;
+    cout << " Color: "; cin >> vehiculo.color;
+    cout << " Year: "; cin >> vehiculo.year;
+    cout << " Kilometraje: "; cin >> vehiculo.kilometraje;
+    cout << " Rentado (Si = 1, No = 0): "; cin >> vehiculo.rentado;
+    cout << " Motor: "; cin >> vehiculo.motor;
+    cout << " Precio de renta: "; cin >> vehiculo.precio_renta;
+    cout << " Cedula del cliente: "; cin >> vehiculo.ced_cliente;
+    cout << " Fecha de entrega (dd/mm/aaaa): "; cin >> vehiculo.fecha_de_entrega;
 
     vehiculos[numVehiculos++] = vehiculo;
 
@@ -622,21 +587,15 @@ void Agregar_Vehiculo(){
 void Agregar_Repuesto(){
     cout << endl << "Introduzca los datos del Repuesto que desea agregar: " << endl;
 
-    cout << " Modelo: ";
-    cin >> repuesto.modelo;
-    cout << " Marca: ";
-    cin >> repuesto.marca;
+    cout << " Modelo: "; cin >> repuesto.modelo;
+    cout << " Marca: "; cin >> repuesto.marca;
     cout << " Nombre: ";
     cin.ignore();
     getline(cin, repuesto.nombre);
-    cout << " Modelo del carro: ";
-    cin >> repuesto.modelo_carro;
-    cout << " Year Carro: ";
-    cin >> repuesto.year_carro;
-    cout << " Precio: ";
-    cin >> repuesto.precio;
-    cout << " Existencias: ";
-    cin >> repuesto.existencias;
+    cout << " Modelo del carro: "; cin >> repuesto.modelo_carro;
+    cout << " Year Carro: "; cin >> repuesto.year_carro;
+    cout << " Precio: "; cin >> repuesto.precio;
+    cout << " Existencias: "; cin >> repuesto.existencias;
 
     repuestos[numRepuestos++] = repuesto;
 
@@ -661,7 +620,7 @@ void Agregar_Repuesto(){
 //Implementacion de funciones de borrado
 void Eliminar_Cliente() {
     int cedula;
-    cout << "Ingrese la Cedula del Cliente que desea eliminar: "; cin >> cedula;
+    cout << endl << "Ingrese la Cedula del Cliente que desea eliminar: "; cin >> cedula;
 
     int left = 0, right = numClientes - 1;
     bool encontrado = false;
@@ -726,7 +685,7 @@ void Eliminar_Cliente() {
 
 void Eliminar_Vehiculo() {
     string placa;
-    cout << "Ingrese la Placa del Vehiculo que desea eliminar: "; cin >> placa;
+    cout << endl << "Ingrese la Placa del Vehiculo que desea eliminar: "; cin >> placa;
 
     ifstream lectura_vehiculo("DATOS_VEHICULOS.csv");
     ofstream escritura_vehiculo_Temp("DATOS_VEHICULOS_TEMP.csv");
@@ -783,7 +742,7 @@ void Eliminar_Vehiculo() {
 
 void Eliminar_Repuesto() {
     int modelo;
-    cout << "Ingrese el Modelo del Repuesto que desea eliminar: "; cin >> modelo;
+    cout << endl << "Ingrese el Modelo del Repuesto que desea eliminar: "; cin >> modelo;
 
     int left = 0, right = numRepuestos - 1;
     bool encontrado = false;
