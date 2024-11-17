@@ -58,8 +58,7 @@ int PartitionRepuestos(int left, int right);
 
 // Funciones de Consulta
 void Consulta_Cliente();
-void Consulta_Vehiculo_x_placa();
-void Consulta_Vehiculo_x_cedula();
+void Consulta_Vehiculo();
 void Consulta_Repuesto();
 
 //Funciones de Insercion
@@ -85,7 +84,7 @@ void MenuPrincipal(){
         cout << "2. Actualizar" << endl;
         cout << "3. Borrar" << endl;
         cout << "4. Agregar" << endl;
-        cout << "5. Salir del programa" << endl;
+        cout << "5. Salir del programa" << endl << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion;
 
@@ -114,30 +113,26 @@ void MenuPrincipal(){
 void MenuConsultar(){
     int opcion_consulta;
     do{
-        cout << endl <<"MENU DE CONSULTA DE REGISTROS" << endl;
+        cout << endl << "MENU DE CONSULTA DE REGISTROS" << endl;
         cout << "Indique el tipo de consulta que desea realizar:" << endl;
-        cout << "1. Vehiculo por placa" << endl;
-        cout << "2. Vehiculo por cedula de cliente" << endl;
-        cout << "3. Cliente" << endl;
-        cout << "4. Repuesto" << endl;
-        cout << "5. Regresar al Menu Principal" << endl;
+        cout << "1. Vehiculo" << endl;
+        cout << "2. Cliente" << endl;
+        cout << "3. Repuesto" << endl;
+        cout << "4. Regresar al Menu Principal" << endl << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion_consulta;
 
         switch (opcion_consulta){
         case 1: 
-            Consulta_Vehiculo_x_placa();
+            Consulta_Vehiculo();
             break;
         case 2:
-            Consulta_Vehiculo_x_cedula();
-            break;
-        case 3:
             Consulta_Cliente();
             break;
-        case 4:
+        case 3:
             Consulta_Repuesto();
             break;
-        case 5: //Menu Principal
+        case 4: //Retorno a Menu Principal
             return;
             break;
         default:
@@ -154,7 +149,7 @@ void MenuActualizar(){
         cout << "1. Vehiculo " << endl;
         cout << "2. Cliente" << endl;
         cout << "3. Repuesto" << endl;
-        cout << "4. Regresar al Menu Principal" << endl;
+        cout << "4. Regresar al Menu Principal" << endl << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion_actualizar;
 
@@ -165,7 +160,7 @@ void MenuActualizar(){
             break;
         case 3: Actualizar_Repuesto();
             break;
-        case 4: //Menu
+        case 4: //Retorno a Menu Principal
             return;
             break;
         default:
@@ -182,7 +177,7 @@ void MenuBorrar(){
         cout << "1. Vehiculo " << endl;
         cout << "2. Cliente" << endl;
         cout << "3. Repuesto" << endl;
-        cout << "4. Regresar al Menu Principal" << endl;
+        cout << "4. Regresar al Menu Principal" << endl << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion_borrar;
 
@@ -196,7 +191,7 @@ void MenuBorrar(){
         case 3: 
             Eliminar_Repuesto();
             break;
-        case 4: //Menu Principal
+        case 4: //Retorno a Menu Principal
             return;
             break;
         default:
@@ -227,7 +222,7 @@ void MenuAgregar(){
         case 3:
             Agregar_Repuesto();
             break;
-        case 4: //Menu Principal
+        case 4: //Retorno a Menu Principal
             return;
             break;
         default:
@@ -415,12 +410,12 @@ void Consulta_Cliente() {
         }
     }
     if (!encontrado) {
-        cout << "Cedula " << cedula << " no encontrada." << endl;
+        cout << endl << "Cedula " << cedula << " no encontrada." << endl;
     }
 }
 
 //Consulta de vehiculo segun su placa
-void Consulta_Vehiculo_x_placa() {
+void Consulta_Vehiculo() {
     ifstream lectura_vehiculo("DATOS_VEHICULOS.csv");
 	string line, vehiculo_buscar, vehiculo_actual;
 	bool existe = false;
@@ -463,45 +458,8 @@ void Consulta_Vehiculo_x_placa() {
 	}
 	lectura_vehiculo.close();
 	if (!existe) {
-		cout << "Placa " << vehiculo_buscar << " no encontrado.";
+		cout << endl << "Placa " << vehiculo_buscar << " no encontrado.";
 	}
-}
-
-//Consulta de vehiculo segun la cedula de cliente
-void Consulta_Vehiculo_x_cedula() {
-	int cedula;
-	cout << endl << "Ingrese la cedula del cliente que alquilo el carro que desea consultar: "; cin >> cedula;
-
-    int left = 0, right = numVehiculos - 1;
-    bool encontrado = false;
-
-    while (left <= right) {
-        int mid = left + (right - left) / 2;
-
-	    if (vehiculos[mid].ced_cliente == cedula) {
-		    encontrado = true;
-		    cout << " Modelo: " << vehiculos[mid].modelo << endl;
-		    cout << " Marca: " << vehiculos[mid].marca << endl;
-		    cout << " Placa: " << vehiculos[mid].placa << endl;
-		    cout << " Color: " << vehiculos[mid].color << endl;
-            cout << " Year: " << vehiculos[mid].year << endl;
-            cout << " Kilometraje: " << vehiculos[mid].kilometraje << " Km" << endl;
-            cout << " Rentado: " << (vehiculos[mid].rentado? "Si" : "No")<< endl;
-            cout << " Motor: " << vehiculos[mid].motor << endl;
-            cout << " Precio de renta: " << vehiculos[mid].precio_renta << " $/hr" << endl;
-            cout << " Cedula del cliente: " << vehiculos[mid].ced_cliente << endl;
-            cout << " Fecha de entrega: " << vehiculos[mid].fecha_de_entrega << endl;
-            break;
-	    }
-        if (vehiculos[mid].ced_cliente < cedula) {
-            left = mid + 1;
-        } else {
-            right = mid - 1;
-        }
-    }
-    if (!encontrado) {
-        cout << "Cedula " << cedula << " no encontrada." << endl;
-    }
 }
 
 //Consulta de repuesto segun el modelo
@@ -533,7 +491,7 @@ void Consulta_Repuesto() {
         }
     }
     if (!encontrado) {
-        cout << "Modelo " << modelo << " no encontrado." << endl;
+        cout << endl << "Modelo " << modelo << " no encontrado." << endl;
     }
 }
 
@@ -541,7 +499,7 @@ void Consulta_Repuesto() {
 void Agregar_Cliente(){
     cout << endl << "Introduzca los datos del Cliente que desea agregar: " << endl;
 
-    cout << " Cedula: ";
+    cout << endl << " Cedula: ";
     cin >> cliente.cedula;
     cout << " Nombre: ";
     cin >> cliente.nombre;
@@ -580,7 +538,7 @@ void Agregar_Cliente(){
 void Agregar_Vehiculo(){
     cout << endl << "Introduzca los datos del vehiculo que desea agregar: " << endl;
 
-    cout << " Modelo: ";
+    cout << endl << " Modelo: ";
     cin >> vehiculo.modelo;
     cout << " Marca: ";
     cin >> vehiculo.marca;
@@ -627,7 +585,7 @@ void Agregar_Vehiculo(){
 void Agregar_Repuesto(){
     cout << endl << "Introduzca los datos del Repuesto que desea agregar: " << endl;
 
-    cout << " Modelo: ";
+    cout << endl << " Modelo: ";
     cin >> repuesto.modelo;
     cout << " Marca: ";
     cin >> repuesto.marca;
@@ -687,7 +645,7 @@ void Eliminar_Cliente() {
 
     if (encontrado) {
         char confirmar;
-        cout << "Desea confirmar los cambios realizados? (y/n): "; cin >> confirmar;
+        cout << "Desea confirmar los cambios realizados? (Y/N): "; cin >> confirmar;
 
         if (confirmar == 'y' || confirmar == 'Y') {
             ifstream lectura_cliente("DATOS_CLIENTES.csv");
@@ -771,7 +729,7 @@ void Eliminar_Vehiculo() {
 
     if (encontrado) {
         char confirmar;
-        cout << "Desea confirmar los cambios realizados? (y/n): "; cin >> confirmar;
+        cout << "Desea confirmar los cambios realizados? (Y/N): "; cin >> confirmar;
 
         if (confirmar == 'y' || confirmar == 'Y') {
             remove("DATOS_VEHICULOS.csv");
@@ -810,7 +768,7 @@ void Eliminar_Repuesto() {
 
     if (encontrado) {
         char confirmar;
-        cout << "Desea confirmar los cambios realizados? (y/n): "; cin >> confirmar;
+        cout << "Desea confirmar los cambios realizados? (Y/N): "; cin >> confirmar;
 
         if (confirmar == 'y' || confirmar == 'Y') {
             ifstream lectura_repuesto("DATOS_REPUESTOS.csv");
@@ -856,7 +814,7 @@ void Eliminar_Repuesto() {
 //Implementacion de funciones de actualizacion
 void Actualizar_Cliente() {
     int cedula;
-    cout << "Ingrese la Cedula del Cliente que desea actualizar: "; cin >> cedula;
+    cout << endl << "Ingrese la Cedula del Cliente que desea actualizar: "; cin >> cedula;
 
     int mid, left = 0, right = numClientes - 1;
     bool encontrado = false;
@@ -899,9 +857,9 @@ void Actualizar_Cliente() {
                 escritura_cliente_Temp << cliente.cedula << ',' << cliente.nombre << ',' << cliente.apellido << ',' << cliente.email 
                 << ',' << cliente.cantidad_vehiculos_rentados << ',' << cliente.direccion << ',' << cliente.activo << endl;
             } else {
-            cout << "Introduzca los datos del nuevo Cliente: " << endl; 
+            cout << endl << "Introduzca los datos del nuevo Cliente: " << endl; 
 
-            cout << " Cedula: "; cin >> cliente.cedula;
+            cout << endl << " Cedula: "; cin >> cliente.cedula;
             cout << " Nombre: "; cin >> cliente.nombre;
             cout << " Apellido: "; cin >> cliente.apellido;
             cout << " Correo: "; cin >> cliente.email;
@@ -927,7 +885,7 @@ void Actualizar_Cliente() {
         escritura_cliente_Temp.close();
 
         char confirmar;
-        cout << "Desea confirmar los cambios realizados? (y/n): "; cin >> confirmar;
+        cout << "Desea confirmar los cambios realizados? (Y/N): "; cin >> confirmar;
 
         if (confirmar == 'y' || confirmar == 'Y') {
             remove("DATOS_CLIENTES.csv");
@@ -944,7 +902,7 @@ void Actualizar_Cliente() {
 
 void Actualizar_Vehiculo() {
     string placa;
-    cout << "Ingrese la Placa del Vehiculo que desea actualizar: "; cin >> placa;
+    cout << endl << "Ingrese la Placa del Vehiculo que desea actualizar: "; cin >> placa;
 
     ifstream lectura_vehiculo("DATOS_VEHICULOS.csv");
     ofstream escritura_vehiculo_Temp("DATOS_VEHICULOS_TEMP.csv");
@@ -974,9 +932,9 @@ void Actualizar_Vehiculo() {
 
         if (placa.compare(placa_actual) == 0) {
             encontrado = true;
-            cout << "Introduzca los datos del nuevo vehiculo: " << endl; 
+            cout << endl << "Introduzca los datos del nuevo vehiculo: " << endl; 
     	    
-            cout << " Modelo: "; cin >> vehiculo.modelo;
+            cout << endl << " Modelo: "; cin >> vehiculo.modelo;
 	        cout << " Marca: "; cin >> vehiculo.marca;
 	        cout << " Placa: "; cin >> vehiculo.placa;
 	        cout << " Color: "; cin >> vehiculo.color;
@@ -1003,7 +961,7 @@ void Actualizar_Vehiculo() {
 
     if (encontrado) {
         char confirmar;
-        cout << "Desea confirmar los cambios realizados? (y/n): "; cin >> confirmar;
+        cout << "Desea confirmar los cambios realizados? (Y/N): "; cin >> confirmar;
 
         if (confirmar == 'y' || confirmar == 'Y') {
             remove("DATOS_VEHICULOS.csv");
@@ -1021,7 +979,7 @@ void Actualizar_Vehiculo() {
 
 void Actualizar_Repuesto() {
     int modelo;
-    cout << "Ingrese el Modelo del Repuesto que desea actualizar: "; cin >> modelo;
+    cout << endl << "Ingrese el Modelo del Repuesto que desea actualizar: "; cin >> modelo;
 
     int mid, left = 0, right = numRepuestos - 1;
     bool encontrado = false;
@@ -1065,9 +1023,9 @@ void Actualizar_Repuesto() {
                 escritura_repuesto_Temp << repuesto.modelo << ',' << repuesto.marca << ',' << repuesto.nombre << ',' << repuesto.modelo_carro
                 << ',' << repuesto.year_carro << ',' << repuesto.precio << ',' << repuesto.existencias << endl;
             } else {
-                cout << "Introduzca los datos del Repuesto que desea agregar: " << endl; 
+                cout << endl << "Introduzca los datos del Repuesto que desea agregar: " << endl; 
     	    
-	            cout << " Modelo: "; cin >> repuesto.modelo;
+	            cout << endl << " Modelo: "; cin >> repuesto.modelo;
 	            cout << " Marca: "; cin >> repuesto.marca;
 	            cout << " Nombre: ";
                 cin.ignore();
@@ -1093,7 +1051,7 @@ void Actualizar_Repuesto() {
         escritura_repuesto_Temp.close();
 
         char confirmar;
-        cout << "Desea confirmar los cambios realizados? (y/n): "; cin >> confirmar;
+        cout << "Desea confirmar los cambios realizados? (Y/N): "; cin >> confirmar;
         if (confirmar == 'y' || confirmar == 'Y') {
             remove("DATOS_REPUESTOS.csv");
             rename("DATOS_REPUESTOS_TEMP.csv", "DATOS_REPUESTOS.csv");
