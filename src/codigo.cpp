@@ -778,6 +778,7 @@ void Eliminar_Vehiculo() {
 	    } 
 	} else {
 		cout << "El Vehiculo de placa " << placa << " no existe en los registros." << endl;
+        remove("DATOS_VEHICULOS_TEMP.csv");
 	}
 }
 
