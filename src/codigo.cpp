@@ -440,8 +440,10 @@ void Consulta_Vehiculo() {
             cout << " Rentado: " << (vehiculo.rentado? "Si" : "No")<< endl;
             cout << " Motor: " << vehiculo.motor << endl;
             cout << " Precio de renta: " << vehiculo.precio_renta << " $/hr" << endl;
-            cout << " Cedula del cliente: " << vehiculo.ced_cliente << endl;
-            cout << " Fecha de entrega: " << vehiculo.fecha_de_entrega << endl;
+            if (vehiculo.rentado == 0) {
+            cout << " Cedula del cliente: N/A" << endl;
+            cout << " Fecha de entrega: N/A" << endl;
+            }
 		}
 	}
 	lectura_vehiculo.close();
