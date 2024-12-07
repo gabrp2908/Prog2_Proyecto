@@ -1,7 +1,5 @@
 #ifndef view_h
 #define view_h
-#include <string>
-using namespace std;
 
 // Funciones de Menu
 void MenuPrincipal();

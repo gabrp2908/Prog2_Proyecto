@@ -13,12 +13,6 @@ class Vehiculos{
     int year, kilometraje, ced_cliente;
     float precio_renta;
     bool rentado;
-
-    void Consulta();
-    void Agregar();
-    void Eliminar();
-    void Actualizar();
-
 }*vehiculos;
 
 class Cliente{
@@ -26,11 +20,6 @@ class Cliente{
     string nombre, apellido, email, direccion;
     int cedula, cantidad_vehiculos_rentados;
     bool activo;
-
-    void Consulta();
-    void Agregar();
-    void Eliminar();
-    void Actualizar();
 }*cliente;
 
 class Repuestos{
@@ -38,11 +27,6 @@ class Repuestos{
     string marca, nombre, modelo_carro;
     int modelo, year_carro, existencias;
     float precio;
-
-    void Consulta();
-    void Agregar();
-    void Eliminar();
-    void Actualizar();
 }*repuesto;
 
 #endif
