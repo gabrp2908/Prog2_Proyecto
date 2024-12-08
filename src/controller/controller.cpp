@@ -9,7 +9,7 @@
 using namespace std;
 
 // Consulta de vehiculo segun su placa
- bool Consulta_Vehiculo(const string& placa, Vehiculos& resultado){
+ bool Consultar_Vehiculo(const string& placa, Vehiculos& resultado){
 
     Vehiculos* vehiculos = new Vehiculos[MAX_VEHICULOS];
     int numVehiculos = Vehiculos::CargarDesdeArchivo("../bin/DATOS_VEHICULOS.csv", vehiculos, MAX_VEHICULOS);
@@ -47,7 +47,7 @@ bool Consultar_Cliente(int cedula, Cliente& resultado){
 }
 
 // Consulta de repuesto segun el modelo
-bool Consulta_Repuesto(int modelo, Repuestos& resultado){
+bool Consultar_Repuesto(int modelo, Repuestos& resultado){
     
     Repuestos* repuestos = new Repuestos[MAX_REPUESTOS];
     int numRepuestos = Repuestos::CargarDesdeArchivo("../bin/DATOS_REPUESTOS.csv", repuestos, MAX_REPUESTOS);

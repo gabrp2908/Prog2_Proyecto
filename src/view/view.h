@@ -9,9 +9,9 @@ void MenuBorrar();
 void MenuAgregar();
 
 // Funciones de Consulta en View
-void Consulta_Vehiculo_View();
-void Consulta_Cliente_View();
-void Consulta_Repuesto_View();
+void Consultar_Vehiculo_View();
+void Consultar_Cliente_View();
+void Consultar_Repuesto_View();
 
 // Funciones de Actualizar en View
 void Actualizar_Vehiculo_View();

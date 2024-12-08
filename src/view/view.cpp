@@ -52,13 +52,13 @@ void MenuConsultar(){
 
         switch (opcion_consulta){
         case 1:
-            Consulta_Vehiculo_View();
+            Consultar_Vehiculo_View();
             break;
         case 2:
-            Consulta_Cliente_View();
+            Consultar_Cliente_View();
             break;
         case 3:
-            Consulta_Repuesto_View();
+            Consultar_Repuesto_View();
             break;
         case 4: // Retorno a Menu Principal
             return;
@@ -164,7 +164,7 @@ void MenuAgregar(){
     } while (opcion_agregar != 4);
 }
 
-void Consulta_Vehiculo_View() {
+void Consultar_Vehiculo_View() {
     string placa;
     cout << endl << "Ingrese la placa del vehiculo que desea consultar: ";
     cin >> placa;
@@ -190,7 +190,7 @@ void Consulta_Vehiculo_View() {
     }
 }
 
-void Consulta_Cliente_View() {
+void Consultar_Cliente_View() {
     int cedula;
     cout << endl << "Ingrese la cedula del cliente que desea consultar: ";
     cin >> cedula;
@@ -209,7 +209,7 @@ void Consulta_Cliente_View() {
     }
 }
 
-void Consulta_Repuesto_View() {
+void Consultar_Repuesto_View() {
     int modelo;
     cout << endl << "Ingrese el modelo del repuesto que desea consultar: ";
     cin >> modelo;
