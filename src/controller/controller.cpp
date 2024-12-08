@@ -8,300 +8,61 @@
 
 using namespace std;
 
-Vehiculos *vehiculos = new Vehiculos[MAX_VEHICULOS];
-Cliente *clientes = new Cliente[MAX_CLIENTES];
-Repuestos *repuestos = new Repuestos[MAX_REPUESTOS];
-
-// Implementacion de QuickSort para Vehiculos
-void QuickSortVehiculos(int left, int right){
-    if (left < right){
-        int pivotIndex = PartitionVehiculos(left, right);
-        QuickSortVehiculos(left, pivotIndex - 1);
-        QuickSortVehiculos(pivotIndex + 1, right);
-    }
-}
-
-int PartitionVehiculos(int left, int right){
-    int pivot = vehiculos[right].ced_cliente;
-    int i = left - 1;
-
-    for (int j = left; j < right; j++){
-        if (vehiculos[j].ced_cliente < pivot){
-            i++;
-            swap(vehiculos[i], vehiculos[j]);
-        }
-    }
-    swap(vehiculos[i + 1], vehiculos[right]);
-    return i + 1;
-}
-
-// Implementacion de QuickSort para Clientes
-void QuickSortClientes(int left, int right){
-    if (left < right){
-        int pivotIndex = PartitionClientes(left, right);
-        QuickSortClientes(left, pivotIndex - 1);
-        QuickSortClientes(pivotIndex + 1, right);
-    }
-}
-
-int PartitionClientes(int left, int right){
-    int pivot = clientes[right].cedula;
-    int i = left - 1;
-
-    for (int j = left; j < right; j++){
-        if (clientes[j].cedula < pivot){
-            i++;
-            swap(clientes[i], clientes[j]);
-        }
-    }
-    swap(clientes[i + 1], clientes[right]);
-    return i + 1;
-}
-
-// Implementacion de QuickSort para Repuestos
-void QuickSortRepuestos(int left, int right){
-    if (left < right){
-        int pivotIndex = PartitionRepuestos(left, right);
-        QuickSortRepuestos(left, pivotIndex - 1);
-        QuickSortRepuestos(pivotIndex + 1, right);
-    }
-}
-
-int PartitionRepuestos(int left, int right){
-    int pivot = repuestos[right].modelo;
-    int i = left - 1;
-
-    for (int j = left; j < right; j++){
-        if (repuestos[j].modelo < pivot){
-            i++;
-            swap(repuestos[i], repuestos[j]);
-        }
-    }
-    swap(repuestos[i + 1], repuestos[right]);
-    return i + 1;
-}
-
-// Lectura de archivos
-void Lectura_Cliente(){
-    ifstream lectura_cliente("DATOS_CLIENTES.csv", ios::in);
-    string line;
-
-    while (getline(lectura_cliente, line) && numClientes < MAX_CLIENTES){
-        istringstream ss(line);
-
-        ss >> cliente.cedula;
-        ss.ignore();
-        getline(ss, cliente.nombre, ',');
-        getline(ss, cliente.apellido, ',');
-        getline(ss, cliente.email, ',');
-        ss >> cliente.cantidad_vehiculos_rentados;
-        ss.ignore();
-        getline(ss, cliente.direccion, ',');
-        ss >> cliente.activo;
-
-        clientes[numClientes++] = cliente;
-    }
-    lectura_cliente.close();
-
-    QuickSortClientes(0, numClientes - 1);
-}
-
-void Lectura_Vehiculo(){
-    ifstream lectura_vehiculo("DATOS_VEHICULOS.csv");
-    string line;
-
-    while (getline(lectura_vehiculo, line) && numVehiculos < MAX_VEHICULOS){
-        istringstream ss(line);
-
-        getline(ss, vehiculo.modelo, ',');
-        getline(ss, vehiculo.marca, ',');
-        getline(ss, vehiculo.placa, ',');
-        getline(ss, vehiculo.color, ',');
-        ss >> vehiculo.year;
-        ss.ignore();
-        ss >> vehiculo.kilometraje;
-        ss.ignore();
-        ss >> vehiculo.rentado;
-        ss.ignore();
-        getline(ss, vehiculo.motor, ',');
-        ss >> vehiculo.precio_renta;
-        ss.ignore();
-        ss >> vehiculo.ced_cliente;
-        ss.ignore();
-        getline(ss, vehiculo.fecha_de_entrega);
-
-        vehiculos[numVehiculos++] = vehiculo;
-    }
-    lectura_vehiculo.close();
-
-    QuickSortVehiculos(0, numVehiculos - 1);
-}
-
-void Lectura_Repuesto(){
-    ifstream lectura_repuesto("DATOS_REPUESTOS.csv", ios::in);
-    string line;
-
-    while (getline(lectura_repuesto, line) && numRepuestos < MAX_REPUESTOS){
-        istringstream ss(line);
-
-        ss >> repuesto.modelo;
-        ss.ignore();
-        getline(ss, repuesto.marca, ',');
-        getline(ss, repuesto.nombre, ',');
-        getline(ss, repuesto.modelo_carro, ',');
-        ss >> repuesto.year_carro;
-        ss.ignore();
-        ss >> repuesto.precio;
-        ss.ignore();
-        ss >> repuesto.existencias;
-
-        repuestos[numRepuestos++] = repuesto;
-    }
-    lectura_repuesto.close();
-
-    QuickSortRepuestos(0, numRepuestos - 1);
-}
-
 // Consulta de cliente segun su cedula
-void Consulta_Cliente(){
-    int cedula, cedula_actual;
-    cout << endl
-         << "Ingrese la cedula del cliente que desea consultar: ";
-    cin >> cedula;
-    bool encontrado = false;
+bool Consultar_Cliente(int cedula, Cliente& resultado){
 
-    ifstream lectura_cliente("DATOS_CLIENTES.csv", ios::in);
-    string line;
-
-    while (getline(lectura_cliente, line) && numClientes < MAX_CLIENTES){
-        istringstream ss(line);
-
-        ss >> cliente.cedula;
-        ss.ignore();
-        cedula_actual = cliente.cedula;
-        getline(ss, cliente.nombre, ',');
-        getline(ss, cliente.apellido, ',');
-        getline(ss, cliente.email, ',');
-        ss >> cliente.cantidad_vehiculos_rentados;
-        ss.ignore();
-        getline(ss, cliente.direccion, ',');
-        ss >> cliente.activo;
-
-        if (cedula_actual == cedula){
-            encontrado = true;
-            cout << " Cedula: " << cliente.cedula << endl;
-            cout << " Nombre: " << cliente.nombre << endl;
-            cout << " Apellido: " << cliente.apellido << endl;
-            cout << " Correo: " << cliente.email << endl;
-            cout << " Vehiculos rentados: " << cliente.cantidad_vehiculos_rentados << endl;
-            cout << " Direccion: " << cliente.direccion << endl;
-            cout << " Activo: " << (cliente.activo ? "Si" : "No") << endl;
-        }
-    }
-    lectura_cliente.close();
-    if (!encontrado){
-        cout << endl
-             << "La Cedula " << cedula << " no ha sido encontrada en los registros." << endl;
-    }
-}
-
-// Consulta de vehiculo segun su placa
-void Consulta_Vehiculo(){
-    ifstream lectura_vehiculo("DATOS_VEHICULOS.csv");
-    string line, vehiculo_buscar, vehiculo_actual;
-    bool existe = false;
-    cout << endl
-         << "Ingrese la placa del vehiculo que desea consultar: ";
-    cin >> vehiculo_buscar;
+    Cliente* clientes = new Cliente[MAX_CLIENTES];
+    int numClientes = Cliente::CargarDesdeArchivo("../bin/DATOS_CLIENTES.csv", clientes, MAX_CLIENTES);
     
-    while (getline(lectura_vehiculo, line)){
-        istringstream ss(line);
-
-        getline(ss, vehiculo.modelo, ',');
-        getline(ss, vehiculo.marca, ',');
-        getline(ss, vehiculo.placa, ',');
-        vehiculo_actual = vehiculo.placa;
-        getline(ss, vehiculo.color, ',');
-        ss >> vehiculo.year;
-        ss.ignore();
-        ss >> vehiculo.kilometraje;
-        ss.ignore();
-        ss >> vehiculo.rentado;
-        ss.ignore();
-        getline(ss, vehiculo.motor, ',');
-        ss >> vehiculo.precio_renta;
-        ss.ignore();
-        ss >> vehiculo.ced_cliente;
-        ss.ignore();
-        getline(ss, vehiculo.fecha_de_entrega);
-
-        if (vehiculo_actual.compare(vehiculo_buscar) == 0){
-            existe = true;
-            cout << " Modelo:" << vehiculo.modelo << endl;
-            cout << " Marca: " << vehiculo.marca << endl;
-            cout << " Placa: " << vehiculo.placa << endl;
-            cout << " Color: " << vehiculo.color << endl;
-            cout << " Year: " << vehiculo.year << endl;
-            cout << " Kilometraje: " << vehiculo.kilometraje << " Km" << endl;
-            cout << " Rentado: " << (vehiculo.rentado ? "Si" : "No") << endl;
-            cout << " Motor: " << vehiculo.motor << endl;
-            cout << " Precio de renta: " << vehiculo.precio_renta << " $/hr" << endl;
-            if (vehiculo.rentado == 0){
-                cout << " Cedula del cliente: N/A" << endl;
-                cout << " Fecha de entrega: N/A" << endl;
-            }
-        }
-    }
-    lectura_vehiculo.close();
-    if (!existe){
-        cout << endl
-             << "La Placa " << vehiculo_buscar << " no ha sido encontrada en los registros.";
-    }
-}
-
-// Consulta de repuesto segun el modelo
-void Consulta_Repuesto(){
-    int modelo, modelo_actual;
-
-    cout << endl
-         << "Ingrese el modelo del repuesto que desea consultar: ";
-    cin >> modelo;
-    ifstream lectura_repuesto("DATOS_REPUESTOS.csv", ios::in);
-    string line;
     bool encontrado = false;
-
-    while (getline(lectura_repuesto, line) && numRepuestos < MAX_REPUESTOS){
-        istringstream ss(line);
-
-        ss >> repuesto.modelo;
-        ss.ignore();
-        modelo_actual = repuesto.modelo;
-        getline(ss, repuesto.marca, ',');
-        getline(ss, repuesto.nombre, ',');
-        getline(ss, repuesto.modelo_carro, ',');
-        ss >> repuesto.year_carro;
-        ss.ignore();
-        ss >> repuesto.precio;
-        ss.ignore();
-        ss >> repuesto.existencias;
-
-        if (modelo_actual == modelo){
+    for (int i = 0; i < numClientes; ++i) {
+        if (clientes[i].cedula == cedula) {
+            resultado = clientes[i];
             encontrado = true;
-            cout << " Modelo: " << repuesto.modelo << endl;
-            cout << " Marca: " << repuesto.marca << endl;
-            cout << " Nombre: " << repuesto.nombre << endl;
-            cout << " Modelo del carro: " << repuesto.modelo_carro << endl;
-            cout << " Year Carro: " << repuesto.year_carro << endl;
-            cout << " Precio: " << repuesto.precio << " $" << endl;
-            cout << " Existencias: " << repuesto.existencias << endl;
             break;
         }
     }
-    lectura_repuesto.close();
-    if (!encontrado){
-        cout << endl
-             << "El Modelo " << modelo << " no ha sido encontrado en los registros." << endl;
+
+    delete[] clientes;
+    return encontrado;
+}
+
+// Consulta de vehiculo segun su placa
+ bool Consulta_Vehiculo(const string& placa, Vehiculos& resultado){
+
+    Vehiculos* vehiculos = new Vehiculos[MAX_VEHICULOS];
+    int numVehiculos = Vehiculos::CargarDesdeArchivo("../bin/DATOS_VEHICULOS.csv", vehiculos, MAX_VEHICULOS);
+    
+    bool encontrado = false;
+    for (int i = 0; i < numVehiculos; ++i) {
+        if (vehiculos[i].placa == placa) {
+            resultado = vehiculos[i];
+            encontrado = true;
+            break;
+        }
     }
+
+    delete[] vehiculos;
+    return encontrado;
+}
+
+// Consulta de repuesto segun el modelo
+bool Consulta_Repuesto(int modelo, Repuestos& resultado){
+    
+    Repuestos* repuestos = new Repuestos[MAX_REPUESTOS];
+    int numRepuestos = Repuestos::CargarDesdeArchivo("../bin/DATOS_REPUESTOS.csv", repuestos, MAX_REPUESTOS);
+
+    bool encontrado = false;
+    for (int i = 0; i < numRepuestos; ++i) {
+        if (repuestos[i].modelo == modelo) {
+            resultado = repuestos[i];
+            encontrado = true;
+            break;
+        }
+    }
+
+    delete[] repuestos;
+    return encontrado;
 }
 
 // Implementacion de funciones de insercion

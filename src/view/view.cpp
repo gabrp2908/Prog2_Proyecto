@@ -52,13 +52,13 @@ void MenuConsultar(){
 
         switch (opcion_consulta){
         case 1:
-            Consulta_Vehiculo();
+            Consulta_Vehiculo_View();
             break;
         case 2:
-            Consulta_Cliente();
+            Consulta_Cliente_View();
             break;
         case 3:
-            Consulta_Repuesto();
+            Consulta_Repuesto_View();
             break;
         case 4: // Retorno a Menu Principal
             return;
@@ -162,4 +162,68 @@ void MenuAgregar(){
             cout << "Opcion Invalida" << endl;
         }
     } while (opcion_agregar != 4);
+}
+
+void Consulta_Vehiculo_View() {
+    string placa;
+    cout << endl << "Ingrese la placa del vehiculo que desea consultar: ";
+    cin >> placa;
+
+    Vehiculos vehiculo;
+    if (Consultar_Vehiculo(placa, vehiculo)) {
+        cout << " Modelo: " << vehiculo.modelo << endl;
+        cout << " Marca: " << vehiculo.marca << endl;
+        cout << " Placa: " << vehiculo.placa << endl;
+        cout << " Year: " << vehiculo.year << endl;
+        cout << " Rentado: " << (vehiculo.rentado ? "Si" : "No") << endl;
+        cout << " Motor: " << vehiculo.motor << endl;
+        cout << " Precio de renta: " << vehiculo.precio_renta << " $/hr" << endl;
+        if (vehiculo.rentado == 0){
+            cout << " Cedula del cliente: N/A" << endl;
+            cout << " Fecha de entrega: N/A" << endl;
+        } else {
+            cout << " Cedula del cliente: " << vehiculo.ced_cliente << endl;
+            cout << " Fecha de entrega: " << vehiculo.fecha_de_entrega << endl;
+        }
+    } else {
+        cout << "La placa " << placa << " no ha sido encontrada en los registros." << endl;
+    }
+}
+
+void Consulta_Cliente_View() {
+    int cedula;
+    cout << endl << "Ingrese la cedula del cliente que desea consultar: ";
+    cin >> cedula;
+
+    Cliente cliente;
+    if (Consultar_Cliente(cedula, cliente)) {
+        cout << " Cedula: " << cliente.cedula << endl;
+        cout << " Nombre: " << cliente.nombre << endl;
+        cout << " Apellido: " << cliente.apellido << endl;
+        cout << " Correo: " << cliente.email << endl;
+        cout << " Vehiculos rentados: " << cliente.cantidad_vehiculos_rentados << endl;
+        cout << " Direccion: " << cliente.direccion << endl;
+        cout << " Activo: " << (cliente.activo ? "Si" : "No") << endl;
+    } else {
+        cout << "La cedula " << cedula << " no ha sido encontrada en los registros." << endl;
+    }
+}
+
+void Consulta_Repuesto_View() {
+    int modelo;
+    cout << endl << "Ingrese el modelo del repuesto que desea consultar: ";
+    cin >> modelo;
+
+    Repuestos repuesto;
+    if (Consultar_Repuesto(modelo, repuesto)) {
+        cout << " Modelo: " << repuesto.modelo << endl;
+        cout << " Marca: " << repuesto.marca << endl;
+        cout << " Nombre: " << repuesto.nombre << endl;
+        cout << " Modelo del carro: " << repuesto.modelo_carro << endl;
+        cout << " Year del carro: " << repuesto.year_carro << endl;
+        cout << " Precio: " << repuesto.precio << " $" << endl;
+        cout << " Existencias: " << repuesto.existencias << endl;
+    } else {
+        cout << "El modelo " << modelo << " no ha sido encontrado en los registros." << endl;
+    }
 }
