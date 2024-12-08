@@ -1,6 +1,9 @@
 #ifndef model_h
 #define model_h
 #include <string>
+#include <fstream>
+#include <sstream>
+#include <iostream>
 using namespace std;
 
 const int MAX_VEHICULOS = 10000;

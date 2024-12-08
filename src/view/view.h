@@ -13,4 +13,18 @@ void Consulta_Vehiculo_View();
 void Consulta_Cliente_View();
 void Consulta_Repuesto_View();
 
+// Funciones de Actualizar en View
+void Actualizar_Vehiculo_View();
+void Actualizar_Cliente_View();
+void Actualizar_Repuesto_View();
+
+// Funciones de Eliminar en View
+void Eliminar_Vehiculo_View();
+void Eliminar_Cliente_View();
+void Eliminar_Repuesto_View();
+
+// Funciones de Agregar en View
+void Agregar_Vehiculo_View();
+void Agregar_Cliente_View();
+void Agregar_Repuesto_View();
 #endif

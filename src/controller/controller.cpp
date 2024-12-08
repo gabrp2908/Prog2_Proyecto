@@ -8,25 +8,6 @@
 
 using namespace std;
 
-// Consulta de cliente segun su cedula
-bool Consultar_Cliente(int cedula, Cliente& resultado){
-
-    Cliente* clientes = new Cliente[MAX_CLIENTES];
-    int numClientes = Cliente::CargarDesdeArchivo("../bin/DATOS_CLIENTES.csv", clientes, MAX_CLIENTES);
-    
-    bool encontrado = false;
-    for (int i = 0; i < numClientes; ++i) {
-        if (clientes[i].cedula == cedula) {
-            resultado = clientes[i];
-            encontrado = true;
-            break;
-        }
-    }
-
-    delete[] clientes;
-    return encontrado;
-}
-
 // Consulta de vehiculo segun su placa
  bool Consulta_Vehiculo(const string& placa, Vehiculos& resultado){
 
@@ -43,6 +24,25 @@ bool Consultar_Cliente(int cedula, Cliente& resultado){
     }
 
     delete[] vehiculos;
+    return encontrado;
+}
+
+// Consulta de cliente segun su cedula
+bool Consultar_Cliente(int cedula, Cliente& resultado){
+
+    Cliente* clientes = new Cliente[MAX_CLIENTES];
+    int numClientes = Cliente::CargarDesdeArchivo("../bin/DATOS_CLIENTES.csv", clientes, MAX_CLIENTES);
+    
+    bool encontrado = false;
+    for (int i = 0; i < numClientes; ++i) {
+        if (clientes[i].cedula == cedula) {
+            resultado = clientes[i];
+            encontrado = true;
+            break;
+        }
+    }
+
+    delete[] clientes;
     return encontrado;
 }
 
@@ -65,220 +65,174 @@ bool Consulta_Repuesto(int modelo, Repuestos& resultado){
     return encontrado;
 }
 
-// Implementacion de funciones de insercion
-void Agregar_Cliente(){
-    Lectura_Cliente();
-    cout << endl
-         << "Introduzca los datos del Cliente que desea agregar: " << endl;
-
-    cout << endl<< " Cedula: ";
-    cin >> cliente.cedula;
-    cout << " Nombre: ";
-    cin >> cliente.nombre;
-    cout << " Apellido: ";
-    cin >> cliente.apellido;
-    cout << " Correo: ";
-    cin >> cliente.email;
-    cout << " Vehiculos rentados: ";
-    cin >> cliente.cantidad_vehiculos_rentados;
-    cout << " Direccion: ";
-    cin.ignore();
-    getline(cin, cliente.direccion);
-    cout << " Activo (Si = 1, No = 0): ";
-    cin >> cliente.activo;
-
-    clientes[numClientes++] = cliente;
-
-    char confirmar;
-    cout << "Desea confirmar los cambios realizados? (Y/N): ";
-    cin >> confirmar;
-
-    if (confirmar == 'y' || confirmar == 'Y'){
-        ofstream escritura_cliente("DATOS_CLIENTES.csv", ios::app);
-
-        escritura_cliente << cliente.cedula << ',' << cliente.nombre << ',' << cliente.apellido << ',' << cliente.email << ',' << cliente.cantidad_vehiculos_rentados << ',' << cliente.direccion << ',' << cliente.activo << endl;
-
-        cout << "El Cliente " << cliente.nombre << " " << cliente.apellido << " ha sido agregado exitosamente." << endl;
-        escritura_cliente.close();
-    }
-    else{
-        cout << "El cambio ha sido descartado. " << endl;
-    }
-}
-
-void Agregar_Vehiculo(){
-    cout << endl << "Introduzca los datos del vehiculo que desea agregar: " << endl;
-
-    cout << endl << " Modelo: ";
-    cin >> vehiculo.modelo;
-    cout << " Marca: ";
-    cin >> vehiculo.marca;
-    cout << " Placa: ";
-    cin >> vehiculo.placa;
-    cout << " Color: ";
-    cin >> vehiculo.color;
-    cout << " Year: ";
-    cin >> vehiculo.year;
-    cout << " Kilometraje: ";
-    cin >> vehiculo.kilometraje;
-    cout << " Rentado (Si = 1, No = 0): ";
-    cin >> vehiculo.rentado;
-    cout << " Motor: ";
-    cin >> vehiculo.motor;
-    cout << " Precio de renta: ";
-    cin >> vehiculo.precio_renta;
-    cout << " Cedula del cliente: ";
-    cin >> vehiculo.ced_cliente;
-    cout << " Fecha de entrega (dd/mm/aaaa): ";
-    cin >> vehiculo.fecha_de_entrega;
-
-    vehiculos[numVehiculos++] = vehiculo;
-
-    char confirmar;
-    cout << "Desea confirmar los cambios realizados? (Y/N): ";
-    cin >> confirmar;
-
-    if (confirmar == 'y' || confirmar == 'Y'){
-        ofstream escritura_vehiculo("DATOS_VEHICULOS.csv", ios::app);
-
-        escritura_vehiculo << vehiculo.modelo << ',' << vehiculo.marca << ',' << vehiculo.placa << ',' << vehiculo.color<< ',' << vehiculo.year << ',' << vehiculo.kilometraje << ',' << vehiculo.rentado << ',' << vehiculo.motor << ',' << vehiculo.precio_renta << ',' << vehiculo.ced_cliente << ',' << vehiculo.fecha_de_entrega << endl;
-
-        cout << "El Vehiculo " << vehiculo.modelo << " " << vehiculo.marca << " ha sido agregado exitosamente." << endl;
-        escritura_vehiculo.close();
-    }
-    else{
-        cout << "El cambio ha sido descartado. " << endl;
-    }
-}
-
-void Agregar_Repuesto(){
-    Lectura_Repuesto();
-    cout << endl << "Introduzca los datos del Repuesto que desea agregar: " << endl;
-
-    cout << endl << " Modelo: ";
-    cin >> repuesto.modelo;
-    cout << " Marca: ";
-    cin >> repuesto.marca;
-    cout << " Nombre: ";
-    cin.ignore();
-    getline(cin, repuesto.nombre);
-    cout << " Modelo del carro: ";
-    cin >> repuesto.modelo_carro;
-    cout << " Year Carro: ";
-    cin >> repuesto.year_carro;
-    cout << " Precio: ";
-    cin >> repuesto.precio;
-    cout << " Existencias: ";
-    cin >> repuesto.existencias;
-
-    repuestos[numRepuestos++] = repuesto;
-
-    char confirmar;
-    cout << "Desea confirmar los cambios realizados? (Y/N): ";
-    cin >> confirmar;
-
-    if (confirmar == 'y' || confirmar == 'Y'){
-        ofstream escritura_repuesto("DATOS_REPUESTOS.csv", ios::app);
-
-        escritura_repuesto << repuesto.modelo << ',' << repuesto.marca << ',' << repuesto.nombre << ',' << repuesto.modelo_carro<< ',' << repuesto.year_carro << ',' << repuesto.precio << ',' << repuesto.existencias << endl;
-
-        cout << "El Repuesto " << repuesto.modelo << " " << repuesto.marca << " ha sido agregado exitosamente." << endl;
-        escritura_repuesto.close();
-    }
-    else{
-        cout << "El cambio ha sido descartado. " << endl;
-    }
-}
-
-// Implementacion de funciones de borrado
-void Eliminar_Cliente(){
-    Lectura_Cliente();
-    int cedula;
-    cout << endl << "Ingrese la Cedula del Cliente que desea eliminar: ";
-    cin >> cedula;
-
-    int mid, left = 0, right = numClientes - 1;
+// Actualizar Vehiculo
+bool Actualizar_Vehiculo(const Vehiculos& nuevoVehiculo, char confirmar) {
+    ifstream lectura_vehiculo("../bin/DATOS_VEHICULOS.csv");
+    ofstream escritura_vehiculo_Temp("../bin/DATOS_VEHICULOS_TEMP.csv");
+    string line, placaActual;
+    Vehiculos vehiculoActual;
     bool encontrado = false;
 
-    while (left <= right){
-        mid = left + (right - left) / 2;
+    while (getline(lectura_vehiculo, line)) {
+        istringstream ss(line);
 
-        if (clientes[mid].cedula == cedula){
+        getline(ss, vehiculoActual.modelo, ',');
+        getline(ss, vehiculoActual.marca, ',');
+        getline(ss, vehiculoActual.placa, ',');
+        placaActual = vehiculoActual.placa;
+        getline(ss, vehiculoActual.color, ',');
+        ss >> vehiculoActual.year;
+        ss.ignore();
+        ss >> vehiculoActual.kilometraje;
+        ss.ignore();
+        ss >> vehiculoActual.rentado;
+        ss.ignore();
+        getline(ss, vehiculoActual.motor, ',');
+        ss >> vehiculoActual.precio_renta;
+        ss.ignore();
+        ss >> vehiculoActual.ced_cliente;
+        ss.ignore();
+        getline(ss, vehiculoActual.fecha_de_entrega);
+
+        if (placaActual == nuevoVehiculo.placa) {
             encontrado = true;
-            break;
-        }
-        if (clientes[mid].cedula < cedula){
-            left = mid + 1;
-        }
-        else{
-            right = mid - 1;
+            escritura_vehiculo_Temp << nuevoVehiculo.modelo << ',' << nuevoVehiculo.marca << ',' << nuevoVehiculo.placa << ',' 
+                                    << nuevoVehiculo.color << ',' << nuevoVehiculo.year << ',' << nuevoVehiculo.kilometraje << ',' 
+                                    << nuevoVehiculo.rentado << ',' << nuevoVehiculo.motor << ',' << nuevoVehiculo.precio_renta << ',' 
+                                    << nuevoVehiculo.ced_cliente << ',' << nuevoVehiculo.fecha_de_entrega << endl;
+        } else {
+            escritura_vehiculo_Temp << vehiculoActual.modelo << ',' << vehiculoActual.marca << ',' << vehiculoActual.placa << ',' 
+                                    << vehiculoActual.color << ',' << vehiculoActual.year << ',' << vehiculoActual.kilometraje << ',' 
+                                    << vehiculoActual.rentado << ',' << vehiculoActual.motor << ',' << vehiculoActual.precio_renta << ',' 
+                                    << vehiculoActual.ced_cliente << ',' << vehiculoActual.fecha_de_entrega << endl;
         }
     }
-    if (cedula == clientes[mid].cedula){
-        for (int i = 0; i < numClientes; i++){
-            clientes[i] = clientes[i + 1];
-        }
-        numClientes--;
-    }
 
-    if (encontrado){
-        char confirmar;
-        cout << "Desea confirmar los cambios realizados? (Y/N): ";
-        cin >> confirmar;
+    lectura_vehiculo.close();
+    escritura_vehiculo_Temp.close();
 
+    if (encontrado && confirmar) {
         if (confirmar == 'y' || confirmar == 'Y'){
-            ifstream lectura_cliente("DATOS_CLIENTES.csv");
-            ofstream escritura_cliente_Temp("DATOS_CLIENTES_TEMP.csv");
-            string line;
-            int cedula_actual;
-
-            while (getline(lectura_cliente, line)){
-                istringstream ss(line);
-
-                ss >> cliente.cedula;
-                ss.ignore();
-                cedula_actual = cliente.cedula;
-                getline(ss, cliente.nombre, ',');
-                getline(ss, cliente.apellido, ',');
-                getline(ss, cliente.email, ',');
-                ss >> cliente.cantidad_vehiculos_rentados;
-                ss.ignore();
-                getline(ss, cliente.direccion, ',');
-                ss >> cliente.activo;
-
-                if (cedula != cedula_actual){
-                    escritura_cliente_Temp << cliente.cedula << ',' << cliente.nombre << ',' << cliente.apellido << ',' << cliente.email
-                                           << ',' << cliente.cantidad_vehiculos_rentados << ',' << cliente.direccion << ',' << cliente.activo << endl;
-                    continue;
-                }
-            }
-            lectura_cliente.close();
-            escritura_cliente_Temp.close();
-
-            remove("DATOS_CLIENTES.csv");
-            rename("DATOS_CLIENTES_TEMP.csv", "DATOS_CLIENTES.csv");
-            cout << "El Cliente fue eliminado correctamente." << endl;
-        }
-        else{
-            cout << "El cambio ha sido descartado. " << endl;
+            remove("../bin/DATOS_VEHICULOS.csv");
+            rename("../bin/DATOS_VEHICULOS_TEMP.csv", "../bin/DATOS_VEHICULOS.csv");
+        } else {
+        remove("../bin/DATOS_VEHICULOS_TEMP.csv");
         }
     }
-    else{
-        cout << "El Cliente con Cedula " << cedula << " no existe en los registros." << endl;
-    }
+
+    return encontrado;
 }
 
-void Eliminar_Vehiculo(){
-    string placa;
-    cout << endl << "Ingrese la Placa del Vehiculo que desea eliminar: ";
-    cin >> placa;
-
-    ifstream lectura_vehiculo("DATOS_VEHICULOS.csv");
-    ofstream escritura_vehiculo_Temp("DATOS_VEHICULOS_TEMP.csv");
+// Actualizar Cliente
+bool Actualizar_Cliente(const Cliente& nuevoCliente, char confirmar) {
+    ifstream lectura_cliente("../bin/DATOS_CLIENTES.csv");
+    ofstream escritura_cliente_Temp("../bin/DATOS_CLIENTES_TEMP.csv");
+    string line;
+    Cliente clienteActual;
     bool encontrado = false;
-    string line, placa_actual;
 
-    while (getline(lectura_vehiculo, line)){
+    while (getline(lectura_cliente, line)) {
+        istringstream ss(line);
+
+        ss >> clienteActual.cedula;
+        ss.ignore();
+        getline(ss, clienteActual.nombre, ',');
+        getline(ss, clienteActual.apellido, ',');
+        getline(ss, clienteActual.email, ',');
+        ss >> clienteActual.cantidad_vehiculos_rentados;
+        ss.ignore();
+        getline(ss, clienteActual.direccion, ',');
+        ss >> clienteActual.activo;
+
+        if (clienteActual.cedula == nuevoCliente.cedula) {
+            encontrado = true;
+            escritura_cliente_Temp << nuevoCliente.cedula << ',' << nuevoCliente.nombre << ',' 
+                                   << nuevoCliente.apellido << ',' << nuevoCliente.email << ',' 
+                                   << nuevoCliente.cantidad_vehiculos_rentados << ',' << nuevoCliente.direccion 
+                                   << ',' << nuevoCliente.activo << endl;
+        } else {
+            escritura_cliente_Temp << clienteActual.cedula << ',' << clienteActual.nombre << ',' 
+                                   << clienteActual.apellido << ',' << clienteActual.email << ',' 
+                                   << clienteActual.cantidad_vehiculos_rentados << ',' << clienteActual.direccion 
+                                   << ',' << clienteActual.activo << endl;
+        }
+    }
+
+    lectura_cliente.close();
+    escritura_cliente_Temp.close();
+
+    if (encontrado && confirmar) {
+        if (confirmar == 'y' || confirmar == 'Y'){
+            remove("../bin/DATOS_CLIENTES.csv");
+            rename("../bin/DATOS_CLIENTES_TEMP.csv", "../bin/DATOS_CLIENTES.csv");
+        }
+    } else {
+        remove("../bin/DATOS_CLIENTES_TEMP.csv");
+    }
+
+    return encontrado;
+}
+
+// Actualizar Repuesto
+bool Actualizar_Repuesto(const Repuestos& nuevoRepuesto, char confirmar) {
+    ifstream lectura_repuesto("../bin/DATOS_REPUESTOS.csv");
+    ofstream escritura_repuesto_Temp("../bin/DATOS_REPUESTOS_TEMP.csv");
+    string line;
+    Repuestos repuestoActual;
+    bool encontrado = false;
+
+    while (getline(lectura_repuesto, line)) {
+        istringstream ss(line);
+
+        ss >> repuestoActual.modelo;
+        ss.ignore();
+        getline(ss, repuestoActual.marca, ',');
+        getline(ss, repuestoActual.nombre, ',');
+        getline(ss, repuestoActual.modelo_carro, ',');
+        ss >> repuestoActual.year_carro;
+        ss.ignore();
+        ss >> repuestoActual.precio;
+        ss.ignore();
+        ss >> repuestoActual.existencias;
+
+        if (repuestoActual.modelo == nuevoRepuesto.modelo) {
+            encontrado = true;
+            escritura_repuesto_Temp << nuevoRepuesto.modelo << ',' << nuevoRepuesto.marca << ',' 
+                                    << nuevoRepuesto.nombre << ',' << nuevoRepuesto.modelo_carro << ',' 
+                                    << nuevoRepuesto.year_carro << ',' << nuevoRepuesto.precio << ',' 
+                                    << nuevoRepuesto.existencias << endl;
+        } else {
+            escritura_repuesto_Temp << repuestoActual.modelo << ',' << repuestoActual.marca << ',' 
+                                    << repuestoActual.nombre << ',' << repuestoActual.modelo_carro << ',' 
+                                    << repuestoActual.year_carro << ',' << repuestoActual.precio << ',' 
+                                    << repuestoActual.existencias << endl;
+        }
+    }
+
+    lectura_repuesto.close();
+    escritura_repuesto_Temp.close();
+
+    if (encontrado && confirmar) {
+        if (confirmar == 'y' || confirmar == 'Y'){
+        remove("../bin/DATOS_REPUESTOS.csv");
+        rename("../bin/DATOS_REPUESTOS_TEMP.csv", "../bin/DATOS_REPUESTOS.csv");
+        }
+    } else {
+        remove("../bin/DATOS_REPUESTOS_TEMP.csv");
+    }
+
+    return encontrado;
+}
+
+// Eliminar Vehiculo
+bool Eliminar_Vehiculo(const string& placa, char confirmar) {
+    ifstream lectura_vehiculo("../bin/DATOS_VEHICULOS.csv");
+    ofstream escritura_vehiculo_Temp("../bin/DATOS_VEHICULOS_TEMP.csv");
+    string line, placa_actual;
+    Vehiculos vehiculo;
+    bool encontrado = false;
+
+    while (getline(lectura_vehiculo, line)) {
         istringstream ss(line);
 
         getline(ss, vehiculo.modelo, ',');
@@ -299,400 +253,157 @@ void Eliminar_Vehiculo(){
         ss.ignore();
         getline(ss, vehiculo.fecha_de_entrega);
 
-        if (placa.compare(placa_actual) == 0)
+        if (placa_actual == placa) {
             encontrado = true;
-        else{
-            escritura_vehiculo_Temp << vehiculo.modelo << ',' << vehiculo.marca << ',' << vehiculo.placa << ',' << vehiculo.color
-                                    << ',' << vehiculo.year << ',' << vehiculo.kilometraje << ',' << vehiculo.rentado << ',' << vehiculo.motor
-                                    << ',' << vehiculo.precio_renta << ',' << vehiculo.ced_cliente << ',' << vehiculo.fecha_de_entrega << endl;
+        } else {
+            escritura_vehiculo_Temp << vehiculo.modelo << ',' << vehiculo.marca << ',' << vehiculo.placa << ',' 
+                                    << vehiculo.color << ',' << vehiculo.year << ',' << vehiculo.kilometraje << ',' 
+                                    << vehiculo.rentado << ',' << vehiculo.motor << ',' << vehiculo.precio_renta << ',' 
+                                    << vehiculo.ced_cliente << ',' << vehiculo.fecha_de_entrega << endl;
         }
     }
+
     lectura_vehiculo.close();
     escritura_vehiculo_Temp.close();
 
-    if (encontrado){
-        char confirmar;
-        cout << "Desea confirmar los cambios realizados? (Y/N): ";
-        cin >> confirmar;
-
+    if (encontrado && confirmar) {
         if (confirmar == 'y' || confirmar == 'Y'){
-            remove("DATOS_VEHICULOS.csv");
-            rename("DATOS_VEHICULOS_TEMP.csv", "DATOS_VEHICULOS.csv");
-            cout << "El Vehiculo fue eliminado correctamente." << endl;
+        remove("../bin/DATOS_VEHICULOS.csv");
+        rename("../bin/DATOS_VEHICULOS_TEMP.csv", "../bin/DATOS_VEHICULOS.csv");
         }
-        else{
-            remove("DATOS_VEHICULOS_TEMP.csv");
-            cout << "El cambio ha sido descartado. " << endl;
-        }
+    } else {
+        remove("../bin/DATOS_VEHICULOS_TEMP.csv");
     }
-    else{
-        cout << "El Vehiculo de placa " << placa << " no existe en los registros." << endl;
-        remove("DATOS_VEHICULOS_TEMP.csv");
-    }
+
+    return encontrado;
 }
 
-void Eliminar_Repuesto(){
-    Lectura_Repuesto();
-    int modelo;
-    cout << endl << "Ingrese el Modelo del Repuesto que desea eliminar: ";
-    cin >> modelo;
-
-    int mid, left = 0, right = numRepuestos - 1;
+// Eliminar Cliente
+bool Eliminar_Cliente(int cedula, char confirmar) {
+    ifstream lectura_cliente("../bin/DATOS_CLIENTES.csv");
+    ofstream escritura_cliente_Temp("../bin/DATOS_CLIENTES_TEMP.csv");
+    string line;
+    Cliente cliente;
     bool encontrado = false;
 
-    while (left <= right){
-        mid = left + (right - left) / 2;
-
-        if (repuestos[mid].modelo == modelo){
-            encontrado = true;
-            break;
-        }
-        if (repuestos[mid].modelo < modelo){
-            left = mid + 1;
-        }
-        else{
-            right = mid - 1;
-        }
-    }
-    if (modelo == repuestos[mid].modelo){
-        for (int i = 0; i < numRepuestos; i++){
-            repuestos[i] = repuestos[i + 1];
-        }
-        numRepuestos--;
-    }
-
-    if (encontrado){
-        char confirmar;
-        cout << "Desea confirmar los cambios realizados? (Y/N): ";
-        cin >> confirmar;
-
-        if (confirmar == 'y' || confirmar == 'Y'){
-            ifstream lectura_repuesto("DATOS_REPUESTOS.csv");
-            ofstream escritura_repuesto_Temp("DATOS_REPUESTOS_TEMP.csv");
-            string line;
-            int modelo_actual;
-
-            while (getline(lectura_repuesto, line)){
-                istringstream ss(line);
-
-                ss >> repuesto.modelo;
-                ss.ignore();
-                modelo_actual = repuesto.modelo;
-                getline(ss, repuesto.marca, ',');
-                getline(ss, repuesto.nombre, ',');
-                getline(ss, repuesto.modelo_carro, ',');
-                ss >> repuesto.year_carro;
-                ss.ignore();
-                ss >> repuesto.precio;
-                ss.ignore();
-                ss >> repuesto.existencias;
-
-                if (modelo != modelo_actual){
-                    escritura_repuesto_Temp << repuesto.modelo << ',' << repuesto.marca << ',' << repuesto.nombre << ',' << repuesto.modelo_carro << ',' << repuesto.year_carro << ',' << repuesto.precio << ',' << repuesto.existencias << endl;
-                    continue;
-                }
-            }
-            lectura_repuesto.close();
-            escritura_repuesto_Temp.close();
-
-            remove("DATOS_REPUESTOS.csv");
-            rename("DATOS_REPUESTOS_TEMP.csv", "DATOS_REPUESTOS.csv");
-            cout << "El Repuesto fue eliminado correctamente." << endl;
-        }
-        else{
-            cout << "El cambio ha sido descartado." << endl;
-        }
-    }
-    else{
-        cout << "El Repuesto de modelo " << modelo << " no existe en los registros." << endl;
-    }
-}
-
-// Implementacion de funciones de actualizacion
-void Actualizar_Cliente(){
-    Lectura_Cliente();
-    int cedula;
-    cout << endl << "Ingrese la Cedula del Cliente que desea actualizar: ";
-    cin >> cedula;
-
-    int mid, left = 0, right = numClientes - 1;
-    bool encontrado = false;
-
-    while (left <= right){
-        mid = left + (right - left) / 2;
-
-        if (clientes[mid].cedula == cedula){
-            encontrado = true;
-            break;
-        }
-        if (clientes[mid].cedula < cedula){
-            left = mid + 1;
-        }
-        else{
-            right = mid - 1;
-        }
-    }
-
-    if (encontrado){
-        ifstream lectura_cliente("DATOS_CLIENTES.csv");
-        ofstream escritura_cliente_Temp("DATOS_CLIENTES_TEMP.csv");
-        string line;
-        int cedula_actual;
-
-        while (getline(lectura_cliente, line)){
-            istringstream ss(line);
-
-            ss >> cliente.cedula;
-            ss.ignore();
-            cedula_actual = cliente.cedula;
-            getline(ss, cliente.nombre, ',');
-            getline(ss, cliente.apellido, ',');
-            getline(ss, cliente.email, ',');
-            ss >> cliente.cantidad_vehiculos_rentados;
-            ss.ignore();
-            getline(ss, cliente.direccion, ',');
-            ss >> cliente.activo;
-
-            if (cedula != cedula_actual){
-                escritura_cliente_Temp << cliente.cedula << ',' << cliente.nombre << ',' << cliente.apellido << ',' << cliente.email
-                                       << ',' << cliente.cantidad_vehiculos_rentados << ',' << cliente.direccion << ',' << cliente.activo << endl;
-            }
-            else{
-                cout << endl << "Introduzca los datos del nuevo Cliente: " << endl;
-
-                cout << endl << " Cedula: ";
-                cin >> cliente.cedula;
-                cout << " Nombre: ";
-                cin >> cliente.nombre;
-                cout << " Apellido: ";
-                cin >> cliente.apellido;
-                cout << " Correo: ";
-                cin >> cliente.email;
-                cout << " Vehiculos rentados: ";
-                cin >> cliente.cantidad_vehiculos_rentados;
-                cout << " Direccion: ";
-                cin.ignore();
-                getline(cin, cliente.direccion);
-                cout << " Activo (Si = 1, No = 0): ";
-                cin >> cliente.activo;
-
-                clientes[mid].cedula = cliente.cedula;
-                clientes[mid].nombre = cliente.nombre;
-                clientes[mid].apellido = cliente.apellido;
-                clientes[mid].email = cliente.email;
-                clientes[mid].cantidad_vehiculos_rentados = cliente.cantidad_vehiculos_rentados;
-                clientes[mid].direccion = cliente.direccion;
-                clientes[mid].activo = cliente.activo;
-
-                escritura_cliente_Temp << cliente.cedula << ',' << cliente.nombre << ',' << cliente.apellido << ',' << cliente.email
-                                       << ',' << cliente.cantidad_vehiculos_rentados << ',' << cliente.direccion << ',' << cliente.activo << endl;
-            }
-        }
-        lectura_cliente.close();
-        escritura_cliente_Temp.close();
-
-        char confirmar;
-        cout << "Desea confirmar los cambios realizados? (Y/N): ";
-        cin >> confirmar;
-
-        if (confirmar == 'y' || confirmar == 'Y'){
-            remove("DATOS_CLIENTES.csv");
-            rename("DATOS_CLIENTES_TEMP.csv", "DATOS_CLIENTES.csv");
-            cout << "El Cliente ha sido actualizado correctamente." << endl;
-        }
-        else{
-            cout << "La actualizacion ha sido descartada. " << endl;
-            remove("DATOS_CLIENTES_TEMP.csv");
-        }
-    }
-    else{
-        cout << "El Cliente con Cedula " << cedula << " no existe en los registros." << endl;
-    }
-}
-
-void Actualizar_Vehiculo(){
-    string placa;
-    cout << endl << "Ingrese la Placa del Vehiculo que desea actualizar: ";
-    cin >> placa;
-
-    ifstream lectura_vehiculo("DATOS_VEHICULOS.csv");
-    ofstream escritura_vehiculo_Temp("DATOS_VEHICULOS_TEMP.csv");
-    bool encontrado = false;
-    string line, placa_actual;
-
-    while (getline(lectura_vehiculo, line)){
+    while (getline(lectura_cliente, line)) {
         istringstream ss(line);
 
-        getline(ss, vehiculo.modelo, ',');
-        getline(ss, vehiculo.marca, ',');
-        getline(ss, vehiculo.placa, ',');
-        placa_actual = vehiculo.placa;
-        getline(ss, vehiculo.color, ',');
-        ss >> vehiculo.year;
+        ss >> cliente.cedula;
         ss.ignore();
-        ss >> vehiculo.kilometraje;
+        getline(ss, cliente.nombre, ',');
+        getline(ss, cliente.apellido, ',');
+        getline(ss, cliente.email, ',');
+        ss >> cliente.cantidad_vehiculos_rentados;
         ss.ignore();
-        ss >> vehiculo.rentado;
-        ss.ignore();
-        getline(ss, vehiculo.motor, ',');
-        ss >> vehiculo.precio_renta;
-        ss.ignore();
-        ss >> vehiculo.ced_cliente;
-        ss.ignore();
-        getline(ss, vehiculo.fecha_de_entrega);
+        getline(ss, cliente.direccion, ',');
+        ss >> cliente.activo;
 
-        if (placa.compare(placa_actual) == 0){
+        if (cliente.cedula == cedula) {
             encontrado = true;
-            cout << endl << "Introduzca los datos del nuevo vehiculo: " << endl;
-
-            cout << endl << " Modelo: ";
-            cin >> vehiculo.modelo;
-            cout << " Marca: ";
-            cin >> vehiculo.marca;
-            cout << " Placa: ";
-            cin >> vehiculo.placa;
-            cout << " Color: ";
-            cin >> vehiculo.color;
-            cout << " Year: ";
-            cin >> vehiculo.year;
-            cout << " Kilometraje: ";
-            cin >> vehiculo.kilometraje;
-            cout << " Rentado (Si = 1, No = 0):: ";
-            cin >> vehiculo.rentado;
-            cout << " Motor: ";
-            cin >> vehiculo.motor;
-            cout << " Precio de renta: ";
-            cin >> vehiculo.precio_renta;
-            cout << " Cedula del cliente: ";
-            cin >> vehiculo.ced_cliente;
-            cout << " Fecha de entrega (dd/mm/aaaa): ";
-            cin >> vehiculo.fecha_de_entrega;
-
-            escritura_vehiculo_Temp << vehiculo.modelo << ',' << vehiculo.marca << ',' << vehiculo.placa << ',' << vehiculo.color << ',' << vehiculo.year << ',' << vehiculo.kilometraje << ',' << vehiculo.rentado << ',' << vehiculo.motor << ',' << vehiculo.precio_renta << ',' << vehiculo.ced_cliente << ',' << vehiculo.fecha_de_entrega << endl;
-        }
-        else{
-            escritura_vehiculo_Temp << vehiculo.modelo << ',' << vehiculo.marca << ',' << vehiculo.placa << ',' << vehiculo.color << ',' << vehiculo.year << ',' << vehiculo.kilometraje << ',' << vehiculo.rentado << ',' << vehiculo.motor << ',' << vehiculo.precio_renta << ',' << vehiculo.ced_cliente << ',' << vehiculo.fecha_de_entrega << endl;
+        } else {
+            escritura_cliente_Temp << cliente.cedula << ',' << cliente.nombre << ',' 
+                                   << cliente.apellido << ',' << cliente.email << ',' 
+                                   << cliente.cantidad_vehiculos_rentados << ',' << cliente.direccion 
+                                   << ',' << cliente.activo << endl;
         }
     }
-    lectura_vehiculo.close();
-    escritura_vehiculo_Temp.close();
 
-    if (encontrado){
-        char confirmar;
-        cout << "Desea confirmar los cambios realizados? (Y/N): ";
-        cin >> confirmar;
+    lectura_cliente.close();
+    escritura_cliente_Temp.close();
 
+    if (encontrado && confirmar) {
         if (confirmar == 'y' || confirmar == 'Y'){
-            remove("DATOS_VEHICULOS.csv");
-            rename("DATOS_VEHICULOS_TEMP.csv", "DATOS_VEHICULOS.csv");
-            cout << "El Vehiculo ha sido actualizado correctamente." << endl;
+        remove("../bin/DATOS_CLIENTES.csv");
+        rename("../bin/DATOS_CLIENTES_TEMP.csv", "../bin/DATOS_CLIENTES.csv");
         }
-        else{
-            remove("DATOS_VEHICULOS_TEMP.csv");
-            cout << "La actualizacion ha sido descartada. " << endl;
-        }
+    } else {
+        remove("../bin/DATOS_CLIENTES_TEMP.csv");
     }
-    else{
-        cout << "El Vehiculo de placa " << placa << " no existe en los registros." << endl;
-        remove("DATOS_VEHICULOS_TEMP.csv");
-    }
+
+    return encontrado;
 }
 
-void Actualizar_Repuesto(){
-    Lectura_Repuesto();
-    int modelo;
-    cout << endl << "Ingrese el Modelo del Repuesto que desea actualizar: ";
-    cin >> modelo;
-
-    int mid, left = 0, right = numRepuestos - 1;
+// Eliminar Repuesto
+bool Eliminar_Repuesto(int modelo, char confirmar) {
+    ifstream lectura_repuesto("../bin/DATOS_REPUESTOS.csv");
+    ofstream escritura_repuesto_Temp("../bin/DATOS_REPUESTOS_TEMP.csv");
+    string line;
+    Repuestos repuesto;
     bool encontrado = false;
 
-    while (left <= right){
-        mid = left + (right - left) / 2;
+    while (getline(lectura_repuesto, line)) {
+        istringstream ss(line);
 
-        if (repuestos[mid].modelo == modelo){
+        ss >> repuesto.modelo;
+        ss.ignore();
+        getline(ss, repuesto.marca, ',');
+        getline(ss, repuesto.nombre, ',');
+        getline(ss, repuesto.modelo_carro, ',');
+        ss >> repuesto.year_carro;
+        ss.ignore();
+        ss >> repuesto.precio;
+        ss.ignore();
+        ss >> repuesto.existencias;
+
+        if (repuesto.modelo == modelo) {
             encontrado = true;
-            break;
-        }
-        if (repuestos[mid].modelo < modelo){
-            left = mid + 1;
-        }
-        else{
-            right = mid - 1;
+        } else {
+            escritura_repuesto_Temp << repuesto.modelo << ',' << repuesto.marca << ',' 
+                                    << repuesto.nombre << ',' << repuesto.modelo_carro << ',' 
+                                    << repuesto.year_carro << ',' << repuesto.precio << ',' 
+                                    << repuesto.existencias << endl;
         }
     }
 
-    if (encontrado){
-        ifstream lectura_repuesto("DATOS_REPUESTOS.csv");
-        ofstream escritura_repuesto_Temp("DATOS_REPUESTOS_TEMP.csv");
-        string line;
-        int modelo_actual;
+    lectura_repuesto.close();
+    escritura_repuesto_Temp.close();
 
-        while (getline(lectura_repuesto, line)){
-            istringstream ss(line);
-
-            ss >> repuesto.modelo;
-            ss.ignore();
-            modelo_actual = repuesto.modelo;
-            getline(ss, repuesto.marca, ',');
-            getline(ss, repuesto.nombre, ',');
-            getline(ss, repuesto.modelo_carro, ',');
-            ss >> repuesto.year_carro;
-            ss.ignore();
-            ss >> repuesto.precio;
-            ss.ignore();
-            ss >> repuesto.existencias;
-
-            if (modelo != modelo_actual){
-                escritura_repuesto_Temp << repuesto.modelo << ',' << repuesto.marca << ',' << repuesto.nombre << ',' << repuesto.modelo_carro << ',' << repuesto.year_carro << ',' << repuesto.precio << ',' << repuesto.existencias << endl;
-            }
-            else{
-                cout << endl << "Introduzca los datos del Repuesto que desea agregar: " << endl;
-
-                cout << endl << " Modelo: ";
-                cin >> repuesto.modelo;
-                cout << " Marca: ";
-                cin >> repuesto.marca;
-                cout << " Nombre: ";
-                cin.ignore();
-                getline(cin, repuesto.nombre);
-                cout << " Modelo del carro: ";
-                cin >> repuesto.modelo_carro;
-                cout << " Year Carro: ";
-                cin >> repuesto.year_carro;
-                cout << " Precio: ";
-                cin >> repuesto.precio;
-                cout << " Existencias: ";
-                cin >> repuesto.existencias;
-
-                repuestos[mid].modelo = repuesto.modelo;
-                repuestos[mid].marca = repuesto.marca;
-                repuestos[mid].nombre = repuesto.nombre;
-                repuestos[mid].modelo_carro = repuesto.modelo_carro;
-                repuestos[mid].year_carro = repuesto.year_carro;
-                repuestos[mid].precio = repuesto.precio;
-                repuestos[mid].existencias = repuesto.existencias;
-
-                escritura_repuesto_Temp << repuesto.modelo << ',' << repuesto.marca << ',' << repuesto.nombre << ',' << repuesto.modelo_carro << ',' << repuesto.year_carro << ',' << repuesto.precio << ',' << repuesto.existencias << endl;
-            }
-        }
-        lectura_repuesto.close();
-        escritura_repuesto_Temp.close();
-
-        char confirmar;
-        cout << "Desea confirmar los cambios realizados? (Y/N): ";
-        cin >> confirmar;
+    if (encontrado && confirmar) {
         if (confirmar == 'y' || confirmar == 'Y'){
-            remove("DATOS_REPUESTOS.csv");
-            rename("DATOS_REPUESTOS_TEMP.csv", "DATOS_REPUESTOS.csv");
-            cout << "El Repuesto fue eliminado correctamente." << endl;
+        remove("../bin/DATOS_REPUESTOS.csv");
+        rename("../bin/DATOS_REPUESTOS_TEMP.csv", "../bin/DATOS_REPUESTOS.csv");
         }
-        else{
-            cout << "El cambio ha sido descartado." << endl;
-            remove("DATOS_REPUESTOS_TEMP.csv");
-        }
+    } else {
+        remove("../bin/DATOS_REPUESTOS_TEMP.csv");
     }
-    else{
-        cout << "El Repuesto de modelo " << modelo << " no existe en los registros." << endl;
-    }
+
+    return encontrado;
+}
+
+// Agregar Vehiculo al archivo
+bool Agregar_Vehiculo(const Vehiculos& vehiculo) {
+    ofstream escritura_vehiculo("../bin/DATOS_VEHICULOS.csv", ios::app);
+
+    escritura_vehiculo << vehiculo.modelo << ',' << vehiculo.marca << ',' << vehiculo.placa << ',' 
+                        << vehiculo.color << ',' << vehiculo.year << ',' << vehiculo.kilometraje << ',' 
+                        << vehiculo.rentado << ',' << vehiculo.motor << ',' << vehiculo.precio_renta << ',' 
+                        << vehiculo.ced_cliente << ',' << vehiculo.fecha_de_entrega << endl;
+
+    escritura_vehiculo.close();
+    return true;
+}
+
+// Agregar Cliente al archivo
+bool Agregar_Cliente(const Cliente& cliente) {
+    ofstream escritura_cliente("../bin/DATOS_CLIENTES.csv", ios::app);
+
+    escritura_cliente << cliente.cedula << ',' << cliente.nombre << ',' << cliente.apellido << ',' 
+                      << cliente.email << ',' << cliente.cantidad_vehiculos_rentados << ',' 
+                      << cliente.direccion << ',' << cliente.activo << endl;
+
+    escritura_cliente.close();
+    return true;
+}
+
+// Agregar Repuesto al archivo
+bool Agregar_Repuesto(const Repuestos& repuesto) {
+    ofstream escritura_repuesto("../bin/DATOS_REPUESTOS.csv", ios::app);
+
+    escritura_repuesto << repuesto.modelo << ',' << repuesto.marca << ',' << repuesto.nombre << ',' 
+                       << repuesto.modelo_carro << ',' << repuesto.year_carro << ',' 
+                       << repuesto.precio << ',' << repuesto.existencias << endl;
+
+    escritura_repuesto.close();
+    return true;
 }
