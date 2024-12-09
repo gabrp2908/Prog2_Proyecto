@@ -3,43 +3,118 @@
 #include "../controller/controller.h"
 using namespace std;
 
-void MenuPrincipal(){
+void MenuPorRol(const Usuario& usuario) {
+    if (usuario.rol == "Admin") {
+        MenuAdmin();
+    } else if (usuario.rol == "Manager") {
+        MenuManager();
+    } else if (usuario.rol == "Empleado") {
+        MenuEmpleado();
+    } else {
+        cout << "Acceso denegado." << endl;
+    }
+}
+
+void MenuAdmin() {
     int opcion;
-    do{
-        cout << endl << "MENU PRINCIPAL" << endl;
+    do {
+        cout << endl << "MENU ADMINISTRADOR" << endl;
         cout << "1. Consultar" << endl;
-        cout << "2. Actualizar" << endl;
-        cout << "3. Borrar" << endl;
-        cout << "4. Agregar" << endl;
-        cout << "5. Crear copias de seguridad" << endl;
-        cout << "6. Salir del programa" << endl << endl;
+        cout << "2. Agregar" << endl;
+        cout << "3. Eliminar" << endl;
+        cout << "4. Actualizar" << endl;
+        cout << "5. Crear copia de seguridad" << endl;
+        cout << "6. Agregar usuario" << endl;
+        cout << "7. Salir" << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion;
 
-        switch (opcion){
-        case 1:
-            MenuConsultar();
-            break;
-        case 2:
-            MenuActualizar();
-            break;
-        case 3:
-            MenuBorrar();
-            break;
-        case 4:
-            MenuAgregar();
-            break;
-        case 5:
-            Backup();
-            break;
-        case 6:
-            cout << "Saliendo del programa . . ." << endl;
-            break;
-        default:
-            cout << "Opcion invalida" << endl
-                 << endl;
+        switch (opcion) {
+            case 1:
+                MenuConsultar();
+                break;
+            case 2:
+                MenuAgregar();
+                break;
+            case 3:
+                MenuBorrar();
+                break;
+            case 4:
+                MenuActualizar();
+                break;
+            case 5:
+                Backup();
+                break;
+            case 6: {
+                Usuario nuevoUsuario;
+                cout << "Ingrese el nombre de usuario: ";
+                cin >> nuevoUsuario.username;
+                cout << "Ingrese la clave: ";
+                cin >> nuevoUsuario.password;
+                cout << "Ingrese el rol (Admin, Manager, Empleado): ";
+                cin >> nuevoUsuario.rol;
+                AgregarUsuario(nuevoUsuario);
+                break;
+            }
+            case 7:
+                cout << "Saliendo..." << endl;
+                break;
+            default:
+                cout << "Opcion invalida. Intente nuevamente." << endl;
         }
-    } while (opcion != 6);
+    } while (opcion != 7);
+}
+
+void MenuManager() {
+    int opcion;
+    do {
+        cout << endl << "MENU MANAGER" << endl;
+        cout << "1. Consultar" << endl;
+        cout << "2. Agregar" << endl;
+        cout << "3. Actualizar" << endl;
+        cout << "4. Salir" << endl;
+        cout << "Seleccione una opcion: ";
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                MenuConsultar();
+                break;
+            case 2:
+                MenuAgregar();
+                break;
+            case 3:
+                MenuActualizar();
+                break;
+            case 4:
+                cout << "Saliendo..." << endl;
+                break;
+            default:
+                cout << "Opcion invalida. Intente nuevamente." << endl;
+        }
+    } while (opcion != 4);
+}
+
+void MenuEmpleado() {
+    int opcion;
+    do {
+        cout << endl << "MENU EMPLEADO" << endl;
+        cout << "1. Consultar" << endl;
+        cout << "2. Salir" << endl;
+        cout << "Seleccione una opcion: ";
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                MenuConsultar();
+                break;
+            case 2:
+                cout << "Saliendo..." << endl;
+                break;
+            default:
+                cout << "Opcion invalida. Intente nuevamente." << endl;
+        }
+    } while (opcion != 2);
 }
 
 void MenuConsultar(){
@@ -389,7 +464,7 @@ void Agregar_Vehiculo_View(){
     cin >> vehiculo.placa;
     cout << " Color: ";
     cin >> vehiculo.color;
-    cout << " Año: ";
+    cout << " Year: ";
     cin >> vehiculo.year;
     cout << " Kilometraje: ";
     cin >> vehiculo.kilometraje;

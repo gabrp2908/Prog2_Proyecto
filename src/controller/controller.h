@@ -6,6 +6,10 @@
 // Funcion de BackUp
 bool CrearBackup();
 
+// Funciones de autenticacion y gestion de usuarios
+Usuario Login(const string& username, const string& password);
+void AgregarUsuario(const Usuario& nuevoUsuario);
+
 // Funciones de Consulta
 bool Consultar_Vehiculo(const string& placa, Vehiculos& resultado);
 bool Consultar_Cliente(int cedula, Cliente& resultado);
