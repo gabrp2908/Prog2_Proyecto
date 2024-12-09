@@ -1,0 +1,1000 @@
+RAV4,Toyota,PEF-750,Teal,2004,77182,1,electric,47.20,24680901,4/3/2024
+CX-7,Mazda,LAE-488,Aquamarine,2008,59533,1,gasoline,25.64,11904532,27/10/2024
+Camaro,Chevrolet,MSD-487,Aquamarine,1994,94290,0,diesel,32.95,0,0
+GTI,Volkswagen,TTY-217,Aquamarine,1986,62078,1,hybrid,46.31,20185772,18/7/2024
+Yukon,GMC,RFP-201,Orange,2003,92488,1,electric,45.21,18643162,10/2/2024
+S-Class,Mercedes-Benz,EBR-711,Goldenrod,2011,92097,1,gasoline,25.96,24029242,1/5/2024
+RX-7,Mazda,HGM-019,Fuscia,1985,91965,1,diesel,38.69,20020367,3/1/2024
+Corolla,Toyota,TEA-605,Puce,2009,38613,0,hybrid,35.79,0,0
+Express 1500,Chevrolet,ILZ-393,Violet,1996,60291,0,electric,41.03,0,0
+Xterra,Nissan,LXT-797,Green,2012,88672,0,gasoline,11.50,0,0
+4Runner,Toyota,ZPZ-455,Orange,1993,85465,1,diesel,28.81,16066586,17/5/2024
+MX-5,Mazda,NEK-318,Teal,1990,73900,1,hybrid,24.54,7751839,1/5/2024
+Tacoma,Toyota,QIN-615,Puce,1996,34269,0,electric,36.05,0,0
+Cougar,Mercury,MWA-426,Purple,1991,85413,1,gasoline,37.58,14622888,12/1/2024
+SLK-Class,Mercedes-Benz,BXJ-300,Aquamarine,2002,83357,1,diesel,18.54,29405368,4/3/2024
+Accent,Hyundai,ZUZ-946,Red,2013,2008,1,hybrid,12.85,10548676,3/12/2023
+RS4,Audi,RRY-114,Fuscia,2007,97546,1,electric,33.06,19495020,25/9/2024
+Uplander,Chevrolet,BVS-312,Red,2006,59860,1,gasoline,44.75,15502457,11/11/2024
+RL,Acura,GQS-017,Indigo,1999,65041,1,diesel,39.63,16251721,22/5/2024
+Challenger,Dodge,HPD-559,Red,2010,98637,1,hybrid,45.91,25345431,23/11/2023
+C30,Volvo,XPM-362,Red,2008,35855,0,electric,13.65,0,0
+Fit,Honda,LTR-442,Orange,2009,19392,0,gasoline,38.85,0,0
+TundraMax,Toyota,ARC-200,Orange,2011,25734,0,diesel,30.08,0,0
+Eclipse,Mitsubishi,KWY-715,Purple,1989,5400,0,hybrid,18.67,0,0
+Rio,Kia,UMY-018,Indigo,2001,98515,1,electric,29.04,11765377,13/10/2024
+JUKE,Nissan,WFK-093,Khaki,2012,86178,1,gasoline,28.56,10696678,16/11/2023
+Fifth Ave,Chrysler,ZHJ-713,Yellow,1993,60719,0,diesel,42.97,0,0
+Boxster,Porsche,WQW-395,Violet,2003,61288,0,hybrid,32.67,0,0
+Eldorado,Cadillac,CGB-114,Pink,1998,96096,0,electric,29.30,0,0
+Accord,Honda,YDU-148,Puce,2005,6179,0,gasoline,10.24,0,0
+Dakota Club,Dodge,KUP-462,Pink,1996,47407,0,diesel,15.74,0,0
+GTO,Mitsubishi,QSC-329,Teal,1990,96707,1,hybrid,10.72,29345834,23/1/2024
+Regal,Buick,OTJ-124,Puce,1986,89312,1,electric,45.74,18783059,30/8/2024
+Reno,Suzuki,YTT-356,Orange,2006,91793,0,gasoline,34.47,0,0
+S2000,Honda,AMD-891,Goldenrod,2004,76867,1,diesel,42.75,11611251,12/10/2024
+Chariot,Mitsubishi,JGQ-241,Indigo,1996,98014,0,hybrid,45.18,0,0
+Baja,Subaru,WUE-931,Crimson,2005,46797,1,electric,37.41,9030409,9/12/2024
+Jimmy,GMC,FIF-047,Violet,1999,78716,1,gasoline,14.06,26194693,15/4/2024
+Avalon,Toyota,TIU-002,Crimson,1995,16502,1,diesel,37.05,9932281,16/11/2023
+A6,Audi,YXD-210,Pink,1996,67552,1,hybrid,28.09,18957283,24/2/2024
+Discovery,Land Rover,YQA-369,Orange,1998,70418,1,electric,32.78,17351967,26/7/2024
+M,Infiniti,RFW-017,Green,2007,51386,0,gasoline,30.13,0,0
+Continental,Lincoln,VBQ-148,Crimson,1998,9644,0,diesel,35.12,0,0
+CTS-V,Cadillac,WKV-817,Teal,2010,82739,1,hybrid,41.03,18551505,4/4/2024
+Impala,Chevrolet,OEO-375,Khaki,1995,30384,0,electric,40.76,0,0
+Millenia,Mazda,BKC-522,Indigo,2001,17202,1,gasoline,26.99,21872748,5/12/2023
+LeMans,Pontiac,SSH-709,Orange,1966,11412,1,diesel,37.74,28954487,7/10/2024
+Sonoma,GMC,HZJ-692,Khaki,1992,6312,1,hybrid,14.27,23160019,19/9/2024
+Caprice Classic,Chevrolet,ZJT-587,Fuscia,1993,87040,1,electric,21.40,23754270,22/5/2024
+Grand Prix,Pontiac,IKZ-783,Turquoise,2003,67212,1,gasoline,15.01,8300457,26/4/2024
+Neon,Plymouth,JSH-977,Blue,2000,22247,0,diesel,48.18,0,0
+Mighty Max Macro,Mitsubishi,CNB-517,Orange,1992,45449,1,hybrid,16.83,10957564,11/12/2024
+650,BMW,QYD-382,Goldenrod,2006,46585,1,electric,35.05,24389210,26/1/2024
+7 Series,BMW,TIH-447,Crimson,2010,58678,0,gasoline,10.20,0,0
+Passat,Volkswagen,ZLP-357,Fuscia,2004,83212,1,diesel,18.86,26256994,9/4/2024
+Rondo,Kia,PQD-802,Indigo,2009,41718,0,hybrid,13.69,0,0
+Continental,Lincoln,VYV-887,Turquoise,1991,52669,1,electric,38.61,22074219,6/10/2024
+Prizm,Chevrolet,SRI-550,Blue,2002,55159,0,gasoline,49.57,0,0
+Viper,Dodge,UKO-548,Red,1994,42487,1,diesel,26.57,13479780,25/7/2024
+1500,Chevrolet,PSY-911,Fuscia,1998,83866,0,hybrid,17.29,0,0
+S8,Audi,CTY-364,Teal,2001,35067,0,electric,11.47,0,0
+DB9,Aston Martin,CQM-138,Pink,2010,95611,0,gasoline,44.85,0,0
+Avalanche 1500,Chevrolet,RWQ-093,Fuscia,2003,91368,0,diesel,24.30,0,0
+500SEL,Mercedes-Benz,YKI-395,Indigo,1992,28378,1,hybrid,18.83,20390099,30/3/2024
+Outback Sport,Subaru,ITA-772,Puce,2002,9709,1,electric,27.61,17242111,28/12/2023
+T100,Toyota,BBD-229,Red,1994,89857,0,gasoline,36.84,0,0
+Camry,Toyota,TJI-247,Turquoise,2001,51093,0,diesel,35.01,0,0
+Continental,Lincoln,HWB-334,Crimson,1984,14605,0,hybrid,14.70,0,0
+LTD Crown Victoria,Ford,OJV-710,Goldenrod,1991,33565,1,electric,14.21,22649557,9/2/2024
+XC70,Volvo,CCN-429,Orange,2007,34066,1,gasoline,35.72,12148595,9/1/2024
+Dakota,Dodge,VSF-551,Khaki,2004,80486,0,diesel,27.86,0,0
+Silverado 2500,Chevrolet,KOS-588,Pink,2003,44711,1,hybrid,33.40,13962752,26/11/2024
+Versa,Nissan,TZS-962,Goldenrod,2010,68659,0,electric,26.04,0,0
+DTS,Cadillac,PFU-400,Green,2010,23928,0,gasoline,28.78,0,0
+Prizm,Chevrolet,PLS-281,Blue,1998,53396,0,diesel,27.07,0,0
+Bonneville,Pontiac,NLE-417,Pink,1984,43352,1,hybrid,34.24,9874869,21/12/2024
+1500,GMC,KCU-808,Khaki,1995,40262,0,electric,18.19,0,0
+F350,Ford,CSV-195,Aquamarine,1994,5811,1,gasoline,14.98,20753578,12/11/2024
+5 Series,BMW,AGX-696,Blue,2000,43944,1,diesel,49.55,24914203,16/12/2024
+Truck,Mitsubishi,NNH-465,Red,1986,90683,0,hybrid,44.08,0,0
+Swift,Suzuki,QFR-450,Red,1989,67306,0,electric,16.77,0,0
+Cavalier,Chevrolet,DGZ-796,Khaki,2001,52844,1,gasoline,11.45,22113547,20/4/2024
+Baja,Subaru,WOI-188,Indigo,2006,81785,0,diesel,21.67,0,0
+H3,Hummer,HTC-541,Fuscia,2006,40266,0,hybrid,32.21,0,0
+Tribute,Mazda,ZSO-915,Goldenrod,2002,67246,1,electric,17.18,25109415,19/9/2024
+Intrepid,Dodge,LSC-804,Violet,2001,26191,1,gasoline,25.64,13877177,16/3/2024
+LTD Crown Victoria,Ford,MCF-874,Indigo,1984,6943,0,diesel,47.38,0,0
+MX-5,Mazda,RFI-524,Crimson,1998,27688,0,hybrid,12.14,0,0
+Liberty,Jeep,BQT-169,Goldenrod,2006,14482,0,electric,37.09,0,0
+Achieva,Oldsmobile,CDH-344,Pink,1994,12953,1,gasoline,45.07,18730051,28/2/2024
+944,Porsche,SHB-212,Aquamarine,1988,9683,1,diesel,16.78,27671480,23/12/2023
+3500 Club Coupe,GMC,SFY-165,Orange,1992,66279,1,hybrid,23.65,10414951,17/11/2023
+Galant,Mitsubishi,VPB-042,Aquamarine,2011,7351,0,electric,41.79,0,0
+Fillmore,Fillmore,DVE-032,Pink,1960,86729,1,gasoline,29.51,15702084,7/4/2024
+Aveo,Chevrolet,APD-047,Orange,2005,66907,0,diesel,32.75,0,0
+Express 3500,Chevrolet,YOR-767,Orange,2012,95950,0,hybrid,34.25,0,0
+X5,BMW,CAW-434,Maroon,2008,44338,0,electric,26.69,0,0
+New Beetle,Volkswagen,PVU-786,Goldenrod,2006,9819,1,gasoline,22.97,16597355,24/10/2024
+LTD Crown Victoria,Ford,PZA-399,Indigo,1984,82386,1,diesel,18.71,27440558,18/6/2024
+GX,Lexus,FNO-579,Violet,2010,94759,0,hybrid,26.68,0,0
+Voyager,Plymouth,OEK-064,Green,1995,29408,1,electric,40.23,15611006,3/12/2023
+Focus,Ford,XGW-376,Teal,2005,77470,0,gasoline,18.97,0,0
+Bronco,Ford,VDG-170,Blue,1986,9197,0,diesel,28.82,0,0
+Cougar,Mercury,PUK-505,Pink,1987,41209,0,hybrid,39.46,0,0
+SX4,Suzuki,NIY-599,Yellow,2012,56352,1,electric,34.79,27170464,7/1/2024
+Corvette,Chevrolet,JTL-551,Yellow,1984,27490,1,gasoline,26.72,7270109,30/1/2024
+Ram 1500,Dodge,ZXG-860,Blue,1994,55750,1,diesel,28.32,28520026,27/12/2023
+Ram 3500,Dodge,PDO-454,Puce,2000,6338,1,hybrid,44.45,28830130,24/11/2024
+I,Infiniti,FKW-738,Indigo,1998,70339,0,electric,35.35,0,0
+RX-8,Mazda,WIL-302,Orange,2005,59531,1,gasoline,27.87,20042739,12/4/2024
+6000,Pontiac,PQK-781,Green,1988,69382,0,diesel,48.66,0,0
+M5,BMW,QQF-804,Indigo,2009,58143,0,hybrid,25.96,0,0
+G-Series 2500,Chevrolet,CLJ-585,Red,1998,26000,0,electric,39.41,0,0
+Caravan,Dodge,IZJ-776,Pink,2002,51533,1,gasoline,18.74,16402628,20/1/2024
+Astra,Saturn,VQG-458,Violet,2008,68776,0,diesel,13.18,0,0
+Precis,Mitsubishi,RXP-812,Orange,1986,7380,1,hybrid,12.40,15144331,7/2/2024
+Navigator,Lincoln,FCB-967,Purple,2000,76569,1,electric,45.42,15577716,2/2/2024
+Ranger,Ford,XJJ-053,Violet,1999,94299,1,gasoline,47.37,22307062,30/11/2024
+Savana 2500,GMC,FBN-684,Purple,2006,69442,0,diesel,16.71,0,0
+Reatta,Buick,YZI-131,Goldenrod,1990,42504,0,hybrid,24.31,0,0
+90,Audi,MCE-324,Mauv,1993,96619,0,electric,29.71,0,0
+Torrent,Pontiac,XDE-648,Indigo,2006,26319,1,gasoline,40.08,9303064,20/8/2024
+Frontier,Nissan,KTG-891,Khaki,2007,82561,0,diesel,49.58,0,0
+Continental GT,Bentley,OGH-119,Yellow,2012,99994,0,hybrid,28.68,0,0
+V70,Volvo,IGZ-737,Yellow,2009,27955,0,electric,45.52,0,0
+Daytona,Dodge,FBO-455,Teal,1993,28067,1,gasoline,38.06,7777833,27/1/2024
+Elantra,Hyundai,OBN-270,Purple,2008,47012,1,diesel,37.98,23222653,21/11/2023
+Esteem,Suzuki,RJT-265,Green,2001,42459,1,hybrid,19.78,19934010,6/11/2024
+Celica,Toyota,CKR-301,Purple,1993,88483,0,electric,11.31,0,0
+Navigator,Lincoln,PVL-151,Teal,2012,38189,1,gasoline,30.98,21400960,24/7/2024
+Highlander,Toyota,UZV-685,Puce,2003,43795,1,diesel,31.56,21186334,23/12/2023
+928,Porsche,MUO-439,Red,1988,65905,0,hybrid,40.47,0,0
+Trooper,Isuzu,TVW-791,Blue,1993,56102,1,electric,35.70,25535973,31/10/2024
+Fiero,Pontiac,APH-510,Maroon,1984,72068,1,gasoline,35.53,11467516,9/2/2024
+Fleetwood,Cadillac,JBQ-441,Red,1954,3143,1,diesel,49.25,21729355,18/8/2024
+rio,Volkswagen,HJH-923,Yellow,2000,47359,0,hybrid,29.11,0,0
+Sable,Mercury,TEY-863,Violet,1991,58928,1,electric,47.20,25160504,11/12/2024
+G3,Pontiac,PTF-441,Yellow,2009,83397,1,gasoline,31.98,20931493,17/1/2024
+Altima,Nissan,CFP-841,Orange,2008,60394,1,diesel,30.88,25659821,24/5/2024
+Pajero,Mitsubishi,CAO-938,Pink,2006,72846,0,hybrid,32.71,0,0
+Suburban 1500,Chevrolet,ACH-904,Blue,1997,27375,0,electric,23.61,0,0
+Durango,Dodge,GHE-186,Fuscia,1998,36020,1,gasoline,13.95,15631986,15/7/2024
+G,Infiniti,LXI-140,Purple,2011,39538,0,diesel,38.78,0,0
+Savana 3500,GMC,NEF-525,Orange,2001,39325,1,hybrid,31.23,25597714,23/10/2024
+B-Series Plus,Mazda,YZB-655,Orange,1993,97741,1,electric,48.89,23859133,6/12/2023
+Ion,Saturn,WZQ-541,Yellow,2005,25405,0,gasoline,22.97,0,0
+F430,Ferrari,WHD-310,Blue,2008,79798,0,diesel,10.04,0,0
+Forester,Subaru,AWX-935,Goldenrod,2007,5378,1,hybrid,35.07,20981898,20/11/2024
+Venture,Chevrolet,HFM-644,Fuscia,2005,79909,1,electric,22.20,18146543,18/5/2024
+S10,Chevrolet,DKE-512,Turquoise,1993,68884,1,gasoline,37.83,28673041,21/5/2024
+Park Avenue,Buick,VTV-898,Blue,2003,1600,0,diesel,22.56,0,0
+Mustang,Ford,EIW-261,Indigo,1990,25335,1,hybrid,17.82,25165836,19/7/2024
+Diamante,Mitsubishi,SFE-157,Maroon,2004,38755,1,electric,12.54,21890959,19/6/2024
+Silverado 2500,Chevrolet,PIG-704,Goldenrod,2000,18694,0,gasoline,25.88,0,0
+Coupe,Maserati,ITR-749,Teal,2006,45860,0,diesel,12.74,0,0
+Enclave,Buick,MUQ-700,Fuscia,2011,12522,1,hybrid,13.99,18613897,5/1/2025
+Avalon,Toyota,XEF-535,Orange,1997,26209,0,electric,39.02,0,0
+Maxima,Nissan,IRH-405,Aquamarine,1994,58067,1,gasoline,47.83,16141586,26/4/2024
+LeSabre,Buick,NPY-854,Maroon,1987,87622,1,diesel,38.96,27157736,12/7/2024
+Tribute,Mazda,KXK-601,Orange,2002,66045,1,hybrid,27.04,21709864,31/5/2024
+Crown Victoria,Ford,BTD-327,Violet,2006,13690,1,electric,38.38,24380467,6/4/2024
+Beretta,Chevrolet,QCH-627,Red,1994,7723,0,gasoline,16.05,0,0
+LTD Crown Victoria,Ford,ASW-838,Purple,1991,85391,1,diesel,34.75,21429892,22/11/2024
+Avenger,Dodge,VYM-419,Turquoise,2000,54955,1,hybrid,26.76,24583443,10/9/2024
+Aspen,Chrysler,NXL-804,Purple,2008,40207,1,electric,24.83,7215146,12/10/2024
+Silhouette,Oldsmobile,MUN-357,Turquoise,2002,58059,0,gasoline,23.15,0,0
+GTI,Volkswagen,TVD-412,Orange,2007,3604,0,diesel,32.23,0,0
+Sierra 2500,GMC,WOI-130,Goldenrod,2001,65249,1,hybrid,45.54,29434727,8/7/2024
+9-May,Saab,VDR-237,Green,2004,44627,1,electric,45.81,12315978,20/8/2024
+Sunbird,Pontiac,SMX-000,Pink,1986,44019,1,gasoline,41.39,29842088,28/6/2024
+Avenger,Dodge,QAJ-864,Aquamarine,1995,44540,1,diesel,48.06,25807440,12/10/2024
+Durango,Dodge,LVS-300,Yellow,1998,13195,0,hybrid,14.50,0,0
+Silverado 2500,Chevrolet,NLM-091,Pink,2010,34664,0,electric,48.75,0,0
+Pathfinder,Nissan,WVG-173,Mauv,1995,3887,0,gasoline,22.98,0,0
+Mazda3,Mazda,KGR-546,Green,2005,94039,1,diesel,42.41,25834401,4/8/2024
+Sierra 1500,GMC,MWX-864,Indigo,2006,23912,1,hybrid,41.33,27038336,11/9/2024
+968,Porsche,TXJ-402,Pink,1993,39670,0,electric,19.42,0,0
+Rio,Kia,FSV-880,Purple,2011,55141,0,gasoline,31.64,0,0
+Camaro,Chevrolet,DHU-895,Turquoise,1985,70012,1,diesel,11.95,21828842,8/2/2024
+A6,Audi,KVL-395,Yellow,2009,5867,0,hybrid,21.58,0,0
+Vega,Chevrolet,OJQ-295,Orange,1971,51694,0,electric,14.53,0,0
+Tiburon,Hyundai,UEE-694,Crimson,2006,39424,1,gasoline,47.31,8478273,29/8/2024
+V8,Audi,QLD-407,Green,1992,98327,1,diesel,30.47,16739425,6/12/2024
+Q7,Audi,BCZ-923,Yellow,2012,32729,0,hybrid,33.52,0,0
+R8,Audi,ITF-702,Aquamarine,2011,98584,1,electric,20.06,25533443,22/11/2023
+S-Class,Mercedes-Benz,NXT-150,Pink,2012,54746,1,gasoline,16.28,26418860,15/11/2023
+Corvette,Chevrolet,PKN-887,Teal,2001,97286,0,diesel,22.65,0,0
+3500,Ram,EKF-434,Turquoise,2012,43335,0,hybrid,24.45,0,0
+Town & Country,Chrysler,VIM-495,Puce,1997,96770,1,electric,19.09,8142627,3/3/2024
+Grand Prix,Pontiac,SAF-329,Fuscia,2008,63215,0,gasoline,21.33,0,0
+3 Series,BMW,QEQ-769,Crimson,1998,96124,1,diesel,11.77,19514364,26/11/2024
+Corvette,Chevrolet,KVO-529,Green,1953,79468,1,hybrid,13.94,21307277,21/4/2024
+57,Maybach,YGV-300,Teal,2007,25733,0,electric,16.14,0,0
+3500,Ram,UOR-371,Green,2011,21625,1,gasoline,48.42,27426871,19/1/2024
+B-Series Plus,Mazda,SPJ-890,Violet,1999,13376,1,diesel,45.37,25182429,21/1/2024
+Canyon,GMC,GWA-772,Fuscia,2005,13168,0,hybrid,17.79,0,0
+rio,Volkswagen,IYE-651,Mauv,2001,54780,1,electric,23.35,27489272,15/1/2024
+R8,Audi,ZQM-904,Pink,2008,78066,1,gasoline,12.71,23803702,27/4/2024
+LSS,Oldsmobile,JOA-531,Violet,1998,41092,0,diesel,31.55,0,0
+XG350,Hyundai,WWN-760,Crimson,2003,62379,0,hybrid,17.93,0,0
+Villager,Mercury,OHJ-590,Green,2001,77824,1,electric,47.31,13042504,7/11/2024
+Montana,Pontiac,IWB-552,Indigo,2004,12483,0,gasoline,47.11,0,0
+Firefly,Pontiac,POI-963,Indigo,1995,24833,1,diesel,38.62,7083309,26/7/2024
+G5,Pontiac,WNI-397,Maroon,2009,48721,1,hybrid,12.51,16287589,10/9/2024
+9-May,Saab,GZK-612,Crimson,1999,4942,1,electric,20.04,11182558,21/5/2024
+Equinox,Chevrolet,FUE-416,Blue,2009,7583,0,gasoline,13.82,0,0
+Daewoo Kalos,Pontiac,NYF-806,Red,2006,15667,0,diesel,48.63,0,0
+Park Avenue,Buick,TYX-521,Blue,1995,58548,0,hybrid,32.22,0,0
+Colorado,Chevrolet,XZZ-956,Yellow,2009,61254,0,electric,39.68,0,0
+Jimmy,GMC,NIV-781,Aquamarine,1993,82717,0,gasoline,20.11,0,0
+Fusion,Ford,SQI-153,Goldenrod,2009,48678,0,diesel,36.48,0,0
+Lumina,Chevrolet,EYY-426,Crimson,1992,23592,0,hybrid,27.79,0,0
+Suburban 1500,Chevrolet,SQP-343,Indigo,2008,93606,0,electric,18.62,0,0
+Land Cruiser,Toyota,RZW-294,Green,2004,76306,1,gasoline,40.80,13270557,18/12/2024
+Colt,Plymouth,EXD-163,Khaki,1993,86368,1,diesel,25.84,8829449,19/12/2023
+Blazer,Chevrolet,ZUH-887,Indigo,1998,52344,1,hybrid,39.72,25121099,10/9/2024
+F250,Ford,XOF-114,Purple,2000,40782,1,electric,13.38,10055382,8/11/2024
+Vantage,Aston Martin,UIM-012,Orange,2010,36581,0,gasoline,33.95,0,0
+Sierra,GMC,MFO-449,Green,2009,4527,0,diesel,49.21,0,0
+Discovery Series II,Land Rover,RYE-101,Orange,2000,10582,1,hybrid,28.16,11147950,2/4/2024
+Range Rover Sport,Land Rover,DYH-440,Fuscia,2009,37899,1,electric,25.75,19889718,9/12/2024
+Miata MX-5,Mazda,SBJ-465,Crimson,2007,45734,0,gasoline,31.63,0,0
+Cabriolet,Audi,KJO-223,Maroon,1996,45188,1,diesel,32.27,27652622,8/7/2024
+Forester,Subaru,RXP-402,Aquamarine,2012,36045,1,hybrid,27.51,15453139,25/12/2023
+Corsica,Chevrolet,SZR-899,Aquamarine,1992,58065,1,electric,12.51,26993487,17/8/2024
+Jetta,Volkswagen,DUN-806,Mauv,2003,16614,0,gasoline,22.90,0,0
+Vandura G3500,GMC,UHG-551,Purple,1996,24147,0,diesel,41.38,0,0
+1500,Chevrolet,HIV-451,Red,1993,77479,1,hybrid,48.46,20971720,22/9/2024
+Ram Wagon B150,Dodge,KYL-320,Yellow,1992,68006,1,electric,45.53,8021800,17/12/2023
+1500,GMC,VJH-930,Blue,1996,93431,0,gasoline,40.42,0,0
+Yukon,GMC,QEE-067,Maroon,2008,72498,1,diesel,23.72,14266292,1/11/2024
+Yaris,Toyota,JCS-523,Aquamarine,2007,38832,0,hybrid,12.19,0,0
+Eclipse,Mitsubishi,GDS-665,Teal,2012,96107,0,electric,24.71,0,0
+G3,Pontiac,ANA-793,Blue,2009,73054,1,gasoline,22.51,7793987,15/11/2024
+Riviera,Buick,TTN-791,Pink,1989,83511,1,diesel,12.47,10084271,12/3/2024
+GS,Lexus,PTJ-971,Blue,2010,68306,0,hybrid,21.78,0,0
+GX,Lexus,GPQ-033,Fuscia,2005,26949,1,electric,23.72,27272925,3/1/2024
+Pajero,Mitsubishi,JMB-538,Green,1998,16673,0,gasoline,49.68,0,0
+S40,Volvo,UFN-459,Purple,2009,98725,0,diesel,31.20,0,0
+Mirage,Mitsubishi,DSD-779,Khaki,1987,51101,0,hybrid,20.25,0,0
+Santa Fe,Hyundai,PAR-748,Green,2002,7407,0,electric,26.00,0,0
+M-Class,Mercedes-Benz,VDS-250,Purple,2012,88696,0,gasoline,37.54,0,0
+Sportage,Kia,JHE-506,Aquamarine,1995,60766,0,diesel,44.17,0,0
+9-7X,Saab,VXC-712,Maroon,2008,83570,0,hybrid,26.50,0,0
+Silverado 2500,Chevrolet,BDO-572,Indigo,2012,47470,1,electric,33.19,27031664,4/8/2024
+Tacoma,Toyota,UQQ-411,Khaki,2002,95520,0,gasoline,10.32,0,0
+525,BMW,GHP-108,Orange,2003,32675,1,diesel,33.15,15441380,27/2/2024
+Axiom,Isuzu,QNE-555,Orange,2002,77982,0,hybrid,34.76,0,0
+Impreza,Subaru,IFK-109,Red,2012,89651,1,electric,22.93,21086138,7/11/2024
+Ram 2500,Dodge,GLS-396,Puce,2003,70437,0,gasoline,37.73,0,0
+Element,Honda,QQZ-349,Puce,2006,32519,1,diesel,42.02,18854177,4/6/2024
+Taurus,Ford,YQT-341,Green,2007,31394,0,hybrid,31.69,0,0
+Ram 2500,Dodge,DGC-794,Orange,2006,2168,0,electric,30.21,0,0
+TSX,Acura,JAK-674,Purple,2006,30776,1,gasoline,31.63,27084796,30/11/2023
+Grand Prix,Pontiac,YXL-212,Turquoise,1970,84149,0,diesel,36.61,0,0
+850,Volvo,XKB-285,Teal,1994,55066,0,hybrid,31.04,0,0
+Somerset,Buick,HSZ-250,Puce,1986,81734,1,electric,46.51,22590388,18/5/2024
+Sable,Mercury,ARQ-629,Goldenrod,1992,76789,1,gasoline,28.12,29248039,12/3/2024
+Continental,Lincoln,ABB-443,Maroon,1988,69647,0,diesel,21.51,0,0
+M,Infiniti,GOM-374,Purple,2011,31234,1,hybrid,26.46,28137253,6/1/2024
+C70,Volvo,LCS-831,Maroon,2001,42269,0,electric,47.20,0,0
+FX,Infiniti,QQR-656,Crimson,2006,83377,1,gasoline,49.24,13106196,6/3/2024
+Prius,Toyota,NHE-902,Maroon,2010,61483,0,diesel,27.41,0,0
+E-Class,Mercedes-Benz,PNC-046,Purple,2009,74389,1,hybrid,49.73,11751667,8/4/2024
+3500 Club Coupe,GMC,DCI-316,Blue,1998,96179,1,electric,27.96,26487771,19/11/2023
+Caravan,Dodge,KGP-875,Green,2005,48668,1,gasoline,30.14,16146785,3/3/2024
+Ridgeline,Honda,UZL-506,Blue,2010,95161,1,diesel,11.23,14076477,26/5/2024
+LeMans,Pontiac,CIC-028,Goldenrod,1991,7829,1,hybrid,43.66,20870707,16/8/2024
+Virage,Aston Martin,DFB-966,Yellow,2012,86525,0,electric,15.36,0,0
+Mazdaspeed 3,Mazda,OWE-339,Mauv,2012,33420,0,gasoline,16.17,0,0
+Caravan,Dodge,ZRL-290,Goldenrod,1998,81374,0,diesel,19.98,0,0
+Sunfire,Pontiac,KTB-333,Khaki,1998,63722,0,hybrid,12.75,0,0
+Rio,Kia,ZTG-807,Purple,2011,75761,1,electric,47.69,20181707,7/4/2024
+F350,Ford,WAG-876,Aquamarine,2006,55100,0,gasoline,19.62,0,0
+Spyder,Maserati,XTL-717,Aquamarine,2003,86370,1,diesel,18.40,25256898,27/11/2023
+5 Series,BMW,KHL-841,Goldenrod,1999,96855,0,hybrid,21.35,0,0
+Vitara,Suzuki,GHY-683,Maroon,1999,84423,1,electric,24.53,20346843,5/1/2025
+Ram Van 2500,Dodge,WZF-580,Fuscia,1998,29558,0,gasoline,11.33,0,0
+Legend,Acura,UUW-152,Indigo,1995,75714,0,diesel,20.96,0,0
+Golf,Volkswagen,LKT-443,Pink,1992,59309,1,hybrid,12.22,7530288,17/10/2024
+Vision,Eagle,TJF-605,Purple,1996,43932,0,electric,48.51,0,0
+Cooper Clubman,MINI,UEY-533,Blue,2011,10866,0,gasoline,23.69,0,0
+Dakota,Dodge,CPI-447,Crimson,1999,18933,1,diesel,21.36,10510603,26/11/2023
+Pilot,Honda,FZZ-868,Khaki,2006,18737,1,hybrid,32.36,14344696,9/6/2024
+Cirrus,Chrysler,LFS-973,Maroon,1998,35881,0,electric,35.51,0,0
+Integra,Acura,BTF-846,Crimson,1988,80277,0,gasoline,42.16,0,0
+Concorde,Chrysler,QOC-081,Purple,1994,12899,1,diesel,23.88,12132360,4/9/2024
+Frontier,Nissan,RKU-431,Purple,2005,66703,0,hybrid,12.71,0,0
+Phantom,Rolls-Royce,HKL-906,Fuscia,2010,90847,1,electric,11.48,20194766,13/8/2024
+Cayman,Porsche,PCO-022,Red,2012,30561,0,gasoline,17.18,0,0
+Voyager,Plymouth,PFH-843,Mauv,1996,98401,0,diesel,17.52,0,0
+XT,Subaru,DQF-323,Teal,1986,48624,0,hybrid,26.73,0,0
+Celica,Toyota,DDO-847,Blue,2001,78528,0,electric,40.19,0,0
+A8,Audi,MZE-412,Indigo,2007,90677,1,gasoline,26.71,9220973,17/8/2024
+Type 2,Volkswagen,BWU-823,Violet,1986,92668,1,diesel,10.70,20236177,3/11/2024
+Celica,Toyota,QKA-160,Indigo,2002,98826,1,hybrid,40.19,19973852,5/4/2024
+Corvette,Chevrolet,UUF-355,Goldenrod,1975,91834,0,electric,49.14,0,0
+Explorer Sport Trac,Ford,HOK-359,Fuscia,2002,21721,0,gasoline,44.54,0,0
+Biturbo,Maserati,DOQ-172,Orange,1987,39372,1,diesel,45.97,19615582,19/8/2024
+Amanti,Kia,VRQ-468,Fuscia,2006,89561,0,hybrid,25.17,0,0
+914,Porsche,HQF-085,Green,1970,54344,0,electric,20.47,0,0
+LS,Lexus,IGR-582,Crimson,1996,23097,0,gasoline,39.05,0,0
+Explorer,Ford,NTC-047,Maroon,1993,28869,0,diesel,13.94,0,0
+MKX,Lincoln,XXX-920,Indigo,2011,87744,0,hybrid,29.54,0,0
+Sebring,Chrysler,XCO-168,Orange,2005,55476,0,electric,12.52,0,0
+Regal,Buick,YUA-230,Mauv,2003,27489,1,gasoline,21.71,16152223,22/10/2024
+Impala,Chevrolet,FAW-564,Orange,2007,65429,1,diesel,32.71,17301997,10/1/2024
+Pathfinder,Nissan,SVE-986,Yellow,2011,81854,0,hybrid,49.38,0,0
+Escalade EXT,Cadillac,YML-149,Turquoise,2008,12632,0,electric,12.29,0,0
+Reatta,Buick,VLT-381,Puce,1991,38173,1,gasoline,43.20,18140306,7/7/2024
+900,Saab,XIZ-050,Yellow,1988,71528,1,diesel,25.63,28446509,20/11/2023
+Viper RT/10,Dodge,NNC-790,Yellow,1993,26505,0,hybrid,39.01,0,0
+B-Series,Mazda,YCF-014,Pink,1991,83968,0,electric,18.68,0,0
+Jetta,Volkswagen,GOZ-086,Violet,1993,85279,0,gasoline,19.25,0,0
+A8,Audi,KBJ-359,Indigo,2006,10756,1,diesel,46.31,25714771,2/5/2024
+Town & Country,Chrysler,MAF-747,Khaki,2000,6933,0,hybrid,20.10,0,0
+LFA,Lexus,GRM-314,Crimson,2012,5818,1,electric,10.34,24566547,25/10/2024
+Fox,Volkswagen,MCJ-062,Violet,1988,54970,1,gasoline,31.70,14455513,18/12/2023
+Corvette,Chevrolet,XEH-183,Puce,2005,63262,0,diesel,46.00,0,0
+Navigator,Lincoln,MOU-592,Mauv,2005,60552,1,hybrid,15.86,14192666,20/5/2024
+Sienna,Toyota,KIK-377,Blue,2004,66178,0,electric,39.71,0,0
+Grand Marquis,Mercury,UFG-516,Aquamarine,1993,83812,0,gasoline,33.28,0,0
+Mazdaspeed 3,Mazda,DCY-141,Maroon,2010,48575,0,diesel,23.38,0,0
+90,Audi,XFB-383,Puce,1991,66727,0,hybrid,15.63,0,0
+Jetta,Volkswagen,LOT-122,Indigo,2004,30957,0,electric,34.57,0,0
+Grand Caravan,Dodge,NJG-319,Orange,2009,66329,1,gasoline,15.30,28433990,23/5/2024
+Focus,Ford,IMO-872,Violet,2002,33694,1,diesel,37.61,21878716,6/9/2024
+Impreza,Subaru,EYG-355,Mauv,2011,42265,1,hybrid,24.54,27231742,27/7/2024
+Civic,Honda,SBR-242,Mauv,2005,71352,1,electric,46.51,25133092,22/7/2024
+Pilot,Honda,NLB-507,Crimson,2011,52999,0,gasoline,18.36,0,0
+F350,Ford,ESE-884,Violet,1993,98882,1,diesel,18.80,27437211,6/1/2025
+Challenger,Dodge,MNM-268,Red,2010,62659,1,hybrid,40.83,10989399,17/2/2024
+928,Porsche,FWN-639,Teal,1989,26072,0,electric,27.86,0,0
+929,Mazda,MXP-713,Puce,1989,61049,0,gasoline,30.01,0,0
+Escalade ESV,Cadillac,XMO-479,Red,2003,44937,0,diesel,43.85,0,0
+LS,Lexus,CLJ-114,Maroon,2009,86594,0,hybrid,46.21,0,0
+Crown Victoria,Ford,LBQ-658,Indigo,2004,51209,0,electric,36.89,0,0
+Xtra,Toyota,GLW-376,Goldenrod,1992,87774,1,gasoline,45.35,18373904,3/1/2025
+i-Series,Isuzu,SBL-677,Puce,2008,29424,1,diesel,38.18,19131411,14/8/2024
+SM,Citro�n,YJF-039,Violet,1972,53003,1,hybrid,33.44,19822919,11/12/2024
+Tribute,Mazda,XJK-643,Crimson,2004,75097,1,electric,39.18,16797329,14/8/2024
+929,Mazda,HXP-152,Khaki,1990,21769,1,gasoline,40.65,20985323,30/6/2024
+Boxster,Porsche,NBZ-115,Purple,1997,15031,0,diesel,18.77,0,0
+Discovery,Land Rover,FDN-354,Green,1999,91363,1,hybrid,19.54,19515722,30/11/2024
+Freestar,Ford,UDL-924,Pink,2007,74042,0,electric,40.75,0,0
+Concorde,Chrysler,BZD-213,Blue,1994,14183,0,gasoline,48.18,0,0
+Countryman,MINI,TWX-422,Orange,2011,65777,0,diesel,13.14,0,0
+Land Cruiser,Toyota,VLA-694,Turquoise,1992,57255,1,hybrid,27.05,14562166,6/11/2024
+M,Infiniti,GMF-753,Mauv,2012,25273,0,electric,30.41,0,0
+I,Infiniti,PPQ-692,Goldenrod,2004,59602,0,gasoline,40.33,0,0
+G-Series G30,Chevrolet,RHL-957,Puce,1992,98434,0,diesel,35.81,0,0
+Sierra 3500,GMC,TZD-077,Fuscia,2000,31456,1,hybrid,42.72,12722129,14/3/2024
+Tracer,Mercury,BGV-742,Indigo,1992,37257,1,electric,21.11,28167318,6/12/2023
+RX-8,Mazda,FBO-026,Maroon,2009,40095,0,gasoline,22.74,0,0
+VehiCROSS,Isuzu,CQT-833,Crimson,1999,33613,1,diesel,14.88,12993276,27/2/2024
+Cutlass,Oldsmobile,GYC-001,Goldenrod,1998,1569,0,hybrid,36.53,0,0
+Corvette,Chevrolet,MNA-452,Indigo,1963,71105,0,electric,35.85,0,0
+Esprit,Lotus,IDA-339,Maroon,1992,69584,0,gasoline,17.00,0,0
+Electra,Buick,BYC-441,Puce,1989,87387,0,diesel,38.41,0,0
+Passat,Volkswagen,ECE-494,Yellow,2003,40778,0,hybrid,41.65,0,0
+Galant,Mitsubishi,DBY-448,Blue,2003,63369,1,electric,15.91,10040237,5/12/2023
+1500,GMC,UQT-548,Aquamarine,1997,28058,0,gasoline,32.95,0,0
+Spyder,Maserati,MXF-359,Blue,2003,21990,0,diesel,43.05,0,0
+SC,Lexus,HSR-226,Puce,1993,91403,0,hybrid,46.72,0,0
+MDX,Acura,FFC-667,Teal,2003,53840,1,electric,40.57,15151886,13/11/2023
+Canyon,GMC,DMQ-339,Khaki,2009,33411,1,gasoline,10.63,9867505,27/1/2024
+Thunderbird,Ford,ZJV-338,Purple,1983,63280,1,diesel,24.04,10474776,12/12/2023
+Camaro,Chevrolet,YJA-085,Mauv,1972,28433,0,hybrid,47.54,0,0
+Sequoia,Toyota,XTU-060,Orange,2010,49141,0,electric,28.72,0,0
+Lancer,Mitsubishi,HPY-791,Maroon,2008,36078,0,gasoline,10.19,0,0
+300ZX,Nissan,MJJ-694,Blue,1992,54292,0,diesel,38.61,0,0
+LS,Lexus,HXK-916,Fuscia,1990,66285,0,hybrid,39.39,0,0
+350Z,Nissan,WGO-736,Pink,2003,45841,0,electric,44.62,0,0
+Altima,Nissan,ZGE-013,Indigo,2004,86686,1,gasoline,32.18,10719775,3/7/2024
+Tribeca,Subaru,EII-751,Green,2006,98507,0,diesel,27.58,0,0
+Camry,Toyota,WQV-721,Red,2000,92966,0,hybrid,11.08,0,0
+Yukon XL 1500,GMC,OJY-980,Fuscia,2011,52153,0,electric,24.14,0,0
+Frontier,Nissan,ZUM-861,Crimson,2010,5471,1,gasoline,15.81,29543881,15/5/2024
+F150,Ford,PUK-285,Blue,2005,56982,1,diesel,30.13,11956586,24/5/2024
+Diamante,Mitsubishi,HSI-656,Green,2002,17470,0,hybrid,19.29,0,0
+Town & Country,Chrysler,TIL-638,Green,2010,94833,1,electric,11.29,27972844,29/12/2023
+Nuova 500,Fiat,UMC-494,Fuscia,2012,68153,0,gasoline,31.53,0,0
+Taurus,Ford,SMU-768,Blue,1997,49745,0,diesel,32.89,0,0
+LR4,Land Rover,MOI-259,Blue,2012,54805,0,hybrid,14.51,0,0
+Pathfinder,Nissan,EYY-569,Aquamarine,2003,11698,1,electric,12.44,24567526,6/12/2023
+GL-Class,Mercedes-Benz,NJI-635,Khaki,2010,4055,0,gasoline,28.76,0,0
+B-Series,Mazda,NCP-123,Goldenrod,1988,34649,1,diesel,11.23,27735693,4/12/2023
+Odyssey,Honda,IXQ-493,Mauv,2000,9954,0,hybrid,34.93,0,0
+300M,Chrysler,VFF-359,Mauv,2000,78988,0,electric,18.00,0,0
+Regal,Buick,ATF-948,Violet,1992,98970,1,gasoline,26.80,15169795,21/12/2024
+Clubman,MINI,DPG-626,Red,2011,67990,1,diesel,37.01,27328155,14/1/2024
+Prius,Toyota,FVZ-317,Goldenrod,2008,45486,1,hybrid,22.30,18923411,19/10/2024
+Impreza,Subaru,LFJ-253,Khaki,2008,90925,1,electric,46.90,7910642,18/11/2023
+LaCrosse,Buick,GSP-055,Teal,2008,45878,1,gasoline,15.54,23351440,7/9/2024
+F350,Ford,FLD-598,Turquoise,2006,91376,0,diesel,14.53,0,0
+Durango,Dodge,XRM-757,Red,1998,53734,1,hybrid,23.09,12029536,31/12/2023
+A8,Audi,XXM-311,Crimson,2004,9805,1,electric,28.58,27418493,27/12/2024
+GT-R,Nissan,ODB-307,Fuscia,2011,76715,1,gasoline,39.44,20475864,24/10/2024
+3000GT,Mitsubishi,HMI-172,Maroon,1998,68679,1,diesel,37.39,23768649,30/7/2024
+Fillmore,Fillmore,KNQ-611,Puce,1960,31815,1,hybrid,40.38,26235619,27/11/2023
+New Beetle,Volkswagen,QJV-832,Pink,2003,12225,0,electric,10.34,0,0
+Equinox,Chevrolet,DCK-638,Orange,2005,36526,0,gasoline,12.66,0,0
+Element,Honda,SHG-900,Blue,2009,89174,1,diesel,13.56,23962693,16/5/2024
+M6,BMW,DYW-657,Purple,2006,18596,1,hybrid,28.77,22759781,18/7/2024
+Rio,Kia,LHL-566,Puce,2013,64751,0,electric,25.74,0,0
+G,Infiniti,BKV-397,Pink,2007,44195,0,gasoline,25.00,0,0
+Stratus,Dodge,AOM-070,Teal,1999,85396,1,diesel,47.45,25829769,31/1/2024
+Riviera,Buick,VQR-326,Crimson,1988,70110,0,hybrid,38.98,0,0
+TSX,Acura,KHA-050,Puce,2008,46345,0,electric,10.59,0,0
+XJ,Jaguar,CBS-453,Crimson,2012,87238,1,gasoline,23.87,15235596,4/7/2024
+Cobalt,Chevrolet,CGV-574,Pink,2010,33412,0,diesel,21.03,0,0
+Ram Van 3500,Dodge,MYY-181,Red,1996,64131,1,hybrid,17.02,11529457,8/1/2024
+E-350 Super Duty,Ford,TIP-419,Violet,2006,5560,0,electric,15.39,0,0
+X3,BMW,KEI-972,Goldenrod,2006,56824,1,gasoline,17.82,11217110,25/7/2024
+ES,Lexus,SZI-014,Pink,2005,46502,0,diesel,19.20,0,0
+Vitara,Suzuki,QBQ-977,Goldenrod,2000,21133,1,hybrid,19.95,20629389,25/6/2024
+Grand Am,Pontiac,BSI-506,Violet,2001,61670,1,electric,14.91,7616088,1/11/2024
+Savana 2500,GMC,UDU-988,Green,2009,73240,0,gasoline,23.38,0,0
+Sebring,Chrysler,BNT-237,Mauv,2000,70877,1,diesel,33.29,26526033,12/4/2024
+Diablo,Lamborghini,LDI-169,Maroon,1996,48543,1,hybrid,38.55,13116269,23/9/2024
+Caravan,Dodge,CAF-770,Crimson,2010,56550,1,electric,47.14,27580807,19/12/2023
+Savana 2500,GMC,PXB-126,Green,1998,94925,1,gasoline,32.44,19910995,14/2/2024
+G-Series G20,Chevrolet,TQK-226,Goldenrod,1992,16865,0,diesel,24.78,0,0
+A6,Audi,JGB-022,Aquamarine,2011,66890,1,hybrid,35.31,20022339,1/4/2024
+Skylark,Buick,VVF-974,Crimson,1992,79424,0,electric,20.22,0,0
+New Beetle,Volkswagen,UFQ-919,Puce,2008,56517,1,gasoline,37.59,17002869,31/12/2023
+Corolla,Toyota,CFF-512,Indigo,2003,80905,0,diesel,39.33,0,0
+RAV4,Toyota,OIH-218,Indigo,2008,91764,1,hybrid,24.52,10974557,23/6/2024
+Stylus,Isuzu,PXQ-999,Orange,1993,14620,1,electric,29.86,10287408,2/8/2024
+Sienna,Toyota,XZV-090,Orange,2000,26390,0,gasoline,22.92,0,0
+Vision,Eagle,KHE-831,Violet,1994,53519,1,diesel,45.70,27533976,23/5/2024
+Lynx,Mercury,DTI-723,Turquoise,1984,71317,0,hybrid,18.52,0,0
+Coachbuilder,Buick,WZM-540,Pink,1995,55079,1,electric,29.32,28580895,8/12/2024
+Accord,Honda,ZVU-936,Orange,1987,49155,0,gasoline,35.90,0,0
+Xterra,Nissan,OWI-895,Blue,2005,44702,1,diesel,31.85,7462951,4/1/2025
+Impreza,Subaru,HLX-720,Mauv,2009,59522,1,hybrid,43.25,15890872,3/10/2024
+New Beetle,Volkswagen,IPF-230,Khaki,2012,86727,0,electric,13.11,0,0
+D250 Club,Dodge,VKX-609,Blue,1993,87343,1,gasoline,45.87,25983569,7/3/2024
+Econoline E150,Ford,TIQ-548,Red,1993,99326,1,diesel,42.08,11254561,19/4/2024
+E350,Ford,CXK-644,Puce,2010,84261,1,hybrid,49.32,18093157,3/1/2025
+Tribute,Mazda,WKO-190,Crimson,2002,86828,1,electric,26.83,18728595,13/10/2024
+Sonoma,GMC,PZU-082,Goldenrod,2003,29964,0,gasoline,36.74,0,0
+Corvette,Chevrolet,XJA-078,Khaki,1998,44202,1,diesel,27.31,18800664,20/12/2024
+Capri,Mercury,BSX-219,Orange,1993,15030,1,hybrid,49.31,24036412,26/5/2024
+Edge,Ford,BHI-713,Violet,2007,55029,0,electric,33.72,0,0
+Yukon,GMC,FDF-555,Crimson,2011,21385,1,gasoline,48.17,24244799,25/1/2024
+Sprinter 2500,Mercedes-Benz,XRW-107,Fuscia,2011,99219,1,diesel,24.52,12458613,18/8/2024
+B2600,Mazda,HJD-308,Pink,1989,37265,0,hybrid,11.68,0,0
+Aero 8,Morgan,AIE-422,Aquamarine,2007,96869,0,electric,33.77,0,0
+SLR McLaren,Mercedes-Benz,GKJ-166,Maroon,2009,33177,0,gasoline,32.02,0,0
+Cutlass Cruiser,Oldsmobile,YYI-039,Purple,1993,97088,0,diesel,26.50,0,0
+M-Class,Mercedes-Benz,THI-713,Green,2005,16724,1,hybrid,25.61,20731697,7/5/2024
+928,Porsche,IRQ-242,Orange,1987,61599,1,electric,27.17,9604994,29/12/2024
+X3,BMW,MWI-607,Blue,2010,57251,1,gasoline,10.44,28306651,31/10/2024
+RX,Lexus,NZA-830,Violet,2000,34138,1,diesel,27.96,24707602,4/8/2024
+350Z,Nissan,QJI-374,Teal,2007,79768,0,hybrid,10.38,0,0
+2500 Club Coupe,GMC,QKI-351,Goldenrod,1994,87297,0,electric,34.96,0,0
+3000GT,Mitsubishi,TDP-024,Maroon,1998,67503,0,gasoline,14.58,0,0
+1500,Chevrolet,VKQ-031,Yellow,1997,66989,0,diesel,29.73,0,0
+Viper,Dodge,BKA-883,Fuscia,2009,91707,0,hybrid,45.60,0,0
+Xtra,Toyota,LWC-532,Orange,1995,66228,0,electric,32.16,0,0
+Quattroporte,Maserati,XKI-142,Fuscia,1986,89900,1,gasoline,45.52,7851182,13/8/2024
+Bonneville,Pontiac,DJJ-245,Green,1994,89561,0,diesel,35.93,0,0
+Elantra,Hyundai,ZIY-312,Aquamarine,2005,76214,0,hybrid,24.54,0,0
+Chariot,Mitsubishi,AHO-647,Violet,1996,31032,0,electric,41.61,0,0
+CR-X,Honda,YFJ-245,Green,1988,53471,1,gasoline,12.09,17617905,7/5/2024
+100,Audi,RDL-213,Pink,1992,86946,0,diesel,32.98,0,0
+Vision,Eagle,ZFC-107,Green,1994,97640,1,hybrid,14.55,10789836,3/9/2024
+Safari,GMC,KFI-482,Mauv,1998,18055,1,electric,31.83,11249893,3/8/2024
+Camaro,Chevrolet,WUN-861,Red,1976,59920,1,gasoline,18.03,20274095,14/4/2024
+Escalade,Cadillac,MZL-990,Fuscia,2000,6276,1,diesel,45.23,22498531,3/7/2024
+Colorado,Chevrolet,VFN-204,Maroon,2010,65981,0,hybrid,15.70,0,0
+C30,Volvo,XLJ-384,Green,2011,24306,0,electric,47.77,0,0
+Quest,Nissan,GWP-015,Indigo,2009,21041,0,gasoline,38.57,0,0
+Outlander,Mitsubishi,ERC-611,Puce,2012,16236,1,diesel,36.95,17918219,5/8/2024
+Century,Buick,LMM-837,Fuscia,1989,19019,0,hybrid,13.10,0,0
+Impulse,Isuzu,EMG-190,Red,1992,33936,0,electric,10.42,0,0
+Tiburon,Hyundai,ULS-600,Turquoise,2008,92953,1,gasoline,48.25,9693049,17/11/2024
+Armada,Nissan,AVK-627,Pink,2011,45571,0,diesel,43.37,0,0
+1 Series,BMW,LXH-636,Indigo,2010,65199,0,hybrid,33.28,0,0
+Firefly,Pontiac,KBP-272,Crimson,1984,43489,1,electric,37.29,8306842,29/1/2024
+DeVille,Cadillac,EOX-488,Indigo,2001,58772,0,gasoline,44.47,0,0
+Neon,Dodge,JHZ-432,Purple,2004,49295,0,diesel,13.56,0,0
+Legacy,Subaru,GVG-488,Purple,2008,41388,0,hybrid,44.02,0,0
+Neon,Dodge,TII-276,Pink,2000,60703,1,electric,28.41,23936282,15/12/2024
+Forester,Subaru,QJK-307,Mauv,1998,87488,1,gasoline,15.72,29639677,5/12/2023
+Escort,Ford,QGL-484,Pink,2000,70748,0,diesel,34.29,0,0
+Electra,Buick,WOO-946,Violet,1987,52258,1,hybrid,32.73,13013443,1/1/2024
+Camry Solara,Toyota,PWA-050,Puce,2008,52884,0,electric,23.99,0,0
+del Sol,Honda,FTX-294,Goldenrod,1995,40973,0,gasoline,44.78,0,0
+Cooper,MINI,ULO-735,Fuscia,2009,83853,0,diesel,26.56,0,0
+Range Rover,Land Rover,WPP-828,Maroon,1989,75700,0,hybrid,40.99,0,0
+G,Infiniti,JMF-655,Teal,1992,60838,1,electric,26.58,29953241,30/12/2024
+Jetta,Volkswagen,VBS-230,Crimson,2008,90588,0,gasoline,48.53,0,0
+3 Series,BMW,JXA-414,Red,2009,22771,1,diesel,36.82,20604264,7/10/2024
+Contour,Ford,MVZ-357,Red,1995,81549,0,hybrid,48.53,0,0
+Skyhawk,Buick,ODW-803,Orange,1986,51279,0,electric,21.59,0,0
+944,Porsche,UKK-202,Red,1988,74400,1,gasoline,47.03,29918219,24/1/2024
+Firebird,Pontiac,EWI-642,Purple,1986,50830,0,diesel,17.98,0,0
+TSX,Acura,WZY-112,Puce,2004,48575,0,hybrid,32.51,0,0
+Camaro,Chevrolet,QAV-517,Fuscia,1996,28179,0,electric,44.20,0,0
+SL-Class,Mercedes-Benz,YJB-692,Mauv,2005,64743,0,gasoline,32.00,0,0
+Cavalier,Chevrolet,QCW-361,Green,1992,64841,1,diesel,20.72,18841938,4/10/2024
+E-Class,Mercedes-Benz,EEZ-375,Violet,2010,50119,0,hybrid,35.13,0,0
+Corvette,Chevrolet,SMV-500,Crimson,1967,81283,1,electric,36.78,8413448,23/12/2023
+Viper,Dodge,ESF-911,Fuscia,2001,40901,1,gasoline,22.99,17759269,9/10/2024
+7 Series,BMW,UOT-779,Mauv,1996,47700,0,diesel,49.41,0,0
+Grand Cherokee,Jeep,LQU-516,Crimson,2009,50220,1,hybrid,11.67,13960941,19/12/2024
+Sonoma Club Coupe,GMC,FVM-598,Yellow,1993,1092,0,electric,32.13,0,0
+Mazda5,Mazda,SLH-430,Mauv,2008,14762,0,gasoline,17.31,0,0
+Ram 1500,Dodge,VAA-811,Orange,2005,94643,1,diesel,46.73,20473070,6/7/2024
+Prelude,Honda,IQE-540,Turquoise,1984,25602,0,hybrid,47.85,0,0
+C-Class,Mercedes-Benz,LKH-416,Yellow,2004,69302,1,electric,14.61,28538718,10/8/2024
+Astro,Chevrolet,VXW-927,Khaki,2000,33759,1,gasoline,11.30,19722083,16/1/2024
+911,Porsche,PFJ-232,Violet,1992,78845,1,diesel,43.17,23826102,29/4/2024
+Passat,Volkswagen,AMR-062,Yellow,1994,9527,0,hybrid,15.98,0,0
+Sequoia,Toyota,AQR-904,Green,2010,71969,1,electric,34.49,24190184,6/12/2024
+Colt,Dodge,ZBI-186,Aquamarine,1989,79601,0,gasoline,14.88,0,0
+Accent,Hyundai,DAF-938,Teal,2013,26014,0,diesel,36.75,0,0
+Sierra 3500,GMC,CEW-940,Goldenrod,2010,83755,1,hybrid,37.71,17073952,30/7/2024
+New Beetle,Volkswagen,QMF-671,Crimson,2009,42622,1,electric,16.95,29310420,3/3/2024
+1500 Club Coupe,GMC,RTT-460,Purple,1992,32707,0,gasoline,30.67,0,0
+Commander,Jeep,XER-627,Indigo,2008,87542,1,diesel,48.95,20685436,19/8/2024
+Rendezvous,Buick,BVW-117,Blue,2005,8460,1,hybrid,12.42,8134462,25/11/2023
+G-Series G10,Chevrolet,UWU-080,Red,1993,60894,1,electric,24.03,28233257,1/10/2024
+Explorer,Ford,CZH-750,Mauv,2013,81939,0,gasoline,18.93,0,0
+E150,Ford,JGW-914,Crimson,2010,84589,0,diesel,34.17,0,0
+Tacoma,Toyota,ZCN-329,Aquamarine,2005,71847,1,hybrid,20.60,19446131,2/1/2025
+Viper,Dodge,ZAK-111,Green,1992,19832,1,electric,13.73,14532466,10/2/2024
+Space,Mitsubishi,BHR-474,Violet,1984,14111,0,gasoline,21.82,0,0
+X-Type,Jaguar,VWT-695,Goldenrod,2002,10823,1,diesel,47.02,12637504,7/10/2024
+Villager,Mercury,DED-540,Crimson,1995,86584,1,hybrid,16.63,10798464,3/8/2024
+Sonic,Chevrolet,GDS-806,Mauv,2012,61692,0,electric,18.74,0,0
+Titan,Nissan,FWC-857,Purple,2009,18252,0,gasoline,29.38,0,0
+Outlander Sport,Mitsubishi,JHP-690,Khaki,2011,52540,0,diesel,37.38,0,0
+Sentra,Nissan,NDA-617,Green,2009,16059,0,hybrid,22.84,0,0
+Regal,Buick,HYJ-269,Maroon,2003,79130,1,electric,22.86,21171618,10/10/2024
+Continental GT,Bentley,KAL-902,Turquoise,2008,36589,1,gasoline,30.54,11857602,30/5/2024
+Murci�lago,Lamborghini,VVB-203,Green,2002,35021,0,diesel,34.95,0,0
+TT,Audi,FHJ-314,Turquoise,2003,55904,0,hybrid,21.00,0,0
+IS,Lexus,UNX-103,Khaki,2012,44292,1,electric,11.69,21759822,8/6/2024
+Grand Am,Pontiac,UHV-902,Orange,1993,94521,0,gasoline,16.36,0,0
+Villager,Mercury,RLI-827,Maroon,1996,57584,1,diesel,34.08,20056526,31/10/2024
+Escalade EXT,Cadillac,MCA-392,Violet,2011,8300,0,hybrid,35.34,0,0
+Corvette,Chevrolet,KEN-300,Orange,2006,32953,0,electric,26.09,0,0
+Relay,Saturn,FYT-507,Yellow,2006,93356,1,gasoline,41.39,28976318,28/7/2024
+Diamante,Mitsubishi,YXX-190,Indigo,2003,11176,1,diesel,47.63,24477889,27/4/2024
+SLK-Class,Mercedes-Benz,TCX-553,Goldenrod,1999,52663,0,hybrid,31.33,0,0
+Jetta,Volkswagen,RRB-359,Maroon,1997,1049,0,electric,12.89,0,0
+Eos,Volkswagen,XUE-521,Aquamarine,2011,28130,1,gasoline,49.01,21678341,30/6/2024
+New Beetle,Volkswagen,BOZ-680,Pink,2006,39920,0,diesel,49.36,0,0
+V50,Volvo,XNG-713,Blue,2005,92063,0,hybrid,20.13,0,0
+EX,Infiniti,VIY-942,Green,2008,43409,0,electric,27.15,0,0
+Camaro,Chevrolet,SDD-946,Goldenrod,1996,66196,1,gasoline,40.55,25797941,26/6/2024
+Windstar,Ford,FPP-085,Purple,2001,16944,0,diesel,42.76,0,0
+Expedition,Ford,AGH-177,Green,2008,5404,0,hybrid,12.40,0,0
+xB,Scion,IXR-362,Yellow,2010,12624,0,electric,38.08,0,0
+QX56,Infiniti,HJI-150,Turquoise,2012,18534,0,gasoline,48.08,0,0
+Thunderbird,Ford,AFR-876,Mauv,1995,35789,0,diesel,38.63,0,0
+Ram Van 3500,Dodge,XGT-353,Yellow,1998,23182,1,hybrid,17.44,27177022,19/10/2024
+1500,GMC,RYA-736,Pink,1998,57136,0,electric,22.58,0,0
+Vision,Eagle,NPQ-048,Violet,1995,6950,0,gasoline,21.73,0,0
+Courier,Ford,AUW-220,Blue,1989,28884,1,diesel,40.31,20355506,3/1/2024
+Silhouette,Oldsmobile,LDP-082,Green,1999,96238,1,hybrid,47.82,23557169,20/6/2024
+Caravan,Dodge,NRH-433,Orange,1997,50925,0,electric,16.50,0,0
+RVR,Mitsubishi,ZJQ-689,Maroon,1995,62564,0,gasoline,13.92,0,0
+LeSabre,Buick,JKI-492,Indigo,1988,64258,1,diesel,48.77,25060124,18/7/2024
+Clubman,MINI,OXV-348,Puce,2010,45477,1,hybrid,30.08,19868489,16/2/2024
+Corvette,Chevrolet,RPD-917,Goldenrod,1978,25975,0,electric,32.44,0,0
+Prius,Toyota,UIZ-960,Red,2001,39505,0,gasoline,33.35,0,0
+Commander,Jeep,CZW-326,Crimson,2006,25102,1,diesel,28.35,22015387,30/3/2024
+Bonneville,Pontiac,XJR-379,Khaki,1987,65656,0,hybrid,41.96,0,0
+Lancer Evolution,Mitsubishi,HNB-389,Khaki,2002,10518,0,electric,14.96,0,0
+Silverado 2500,Chevrolet,FTK-115,Orange,2004,41624,0,gasoline,15.23,0,0
+90,Audi,QZF-977,Red,1995,65474,0,diesel,37.85,0,0
+Malibu,Chevrolet,IZA-372,Aquamarine,2008,99869,1,hybrid,39.54,26316780,11/5/2024
+Journey,Dodge,BIY-453,Aquamarine,2010,24181,1,electric,28.33,24439195,28/11/2024
+Econoline E350,Ford,UIG-681,Pink,1994,1963,0,gasoline,49.70,0,0
+DTS,Cadillac,GLX-898,Orange,2008,48867,0,diesel,44.69,0,0
+Explorer,Ford,BXY-739,Crimson,2003,28367,1,hybrid,33.13,19624094,17/11/2023
+CR-V,Honda,YTR-147,Violet,2002,43230,0,electric,47.58,0,0
+Edge,Ford,CFH-848,Khaki,2010,8726,1,gasoline,12.64,24299287,2/11/2024
+Golf,Volkswagen,UDG-504,Teal,2011,15775,1,diesel,27.96,15560579,8/12/2023
+3500 Club Coupe,GMC,RTJ-026,Fuscia,1993,34752,0,hybrid,20.89,0,0
+Protege,Mazda,RGK-927,Maroon,1993,6620,1,electric,39.28,15602910,14/3/2024
+Mustang,Ford,ESB-258,Green,2006,61578,1,gasoline,36.82,18774102,11/2/2024
+Firebird Formula,Pontiac,KFP-132,Khaki,1999,71899,1,diesel,31.89,16236779,2/12/2024
+XC60,Volvo,IZC-027,Puce,2009,32128,1,hybrid,45.21,17945456,29/2/2024
+Land Cruiser,Toyota,OCW-314,Fuscia,1996,48606,1,electric,46.49,27074087,2/2/2024
+Lynx,Mercury,WNY-514,Pink,1985,32985,1,gasoline,23.43,9617166,8/4/2024
+Catera,Cadillac,LBJ-422,Teal,1997,77175,1,diesel,35.73,29323000,6/7/2024
+300M,Chrysler,ABM-209,Puce,2001,71400,0,hybrid,21.37,0,0
+Legend,Acura,ZZD-320,Khaki,1994,63653,0,electric,18.04,0,0
+Tracer,Mercury,ZZD-731,Goldenrod,1995,2756,1,gasoline,43.21,12749937,27/10/2024
+V50,Volvo,IEL-416,Green,2010,58844,1,diesel,12.25,28879155,12/6/2024
+E-Class,Mercedes-Benz,QCF-043,Maroon,1997,25227,0,hybrid,26.22,0,0
+G25,Infiniti,BVK-901,Yellow,2012,11439,0,electric,40.02,0,0
+Tundra,Toyota,LIH-579,Maroon,2012,4509,1,gasoline,17.07,27582306,23/5/2024
+Regal,Buick,LKX-292,Puce,1991,35604,1,diesel,24.00,20189999,19/2/2024
+E-Series,Ford,GTL-641,Indigo,2007,79370,1,hybrid,21.38,19041193,26/3/2024
+Grand Voyager,Plymouth,ZBK-711,Teal,1999,41235,0,electric,48.40,0,0
+Ascender,Isuzu,YBH-779,Maroon,2005,5098,0,gasoline,40.35,0,0
+Frontier,Nissan,IVD-926,Purple,2008,28517,1,diesel,16.74,21802327,9/7/2024
+Ram Van B250,Dodge,LOO-420,Khaki,1993,7606,1,hybrid,15.03,19857067,20/4/2024
+Civic,Honda,LSK-794,Orange,1996,25488,0,electric,34.13,0,0
+Explorer,Ford,HMO-083,Green,1993,99525,1,gasoline,28.53,19059066,20/11/2024
+Tacoma,Toyota,KUG-748,Orange,2007,89478,0,diesel,12.03,0,0
+S4,Audi,IWF-287,Green,2013,11686,1,hybrid,23.67,19128999,17/11/2023
+Sierra 1500,GMC,XBY-912,Purple,2006,14767,0,electric,37.31,0,0
+Truck,Mitsubishi,HAK-555,Purple,1987,81687,0,gasoline,17.76,0,0
+Cayenne,Porsche,WAS-688,Purple,2005,29819,0,diesel,48.03,0,0
+VUE,Saturn,EDI-285,Yellow,2009,40507,1,hybrid,30.72,25729121,18/11/2023
+Mazda6,Mazda,CFD-518,Violet,2007,74775,0,electric,25.48,0,0
+Ram 2500,Dodge,SMQ-998,Puce,1995,29372,0,gasoline,21.42,0,0
+Protege,Mazda,IRE-564,Red,1998,3209,0,diesel,40.64,0,0
+Veracruz,Hyundai,AKW-585,Teal,2008,57824,1,hybrid,45.97,29448883,13/5/2024
+CLK-Class,Mercedes-Benz,CQY-163,Crimson,2000,83891,0,electric,15.32,0,0
+Range Rover,Land Rover,DOE-635,Indigo,2008,45397,0,gasoline,22.87,0,0
+Lancer Evolution,Mitsubishi,RWI-033,Orange,2010,69596,1,diesel,46.03,26631925,25/2/2024
+Metro,Geo,HJB-347,Khaki,1992,17698,1,hybrid,26.94,24600422,22/11/2024
+Prizm,Geo,OAK-261,Pink,1994,17420,1,electric,15.18,7922806,15/10/2024
+Avalon,Toyota,VQW-326,Aquamarine,1997,22900,1,gasoline,18.60,25137605,14/5/2024
+500E,Mercedes-Benz,IUG-330,Red,1993,49112,1,diesel,41.41,9182986,19/11/2024
+928,Porsche,RJV-851,Teal,1991,65619,1,hybrid,43.01,21883639,9/6/2024
+Impulse,Isuzu,KVL-071,Fuscia,1992,62875,1,electric,18.34,22765836,20/12/2024
+Ram,Dodge,QCK-204,Blue,2010,26557,0,gasoline,11.20,0,0
+Ram Van 2500,Dodge,KCS-798,Puce,1996,69349,1,diesel,37.55,26975086,21/1/2024
+Accent,Hyundai,NFY-384,Blue,2008,90107,1,hybrid,10.34,20971694,10/8/2024
+Verona,Suzuki,NYC-827,Yellow,2006,69227,1,electric,39.66,26722135,15/5/2024
+Land Cruiser,Toyota,QVD-568,Maroon,2002,66867,0,gasoline,14.87,0,0
+Mighty Max,Mitsubishi,RIX-674,Red,1993,48991,0,diesel,47.13,0,0
+Mustang,Ford,GAL-528,Aquamarine,2008,52327,1,hybrid,41.18,21290781,18/12/2023
+Intrigue,Oldsmobile,HUN-980,Goldenrod,2000,68752,1,electric,31.72,24601539,21/11/2023
+Firebird Trans Am,Pontiac,MTW-069,Khaki,1986,31437,0,gasoline,20.77,0,0
+B-Series,Mazda,SJO-759,Violet,2006,16030,1,diesel,21.76,23405606,29/11/2023
+Corvette,Chevrolet,BKK-961,Violet,1964,49048,1,hybrid,34.07,16588216,19/12/2023
+TL,Acura,UYK-883,Teal,1999,49063,1,electric,26.67,9577213,7/5/2024
+Escalade,Cadillac,RCF-666,Puce,1999,29385,1,gasoline,33.81,18342394,23/3/2024
+A8,Audi,LJG-273,Maroon,1998,19102,1,diesel,23.64,14621914,17/8/2024
+Suburban 1500,Chevrolet,IXS-269,Green,2006,10939,0,hybrid,12.90,0,0
+Pathfinder,Nissan,YNA-391,Purple,1995,79432,0,electric,41.77,0,0
+G-Series 1500,Chevrolet,ZPU-293,Blue,1996,16589,0,gasoline,34.04,0,0
+EX,Infiniti,OGQ-463,Crimson,2010,75403,0,diesel,28.72,0,0
+57,Maybach,WIN-254,Red,2007,58930,0,hybrid,11.99,0,0
+V70,Volvo,XSU-273,Crimson,2001,98200,1,electric,36.00,22182848,28/11/2023
+Topaz,Mercury,XQJ-639,Mauv,1990,73984,1,gasoline,20.45,14467271,29/11/2024
+Cabriolet,Audi,BER-850,Crimson,1996,25822,1,diesel,17.68,23156141,6/8/2024
+CTS,Cadillac,EXD-075,Violet,2007,30114,0,hybrid,45.42,0,0
+Coupe Quattro,Audi,HDW-663,Crimson,1991,85785,1,electric,32.46,7185325,21/9/2024
+Uplander,Chevrolet,UTU-602,Blue,2005,48428,1,gasoline,27.10,21106494,2/12/2024
+Topaz,Mercury,QHH-785,Khaki,1994,70990,0,diesel,29.63,0,0
+Catera,Cadillac,EJB-745,Maroon,1998,22689,0,hybrid,13.01,0,0
+Ram 2500 Club,Dodge,MQV-460,Violet,1998,68607,1,electric,19.53,28991920,16/8/2024
+Dakota Club,Dodge,JGI-393,Aquamarine,1993,98684,1,gasoline,49.19,9834795,6/9/2024
+XF,Jaguar,QIQ-916,Khaki,2010,55709,1,diesel,30.15,18245134,30/6/2024
+900,Saab,WPS-200,Yellow,1990,59485,0,hybrid,40.74,0,0
+Ram 3500,Dodge,WFW-807,Maroon,2004,57743,1,electric,37.35,22527046,22/3/2024
+Corvette,Chevrolet,ARH-769,Indigo,1998,31170,1,gasoline,23.05,20379484,25/2/2024
+Sprinter,Dodge,MYF-066,Blue,2006,97053,0,diesel,27.05,0,0
+RL,Acura,VBR-373,Red,2011,80872,0,hybrid,28.50,0,0
+Grand Marquis,Mercury,XOT-019,Mauv,1998,42477,0,electric,29.27,0,0
+S70,Volvo,NLH-896,Aquamarine,1999,28920,0,gasoline,34.18,0,0
+Catera,Cadillac,VDM-469,Puce,1997,61786,1,diesel,42.31,10900333,28/8/2024
+Boxster,Porsche,UWL-515,Goldenrod,2005,18603,0,hybrid,49.12,0,0
+Navigator,Lincoln,FLO-636,Violet,2009,99784,1,electric,41.27,27031913,7/8/2024
+Firefly,Pontiac,GBZ-457,Purple,1986,76136,1,gasoline,35.30,23927068,20/5/2024
+Cherokee,Jeep,PAA-519,Maroon,2001,86059,0,diesel,38.45,0,0
+E-Class,Mercedes-Benz,RNZ-113,Purple,2002,69812,0,hybrid,27.06,0,0
+Town & Country,Chrysler,HYZ-341,Turquoise,2010,27114,1,electric,15.55,8732236,12/10/2024
+STS-V,Cadillac,ZFH-333,Yellow,2006,8221,1,gasoline,24.30,25933727,23/7/2024
+Town & Country,Chrysler,HYU-292,Pink,1993,51158,0,diesel,28.58,0,0
+Forester,Subaru,WAA-488,Blue,2011,13608,0,hybrid,24.13,0,0
+B-Series Plus,Mazda,NAQ-408,Violet,2000,59707,1,electric,41.07,23232154,30/4/2024
+9-May,Saab,HQW-924,Aquamarine,1999,98329,0,gasoline,18.84,0,0
+4Runner,Toyota,GVV-357,Goldenrod,2002,45567,1,diesel,44.00,23993866,10/3/2024
+Equator,Suzuki,ENS-909,Aquamarine,2011,52852,0,hybrid,30.58,0,0
+Cherokee,Jeep,DAH-673,Mauv,2000,83437,1,electric,25.69,22811228,9/2/2024
+HHR,Chevrolet,RGO-903,Aquamarine,2009,9080,0,gasoline,29.93,0,0
+164,Alfa Romeo,AMK-178,Goldenrod,1992,91935,0,diesel,28.69,0,0
+TL,Acura,GTD-229,Purple,2010,69602,0,hybrid,32.48,0,0
+Accord,Honda,HLM-110,Crimson,2011,39261,0,electric,28.80,0,0
+Avalanche 2500,Chevrolet,AUF-657,Puce,2002,51589,0,gasoline,35.50,0,0
+W126,Mercedes-Benz,NJV-280,Crimson,1981,11413,1,diesel,36.62,10553908,6/12/2023
+Continental GTC,Bentley,RSO-792,Maroon,2010,89468,0,hybrid,29.80,0,0
+Montero,Mitsubishi,IQL-823,Indigo,2002,33434,0,electric,41.05,0,0
+Crown Victoria,Ford,ACE-373,Yellow,1996,60557,1,gasoline,27.91,27305173,1/9/2024
+Navajo,Mazda,RAN-941,Puce,1991,10330,0,diesel,22.26,0,0
+Sentra,Nissan,RPS-535,Pink,1999,95263,0,hybrid,10.21,0,0
+Pathfinder,Nissan,CXE-284,Pink,2004,66595,1,electric,13.67,20737756,21/8/2024
+Mazda6,Mazda,LJM-255,Violet,2012,29929,1,gasoline,32.84,22073122,17/11/2023
+Passat,Volkswagen,JPQ-006,Mauv,1999,22179,0,diesel,13.76,0,0
+Achieva,Oldsmobile,FGO-605,Fuscia,1995,99640,0,hybrid,32.33,0,0
+Trooper,Isuzu,NNF-024,Puce,1999,31675,1,electric,38.55,11003000,11/12/2023
+Century,Buick,DVE-466,Yellow,1989,71030,1,gasoline,46.85,11563217,25/1/2024
+Expo,Mitsubishi,FHL-250,Teal,1994,42864,0,diesel,12.75,0,0
+Continental GT,Bentley,ZGX-803,Maroon,2010,54854,0,hybrid,40.24,0,0
+D250,Dodge,FMC-114,Fuscia,1992,61493,0,electric,11.72,0,0
+LS,Lincoln,ISB-853,Yellow,2001,50041,1,gasoline,13.64,12051348,25/12/2023
+J,Infiniti,CQO-869,Maroon,1997,99655,0,diesel,39.62,0,0
+Sonata,Hyundai,SSP-330,Yellow,2013,61927,0,hybrid,10.20,0,0
+300,Chrysler,SGL-047,Indigo,1999,17306,1,electric,43.45,26714660,28/9/2024
+Avenger,Dodge,NSJ-534,Mauv,2000,66889,1,gasoline,15.99,20829223,27/4/2024
+LaCrosse,Buick,HPH-318,Green,2007,76695,0,diesel,37.86,0,0
+Discovery Series II,Land Rover,AII-836,Maroon,1999,66796,1,hybrid,49.26,15156996,28/12/2023
+Cougar,Mercury,OPC-660,Maroon,1988,31806,0,electric,30.77,0,0
+Quest,Nissan,SFZ-859,Teal,1998,20518,1,gasoline,31.26,11524241,9/9/2024
+Mustang,Ford,URD-572,Blue,2011,31328,0,diesel,31.18,0,0
+Rogue,Nissan,KTP-447,Aquamarine,2011,10242,0,hybrid,28.83,0,0
+Oasis,Isuzu,DSX-648,Violet,1997,75669,0,electric,28.39,0,0
+Countach,Lamborghini,MXD-586,Teal,1988,60325,1,gasoline,15.21,24698310,15/9/2024
+Countryman,MINI,RZH-432,Violet,2012,79638,1,diesel,37.81,20783792,26/2/2024
+C70,Volvo,GZD-552,Orange,2000,77064,0,hybrid,20.45,0,0
+Bonneville,Pontiac,LJG-226,Teal,2005,19555,0,electric,46.74,0,0
+Grand Voyager,Plymouth,OAS-214,Teal,1995,36383,0,gasoline,12.91,0,0
+Bonneville,Pontiac,ISW-896,Goldenrod,2004,78088,1,diesel,37.21,13216660,7/9/2024
+LR4,Land Rover,JUN-692,Purple,2010,50291,0,hybrid,46.26,0,0
+NSX,Acura,MWL-692,Aquamarine,1992,77932,1,electric,25.39,29461638,7/12/2024
+Express 3500,Chevrolet,XQD-717,Aquamarine,2000,53818,0,gasoline,30.82,0,0
+M,Infiniti,OAV-552,Pink,2007,70100,0,diesel,14.42,0,0
+Pacifica,Chrysler,XGF-318,Teal,2004,54622,1,hybrid,42.99,8130104,16/2/2024
+Z4,BMW,SMF-773,Blue,2011,2659,0,electric,40.75,0,0
+DTS,Cadillac,RIF-830,Khaki,2008,73988,0,gasoline,46.74,0,0
+Esprit,Lotus,SBC-347,Maroon,1988,74057,1,diesel,18.35,14627704,10/1/2024
+Pathfinder,Nissan,KHE-068,Violet,2007,96200,0,hybrid,30.67,0,0
+Grand Cherokee,Jeep,AZI-615,Yellow,1996,21245,0,electric,39.99,0,0
+Quest,Nissan,YJW-440,Fuscia,2008,60919,0,gasoline,30.58,0,0
+Reno,Suzuki,KYJ-032,Blue,2008,88614,0,diesel,36.94,0,0
+Envoy,GMC,WBK-497,Fuscia,1999,18454,0,hybrid,16.13,0,0
+XR4Ti,Merkur,QSK-808,Crimson,1985,19398,0,electric,30.85,0,0
+MKS,Lincoln,WII-618,Teal,2012,87368,0,gasoline,44.42,0,0
+Savana 3500,GMC,UTO-288,Aquamarine,2008,68768,1,diesel,29.37,16092684,8/5/2024
+XT,Subaru,OMW-394,Blue,1990,56488,1,hybrid,33.35,11175007,13/12/2024
+F250,Ford,SVA-011,Green,1984,54597,0,electric,49.36,0,0
+S8,Audi,TWW-516,Purple,2003,14775,0,gasoline,27.12,0,0
+Econoline E250,Ford,ENU-202,Blue,1993,24551,0,diesel,25.78,0,0
+Range Rover,Land Rover,NCH-975,Aquamarine,2009,18627,0,hybrid,41.74,0,0
+Q,Infiniti,AXW-580,Goldenrod,2006,80557,0,electric,37.21,0,0
+MX-5,Mazda,GUA-708,Fuscia,1992,18623,0,gasoline,11.54,0,0
+88,Oldsmobile,DNZ-852,Indigo,1996,61601,0,diesel,33.81,0,0
+911,Porsche,DZG-650,Violet,1997,10916,1,hybrid,19.03,17401602,7/12/2023
+Mustang,Ford,BRQ-513,Puce,2004,28513,0,electric,16.46,0,0
+V8 Vantage,Aston Martin,AOO-918,Mauv,2011,6149,0,gasoline,48.42,0,0
+RAV4,Toyota,LMW-592,Goldenrod,2006,71615,0,diesel,13.17,0,0
+Biturbo,Maserati,QPD-031,Puce,1986,35970,1,hybrid,35.32,15008556,13/6/2024
+Classic,Chevrolet,CSQ-088,Puce,2004,61434,0,electric,31.32,0,0
+Miata MX-5,Mazda,PLH-584,Fuscia,2008,68482,0,gasoline,34.63,0,0
+Arnage,Bentley,WVD-085,Purple,2009,81199,1,diesel,33.37,25699519,2/1/2025
+G-Series 2500,Chevrolet,BMI-720,Indigo,1998,41225,0,hybrid,41.96,0,0
+Suburban 2500,Chevrolet,PVK-631,Turquoise,2006,42444,0,electric,47.92,0,0
+530,BMW,TPQ-861,Indigo,2001,44318,0,gasoline,21.00,0,0
+Prius,Toyota,QCK-207,Goldenrod,2010,29124,1,diesel,42.86,23764107,16/11/2024
+Xterra,Nissan,KCR-702,Puce,2011,93274,1,hybrid,13.70,10110204,27/3/2024
+Durango,Dodge,LFL-119,Maroon,2012,37449,1,electric,48.66,24961651,2/6/2024
+rio,Volkswagen,VIO-823,Puce,2000,9145,0,gasoline,13.58,0,0
+Dakota,Dodge,ZGH-079,Purple,1999,51266,1,diesel,34.60,18849713,7/1/2024
+RL,Acura,ZOL-583,Orange,2008,39458,1,hybrid,35.40,10792648,19/5/2024
+RVR,Mitsubishi,MCK-776,Maroon,1993,88063,0,electric,28.63,0,0
+H3T,Hummer,EAL-184,Red,2009,31264,1,gasoline,30.88,16752668,12/5/2024
+Cayman,Porsche,RZE-355,Puce,2008,30186,1,diesel,17.06,15163919,19/12/2024
+CL-Class,Mercedes-Benz,EPK-002,Mauv,2006,32365,0,hybrid,34.06,0,0
+Galaxie,Ford,ECU-631,Indigo,1964,58612,0,electric,49.81,0,0
+Type 2,Volkswagen,DUH-261,Aquamarine,1986,86885,1,gasoline,47.51,29358263,3/1/2024
+929,Mazda,KZB-490,Crimson,1994,19989,0,diesel,46.41,0,0
+DBS,Aston Martin,ZEH-180,Red,2010,75585,1,hybrid,34.28,19099391,6/5/2024
+Vandura G3500,GMC,ZAS-612,Turquoise,1995,73058,1,electric,35.47,25679138,16/10/2024
+Sonata,Hyundai,MGX-547,Violet,2003,42696,0,gasoline,26.57,0,0
+Continental Flying Spur,Bentley,DFX-542,Red,2010,26291,0,diesel,20.68,0,0
+Murano,Nissan,ZJI-776,Indigo,2009,81453,0,hybrid,22.10,0,0
+SL-Class,Mercedes-Benz,HQO-734,Crimson,1988,17876,1,electric,11.02,29917629,28/10/2024
+Pajero,Mitsubishi,BTP-642,Puce,2000,20818,0,gasoline,21.75,0,0
+GT350,Shelby,KNM-120,Indigo,1969,56962,0,diesel,47.47,0,0
+X5,BMW,YVW-575,Aquamarine,2008,81598,1,hybrid,33.28,12100980,7/5/2024
+M,BMW,TZN-974,Fuscia,2000,68691,1,electric,40.14,26111326,25/1/2024
+Bravada,Oldsmobile,YRB-157,Turquoise,1998,30360,0,gasoline,25.91,0,0
+Ranger,Ford,TLJ-706,Crimson,2004,47231,0,diesel,42.43,0,0
+Corolla,Toyota,ETW-917,Violet,2010,21331,1,hybrid,33.97,15808455,8/8/2024
+Solara,Toyota,UWD-629,Indigo,1999,29822,0,electric,22.72,0,0
+Mirage,Mitsubishi,EHW-375,Fuscia,1986,93576,0,gasoline,44.19,0,0
+2500,Chevrolet,VIV-990,Yellow,1993,9874,0,diesel,29.94,0,0
+CTS-V,Cadillac,DEN-764,Turquoise,2009,33425,1,hybrid,13.64,10021067,9/11/2024
+E350,Ford,LYX-941,Blue,2008,2124,0,electric,40.00,0,0
+LS,Lexus,DTC-012,Orange,1999,18007,0,gasoline,47.84,0,0
+Quest,Nissan,LUC-386,Puce,2001,58203,0,diesel,34.12,0,0
+XG350,Hyundai,ABU-365,Red,2005,33349,0,hybrid,48.53,0,0
+Equinox,Chevrolet,BSY-131,Red,2008,73043,0,electric,43.16,0,0
+Enclave,Buick,DWB-986,Violet,2011,32013,1,gasoline,45.52,22654942,15/2/2024
+Cherokee,Jeep,SNL-420,Red,1999,40655,0,diesel,40.86,0,0
+TT,Audi,AER-455,Goldenrod,2003,21507,0,hybrid,44.22,0,0
+A8,Audi,YKY-113,Turquoise,2000,10900,1,electric,12.32,24648123,19/5/2024
+Cougar,Mercury,JPD-178,Khaki,2000,53477,1,gasoline,23.44,28245806,3/12/2024
+Express 2500,Chevrolet,NPJ-179,Khaki,2006,8128,0,diesel,38.48,0,0
+GL-Class,Mercedes-Benz,MFP-171,Pink,2010,1883,0,hybrid,37.62,0,0
+Metro,Chevrolet,ZYN-726,Orange,1999,2505,0,electric,32.41,0,0
+Ion,Saturn,ODL-901,Aquamarine,2006,6815,0,gasoline,23.86,0,0
+Ram 3500,Dodge,XIP-098,Violet,1997,31271,1,diesel,18.89,27842486,16/12/2024
+Aerostar,Ford,FTT-707,Orange,1987,20277,0,hybrid,23.28,0,0
+Prelude,Honda,KCK-358,Yellow,1985,50591,0,electric,10.41,0,0
+Ram 3500,Dodge,JDZ-218,Turquoise,1995,62507,0,gasoline,38.13,0,0
+Pathfinder,Nissan,WVF-678,Crimson,2007,73605,0,diesel,33.93,0,0
+Volare,Plymouth,PWM-296,Indigo,1976,46691,0,hybrid,21.24,0,0
+Wrangler,Jeep,SSI-418,Maroon,1998,30313,1,electric,44.80,16483552,26/3/2024
+Vandura 1500,GMC,GUH-118,Indigo,1993,97420,0,gasoline,30.07,0,0
+Express 3500,Chevrolet,FDM-610,Orange,2001,32525,0,diesel,41.81,0,0
+Rocky,Daihatsu,NOO-631,Maroon,1992,38900,1,hybrid,29.80,9081685,6/1/2024
+New Beetle,Volkswagen,NSV-003,Aquamarine,1998,46804,1,electric,24.11,15457957,26/11/2023
+Spectra5,Kia,WGP-584,Khaki,2006,79892,1,gasoline,36.45,8130195,17/1/2024
+Esprit,Lotus,MFW-175,Orange,2002,62928,0,diesel,25.22,0,0
+XJ Series,Jaguar,UJP-682,Red,1992,90412,0,hybrid,30.32,0,0
+V50,Volvo,OFT-470,Aquamarine,2005,76594,0,electric,23.00,0,0
+Sable,Mercury,GLQ-121,Maroon,2005,68928,1,gasoline,26.53,18793108,17/3/2024
+Santa Fe,Hyundai,WXD-935,Fuscia,2009,6956,0,diesel,47.37,0,0
+Boxster,Porsche,MOE-995,Red,2008,45720,1,hybrid,19.06,29510332,2/8/2024
+Dakota,Dodge,PTY-647,Maroon,1996,14567,1,electric,12.47,13647216,29/11/2024
+Mazdaspeed 3,Mazda,VOH-738,Violet,2007,82563,1,gasoline,12.67,12435320,15/11/2023
+240SX,Nissan,RRM-906,Purple,1997,42843,0,diesel,31.59,0,0
+626,Mazda,ZMV-632,Yellow,1993,10752,0,hybrid,29.93,0,0
+Corrado,Volkswagen,BVA-301,Indigo,1992,34508,1,electric,19.73,8621241,12/12/2023
+Range Rover,Land Rover,MRN-154,Fuscia,1994,96541,1,gasoline,19.17,12424129,16/3/2024
+Passat,Volkswagen,DAE-643,Aquamarine,1999,4710,1,diesel,14.77,20318428,26/4/2024
+1000,Pontiac,NDQ-596,Aquamarine,1986,58679,0,hybrid,41.90,0,0
+F-Series,Ford,PIF-207,Khaki,2002,11004,1,electric,11.73,20201425,7/7/2024
+Escape,Ford,MFI-474,Goldenrod,2005,32936,1,gasoline,37.47,13778645,23/2/2024
+Santa Fe,Hyundai,TGA-921,Red,2006,47705,0,diesel,39.92,0,0
+Prowler,Plymouth,PEZ-839,Crimson,2000,99278,1,hybrid,46.07,19044749,27/9/2024
+Fortwo,Smart,SKZ-451,Teal,2012,35760,0,electric,47.73,0,0
+Windstar,Ford,QPT-947,Orange,1997,31312,0,gasoline,33.90,0,0
+Caravan,Dodge,SNF-422,Maroon,2005,67872,0,diesel,40.57,0,0
+Edge,Ford,OKT-139,Indigo,2011,29184,1,hybrid,47.15,21901168,10/11/2023
+E-Series,Ford,BTN-708,Pink,1987,99070,1,electric,47.94,24504519,2/7/2024
+Lucerne,Buick,KWM-357,Indigo,2011,75920,0,gasoline,24.83,0,0
+MX-5,Mazda,FOT-844,Maroon,1998,48984,1,diesel,11.80,12754889,4/4/2024
+Exige,Lotus,WYA-651,Goldenrod,2006,82476,0,hybrid,23.50,0,0
+Highlander,Toyota,FQS-784,Green,2009,82274,0,electric,10.89,0,0
+S-Class,Mercedes-Benz,BPU-797,Violet,2004,18427,0,gasoline,40.47,0,0
+SL-Class,Mercedes-Benz,OXV-154,Maroon,2006,75128,0,diesel,34.62,0,0
+Sentra,Nissan,XAM-679,Maroon,2004,26555,0,hybrid,13.34,0,0
+XC70,Volvo,YEA-077,Aquamarine,2009,30878,1,electric,43.91,13806125,9/11/2024
+Mirage,Mitsubishi,AIF-320,Blue,1989,45336,0,gasoline,35.74,0,0
+tC,Scion,MCT-975,Blue,2011,71055,0,diesel,45.62,0,0
+Land Cruiser,Toyota,ZAS-980,Blue,1998,68395,1,hybrid,31.47,16000053,27/10/2024
+C-Class,Mercedes-Benz,WXD-427,Crimson,2003,52150,1,electric,18.22,29257102,16/11/2024
+V8,Audi,EQD-300,Crimson,1991,46944,1,gasoline,34.11,21089566,31/5/2024
+F250,Ford,SQC-858,Mauv,2009,28831,1,diesel,41.47,27697954,13/12/2024
+C70,Volvo,JMR-739,Indigo,2010,44316,0,hybrid,30.65,0,0
+Tracer,Mercury,QDI-988,Orange,1999,34412,0,electric,38.09,0,0
+Taurus,Ford,XCO-898,Maroon,1990,66355,0,gasoline,33.91,0,0
+Montero,Mitsubishi,SRQ-974,Crimson,1994,86988,1,diesel,41.29,16316412,26/12/2024
+Town & Country,Chrysler,EET-019,Green,2002,83833,1,hybrid,47.64,19112265,9/5/2024
+LaCrosse,Buick,SEE-107,Puce,2012,14734,1,electric,43.10,19431184,20/1/2024
+Focus,Ford,CPN-643,Indigo,2004,25498,0,gasoline,14.20,0,0
+Type-1h,Aptera,QFG-238,Orange,2010,93110,1,diesel,35.76,19325738,25/12/2023
+Jetta,Volkswagen,FQY-938,Teal,1996,39532,1,hybrid,17.99,10675541,7/9/2024
+Estate,Buick,KOH-018,Yellow,1990,22754,1,electric,40.98,22387910,22/1/2024
+Safari,GMC,VJB-435,Yellow,1996,22445,0,gasoline,29.95,0,0
+Avalanche 2500,Chevrolet,AMG-115,Orange,2002,36769,0,diesel,40.05,0,0
+Suburban 1500,GMC,YEF-145,Blue,1999,73874,0,hybrid,44.96,0,0
+Aviator,Lincoln,HOV-385,Violet,2004,33216,1,electric,44.30,14412390,13/1/2025
+A6,Audi,TOX-789,Purple,2001,84548,1,gasoline,35.57,27051555,27/1/2024
+Continental GTC,Bentley,SRK-249,Aquamarine,2009,17693,1,diesel,33.31,22909881,8/4/2024
+300SL,Mercedes-Benz,GQQ-924,Turquoise,1992,60836,1,hybrid,33.14,20875859,7/11/2024
+FCX Clarity,Honda,TRE-272,Maroon,2012,15719,1,electric,13.99,14904657,23/11/2024
+Exige,Lotus,GMD-820,Turquoise,2012,18761,1,gasoline,19.84,25758924,9/12/2024
+Q,Infiniti,UFW-331,Red,1995,93340,0,diesel,29.72,0,0
+Taurus,Ford,SOM-023,Blue,1998,80572,0,hybrid,26.83,0,0
+G5,Pontiac,TJE-881,Mauv,2007,21705,0,electric,23.51,0,0
+Nitro,Dodge,QEP-148,Red,2009,92050,0,gasoline,23.37,0,0
+CL-Class,Mercedes-Benz,WAG-790,Turquoise,2012,33922,1,diesel,28.86,18460095,19/11/2024
+Silverado,Chevrolet,DRR-137,Green,2010,84026,1,hybrid,37.04,26005425,12/1/2024
+B2600,Mazda,ZJM-310,Crimson,1989,32894,0,electric,49.70,0,0
+Range Rover,Land Rover,PAZ-758,Puce,2010,73641,0,gasoline,29.04,0,0
+Miata MX-5,Mazda,WSZ-887,Red,1995,18120,0,diesel,25.53,0,0
+F150,Ford,WPR-874,Khaki,2010,87192,1,hybrid,27.94,7740799,31/8/2024
+MDX,Acura,NFB-404,Orange,2007,51396,0,electric,20.67,0,0
+911,Porsche,CRT-476,Fuscia,1993,26242,0,gasoline,11.73,0,0
+Millenia,Mazda,PUA-115,Violet,1995,19667,0,diesel,25.80,0,0
+Crown Victoria,Ford,QGI-487,Crimson,2000,16027,0,hybrid,41.31,0,0
+Freelander,Land Rover,CRV-278,Maroon,2002,21029,0,electric,17.47,0,0
+F150,Ford,KEL-006,Green,1994,73671,1,gasoline,38.89,13921509,29/6/2024
+RX,Lexus,VIU-943,Fuscia,2002,73692,0,diesel,22.91,0,0
+Express 2500,Chevrolet,PQJ-842,Blue,2004,10513,1,hybrid,17.75,11898986,30/9/2024
+Econoline E350,Ford,KIS-164,Goldenrod,1992,21454,0,electric,25.97,0,0
+Tribute,Mazda,CWY-973,Fuscia,2001,14022,0,gasoline,24.03,0,0
+Econoline E250,Ford,QVZ-274,Goldenrod,1997,65070,1,diesel,14.11,19564478,10/1/2025
+Sable,Mercury,OZG-715,Indigo,1990,71706,0,hybrid,21.53,0,0
+Riviera,Buick,NQH-509,Pink,1995,61600,1,electric,27.86,24868387,23/6/2024
+F250,Ford,BZW-809,Pink,1984,48870,0,gasoline,18.40,0,0
+Mirage,Mitsubishi,QTB-045,Maroon,1996,98878,1,diesel,26.73,19242077,18/6/2024
+Corvette,Chevrolet,EYX-247,Crimson,1969,25765,0,hybrid,30.57,0,0
+A3,Audi,SBH-854,Khaki,2009,41143,1,electric,49.53,28580433,19/12/2024
+Caravan,Dodge,HJH-724,Mauv,2002,34936,0,gasoline,35.30,0,0
+Sequoia,Toyota,MFK-756,Fuscia,2001,86348,0,diesel,28.04,0,0
+Tacoma,Toyota,PZG-568,Purple,2008,71980,0,hybrid,19.61,0,0
+E-Series,Ford,TSK-048,Puce,1992,57132,0,electric,48.34,0,0
+G37,Infiniti,NTM-263,Maroon,2010,72931,0,gasoline,37.90,0,0
+Ram Van 3500,Dodge,UCF-144,Aquamarine,1999,54044,0,diesel,41.02,0,0
+F-Series Super Duty,Ford,OPZ-248,Mauv,2007,22990,1,hybrid,19.85,13696151,30/7/2024
+Quest,Nissan,LXD-452,Teal,1995,5596,1,electric,35.33,23832327,30/9/2024
+Model S,Tesla,ZZT-687,Maroon,2012,55141,1,gasoline,11.26,15987932,1/8/2024
+Bonneville,Pontiac,GFU-265,Maroon,1999,47893,0,diesel,44.56,0,0
+Monte Carlo,Chevrolet,XMH-227,Pink,2005,45363,1,hybrid,25.78,25585766,11/9/2024
+Corolla,Toyota,FNY-517,Crimson,2008,31933,1,electric,17.94,16016019,26/7/2024
+Elantra,Hyundai,XCX-179,Purple,2011,76413,1,gasoline,10.38,25664726,27/9/2024
+Quest,Nissan,YXA-827,Orange,1995,45545,1,diesel,21.19,21071384,1/7/2024
+MKX,Lincoln,JLM-711,Mauv,2011,29909,1,hybrid,39.93,21158213,24/4/2024
+599 GTB Fiorano,Ferrari,HGX-675,Indigo,2009,30221,1,electric,38.59,29102970,23/7/2024
+Outlander,Mitsubishi,CPW-277,Green,2012,94920,1,gasoline,17.02,7937032,26/11/2023
+GX,Lexus,EAE-720,Blue,2003,9816,1,diesel,29.98,24994964,20/10/2024
+V8 Vantage,Aston Martin,AFA-246,Mauv,2008,27200,1,hybrid,14.65,26381449,10/7/2024
+Canyon,GMC,JTI-386,Red,2008,26588,0,electric,31.89,0,0
+Baja,Subaru,CWE-143,Maroon,2005,32257,0,gasoline,30.30,0,0
+Acclaim,Plymouth,RTG-900,Indigo,1992,61720,0,diesel,24.80,0,0
+Sable,Mercury,IBO-965,Teal,1996,35624,1,hybrid,15.10,17222655,24/2/2024
+9-7X,Saab,YIT-217,Puce,2005,27675,1,electric,17.46,7802674,8/6/2024
+Continental Mark VII,Lincoln,RPT-618,Mauv,1991,32474,1,gasoline,21.68,27141680,11/11/2024
+Typ-1,Aptera,FUU-353,Green,2008,90253,0,diesel,32.62,0,0
+Esperante,Panoz,OGN-507,Green,2007,81512,0,hybrid,11.06,0,0
+500SEL,Mercedes-Benz,CKM-252,Crimson,1992,37891,0,electric,10.72,0,0
+Vantage,Aston Martin,QOW-704,Turquoise,2009,76939,0,gasoline,48.98,0,0
+Grand Caravan,Dodge,ZES-293,Crimson,1995,93080,0,diesel,26.20,0,0
+SL-Class,Mercedes-Benz,PFG-961,Mauv,2005,30259,0,hybrid,44.62,0,0
+X5,BMW,OVN-772,Puce,2007,10594,1,electric,49.10,29064564,19/10/2024
+Miata MX-5,Mazda,WSK-252,Aquamarine,2005,43241,1,gasoline,42.44,13406838,13/1/2025
+GT-R,Nissan,WDC-702,Purple,2012,81220,0,diesel,29.58,0,0
+Familia,Mazda,FDY-915,Maroon,1992,95472,1,hybrid,33.17,29223830,15/1/2024
+Tracer,Mercury,LRJ-800,Green,1988,8201,0,electric,29.57,0,0
+S10,Chevrolet,JTJ-175,Pink,2004,99315,1,gasoline,48.01,10654221,20/6/2024
+Park Avenue,Buick,EFW-220,Puce,1996,83814,0,diesel,45.71,0,0
+Escalade,Cadillac,VAE-665,Purple,2006,75111,0,hybrid,32.72,0,0
+Pilot,Honda,LIY-126,Crimson,2008,5282,0,electric,45.38,0,0
+Cavalier,Chevrolet,VUD-127,Orange,2001,34616,1,gasoline,37.45,12271609,10/3/2024
+Amanti,Kia,QYN-344,Yellow,2009,86963,0,diesel,46.12,0,0
+Venture,Chevrolet,VIO-817,Turquoise,1999,30308,0,hybrid,48.27,0,0
+Mountaineer,Mercury,BDE-712,Pink,2010,51441,1,electric,34.71,19248102,26/12/2023
+LS,Lexus,NQC-562,Violet,1995,86982,0,gasoline,27.73,0,0
+Insight,Honda,VTH-483,Indigo,2011,23416,0,diesel,26.56,0,0
+Crown Victoria,Ford,OSJ-967,Yellow,1996,36283,0,hybrid,23.59,0,0
+Exige,Lotus,CSY-059,Red,2005,6220,0,electric,25.46,0,0
+Amigo,Isuzu,LAU-030,Teal,1998,20590,0,gasoline,31.00,0,0
+Dakota,Ram,NJP-627,Purple,2011,46854,1,diesel,36.64,16056261,12/4/2024
+MR2,Toyota,LYG-949,Blue,1994,24252,1,hybrid,24.56,28316720,2/1/2025
+Pajero,Mitsubishi,ZTJ-984,Yellow,1991,85082,1,electric,23.83,9821240,17/9/2024
+XL7,Suzuki,EAW-077,Pink,2009,83061,0,gasoline,44.73,0,0
+Traverse,Chevrolet,QDD-044,Indigo,2011,24990,1,diesel,39.56,9868973,27/1/2024
+Skylark,Buick,EUP-269,Yellow,1990,46759,1,hybrid,35.53,25940290,2/9/2024
+Sentra,Nissan,LXB-045,Khaki,2011,73277,0,electric,48.96,0,0
+Continental GT,Bentley,DQZ-197,Orange,2006,39874,1,gasoline,12.21,23003726,8/12/2023
+S10 Blazer,Chevrolet,DCD-512,Turquoise,1993,81701,1,diesel,29.14,17128932,9/10/2024
+1 Series,BMW,WLX-376,Maroon,2012,5115,0,hybrid,26.99,0,0
+Mariner,Mercury,QQN-275,Purple,2009,57017,0,electric,18.93,0,0
+Laser,Plymouth,RAR-402,Yellow,1989,70849,0,gasoline,24.46,0,0
+IS-F,Lexus,MVO-601,Khaki,2008,56401,0,diesel,34.87,0,0
+MR2,Toyota,CLU-728,Purple,2001,69436,0,hybrid,23.29,0,0
+XL7,Suzuki,TXW-214,Turquoise,2007,64372,1,electric,29.74,28727913,5/5/2024
+9-Mar,Saab,BVQ-488,Teal,2010,96395,0,gasoline,47.03,0,0
+Outlander,Mitsubishi,NEJ-155,Khaki,2011,51121,0,diesel,43.61,0,0
+911,Porsche,LUV-165,Aquamarine,1991,21390,1,hybrid,36.71,25412789,8/12/2023
+I,Infiniti,CJP-658,Yellow,2001,38417,0,electric,32.50,0,0
+S80,Volvo,IGP-078,Yellow,2010,26945,1,gasoline,29.12,23071635,17/4/2024
+Regal,Buick,ZDM-925,Purple,2004,84950,1,diesel,31.89,25714818,11/12/2023
+Expedition,Ford,CNO-929,Blue,1997,61356,1,hybrid,11.40,7247851,26/9/2024
+LUV,Chevrolet,YQU-607,Goldenrod,1979,57391,0,electric,47.57,0,0
+Tribeca,Subaru,BQZ-480,Pink,2010,60118,1,gasoline,36.51,11231802,14/8/2024
+LeSabre,Buick,ITK-760,Blue,2005,58451,0,diesel,46.84,0,0
+525,BMW,KMU-182,Goldenrod,2006,97996,1,hybrid,37.09,18137022,17/7/2024
+Pajero,Mitsubishi,HNY-264,Indigo,1991,98051,0,electric,38.85,0,0
+Express 1500,Chevrolet,NOJ-002,Indigo,2005,85160,1,gasoline,19.33,23567642,12/8/2024
+Cayenne,Porsche,THC-563,Red,2011,40388,0,diesel,46.92,0,0
+MX-6,Mazda,LUG-092,Purple,1988,80706,0,hybrid,26.20,0,0
+Truck,Mitsubishi,XOF-739,Green,1994,44360,1,electric,22.88,25248911,16/2/2024
+Elantra,Hyundai,HEH-580,Goldenrod,1995,70353,0,gasoline,49.15,0,0
+Murano,Nissan,OSL-489,Khaki,2012,33354,1,diesel,25.76,8933805,25/9/2024
+Econoline E250,Ford,DAU-517,Teal,1992,67107,1,hybrid,37.34,26515917,5/4/2024
+Optima,Kia,UQI-333,Turquoise,2004,68034,0,electric,46.72,0,0
+Mazda3,Mazda,HRT-716,Blue,2005,40002,0,gasoline,20.58,0,0
+Maxima,Nissan,JVB-731,Turquoise,1995,83954,1,diesel,37.22,23309366,29/6/2024
+Lanos,Daewoo,SHI-366,Khaki,2000,81309,1,hybrid,28.08,24995742,3/3/2024
+Esteem,Suzuki,NGL-685,Goldenrod,2001,96078,1,electric,11.38,19321959,8/7/2024
+Lumina,Chevrolet,YNC-243,Purple,2000,8995,0,gasoline,13.09,0,0
+Lancer Evolution,Mitsubishi,KYH-046,Teal,2004,15245,1,diesel,22.09,10256699,12/6/2024
+Express 2500,Chevrolet,SPD-475,Orange,2011,41918,1,hybrid,33.54,20312182,18/10/2024
+Continental GT,Bentley,BRO-319,Pink,2007,74287,0,electric,10.32,0,0
+Fiesta,Ford,XDQ-821,Teal,2013,41437,1,gasoline,29.81,25459077,24/1/2024
+Alcyone SVX,Subaru,VQH-575,Teal,1993,38459,0,diesel,19.66,0,0
+Camaro,Chevrolet,WSY-653,Indigo,1969,96237,0,hybrid,33.79,0,0
+Silverado,Chevrolet,RST-686,Red,2001,10928,0,electric,40.95,0,0
+SL-Class,Mercedes-Benz,GCD-129,Turquoise,1990,46492,1,gasoline,31.48,11342168,11/7/2024
+Savana 3500,GMC,QFG-347,Orange,2002,20313,1,diesel,39.96,12320316,4/12/2023
+88,Oldsmobile,MMX-546,Yellow,1995,84716,1,hybrid,23.91,25847481,23/4/2024
+Cayman,Porsche,CPH-800,Fuscia,2007,46759,0,electric,22.06,0,0
+Corvette,Chevrolet,JHW-296,Blue,1997,24583,0,gasoline,34.99,0,0
+Express,Chevrolet,BHR-568,Turquoise,2009,93957,1,diesel,35.06,22987795,4/1/2025
+Tundra,Toyota,OMJ-245,Fuscia,2004,9638,1,hybrid,45.88,13946507,7/10/2024
+Comanche,Jeep,VLG-408,Teal,1992,87615,1,electric,33.62,11944828,5/4/2024
+Monte Carlo,Chevrolet,SWC-422,Yellow,1998,32909,1,gasoline,34.12,20079597,18/4/2024
+Sable,Mercury,DVS-868,Goldenrod,1986,22108,1,diesel,48.36,20322305,1/7/2024
+Impreza,Subaru,PAT-619,Crimson,1996,30416,1,hybrid,49.58,23899503,22/1/2024
+Elan,Lotus,WMN-002,Aquamarine,1990,95789,0,electric,19.80,0,0
+S-Series,Saturn,ZHY-547,Khaki,1995,13518,1,gasoline,18.91,15115350,12/10/2024
+MPV,Mazda,YEN-683,Turquoise,1991,35392,1,diesel,33.81,20271963,22/8/2024
+Grand Prix,Pontiac,TNB-076,Purple,1987,52063,1,hybrid,47.57,9051930,16/1/2024
