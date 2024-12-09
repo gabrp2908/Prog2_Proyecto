@@ -174,7 +174,9 @@ void Consultar_Vehiculo_View() {
         cout << " Modelo: " << vehiculo.modelo << endl;
         cout << " Marca: " << vehiculo.marca << endl;
         cout << " Placa: " << vehiculo.placa << endl;
+        cout << " Color: " << vehiculo.color << endl;
         cout << " Year: " << vehiculo.year << endl;
+        cout << " Kilometraje: " << vehiculo.kilometraje << endl;
         cout << " Rentado: " << (vehiculo.rentado ? "Si" : "No") << endl;
         cout << " Motor: " << vehiculo.motor << endl;
         cout << " Precio de renta: " << vehiculo.precio_renta << " $/hr" << endl;
