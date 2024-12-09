@@ -112,4 +112,15 @@ class Repuestos{
     }
 };
 
+struct Usuario {
+    string username;
+    string password;
+    string rol;
+};
+
+const int MAX_USUARIOS = 100;
+
+extern Usuario UsuariosBase[MAX_USUARIOS];
+extern int numUsuarios;
+
 #endif

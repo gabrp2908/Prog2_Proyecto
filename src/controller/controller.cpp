@@ -10,6 +10,31 @@
 
 using namespace std;
 
+int BuscarUsuario(const string& username) {
+    for (int i = 0; i < numUsuarios; ++i) {
+        if (UsuariosBase[i].username == username) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+Usuario Login(const string& username, const string& password) {
+    int indice = BuscarUsuario(username);
+    if (indice != -1 && UsuariosBase[indice].password == password) {
+        cout << "Inicio de sesion exitoso." << endl;
+        return UsuariosBase[indice];
+    }
+
+    cout << "Nombre de usuario o clave incorrectos." << endl;
+    return {"", "", ""};
+}
+void AgregarUsuario(const Usuario& nuevoUsuario) {
+    if (numUsuarios < MAX_USUARIOS) {
+        UsuariosBase[numUsuarios++] = nuevoUsuario;
+    } 
+}
+
 string FechaActual(){
     time_t ahora = time(0);
     tm *tiempoLocal = localtime(&ahora);

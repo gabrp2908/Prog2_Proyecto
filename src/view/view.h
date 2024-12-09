@@ -1,13 +1,19 @@
 #ifndef view_h
 #define view_h
+#include "../model/model.h"
 
 // Funciones de Menu
-void MenuPrincipal();
 void MenuConsultar();
 void MenuActualizar();
 void MenuBorrar();
 void MenuAgregar();
 void Backup();
+
+// Funciones de Menu por Rol
+void MenuPorRol(const Usuario& usuario);
+void MenuAdmin();
+void MenuManager();
+void MenuEmpleado();
 
 // Funciones de Consulta en View
 void Consultar_Vehiculo_View();
