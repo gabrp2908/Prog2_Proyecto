@@ -7,6 +7,7 @@ void MenuConsultar();
 void MenuActualizar();
 void MenuBorrar();
 void MenuAgregar();
+void Backup();
 
 // Funciones de Consulta en View
 void Consultar_Vehiculo_View();
@@ -27,4 +28,5 @@ void Eliminar_Repuesto_View();
 void Agregar_Vehiculo_View();
 void Agregar_Cliente_View();
 void Agregar_Repuesto_View();
+
 #endif

@@ -1,12 +1,45 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <ctime>
+#include <filesystem>
 #include <string>
 #include "../model/model.h"
 #include "../view/view.h"
 #include "controller.h"
 
 using namespace std;
+
+string FechaActual(){
+    time_t ahora = time(0);
+    tm *tiempoLocal = localtime(&ahora);
+
+    char buffer[20];
+    strftime(buffer, sizeof(buffer), "%Y-%m-%d_%H-%M-%S", tiempoLocal);
+
+    return string(buffer);
+}
+
+// Funcion para copias de seguridad
+bool CrearBackup(){
+    string fecha = FechaActual();
+    string archivos[] = {"DATOS_CLIENTES.csv", "DATOS_VEHICULOS.csv", "DATOS_REPUESTOS.csv"};
+
+    for (const string &archivo : archivos){
+        if (!filesystem::exists(archivo)){
+            continue;
+        }
+        string archivoBackup = "backups/" + fecha + "_" + archivo;
+
+        try{
+            filesystem::copy_file(archivo, archivoBackup, filesystem::copy_options::overwrite_existing);
+        }
+        catch (const filesystem::filesystem_error &e){
+            return false;
+        }
+    }
+    return true;
+}
 
 // Consulta de vehiculo segun su placa
  bool Consultar_Vehiculo(const string& placa, Vehiculos& resultado){

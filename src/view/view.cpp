@@ -11,7 +11,8 @@ void MenuPrincipal(){
         cout << "2. Actualizar" << endl;
         cout << "3. Borrar" << endl;
         cout << "4. Agregar" << endl;
-        cout << "5. Salir del programa" << endl << endl;
+        cout << "5. Crear copias de seguridad" << endl;
+        cout << "6. Salir del programa" << endl << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion;
 
@@ -29,13 +30,16 @@ void MenuPrincipal(){
             MenuAgregar();
             break;
         case 5:
+            Backup();
+            break;
+        case 6:
             cout << "Saliendo del programa . . ." << endl;
             break;
         default:
             cout << "Opcion invalida" << endl
                  << endl;
         }
-    } while (opcion != 5);
+    } while (opcion != 6);
 }
 
 void MenuConsultar(){
@@ -66,7 +70,7 @@ void MenuConsultar(){
         default:
             cout << "Opcion Invalida" << endl << endl;
         }
-    } while (opcion_consulta != 5);
+    } while (opcion_consulta != 4);
 }
 
 void MenuActualizar(){
@@ -477,5 +481,14 @@ void Agregar_Repuesto_View() {
         }
     } else {
         cout << "El cambio ha sido descartado." << endl;
+    }
+}
+
+void Backup(){
+    if (CrearBackup()){
+        cout << "Copia de seguridad completada." << endl;
+    }
+    else{
+        cout << "No se pudo completar la copia de seguridad." << endl;
     }
 }

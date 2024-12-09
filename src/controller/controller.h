@@ -3,6 +3,9 @@
 
 #include "../model/model.h"
 
+// Funcion de BackUp
+bool CrearBackup();
+
 // Funciones de Consulta
 bool Consultar_Vehiculo(const string& placa, Vehiculos& resultado);
 bool Consultar_Cliente(int cedula, Cliente& resultado);
@@ -22,4 +25,5 @@ bool Eliminar_Repuesto(int modelo, char confirmar);
 bool Agregar_Vehiculo(const Vehiculos& vehiculo);
 bool Agregar_Cliente(const Cliente& cliente);
 bool Agregar_Repuesto(const Repuestos& repuesto);
+
 #endif
